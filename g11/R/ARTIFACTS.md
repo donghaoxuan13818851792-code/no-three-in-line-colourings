@@ -38,7 +38,7 @@ Staging parts received:
 | part 02 | 104857600 | `392d1850b73e09df82fa7f83e35196cde076427e6e27a50cc6146412f75c7d09` |
 | part 03 | 104857600 | `8fc0c3640f3df2b7295382fc82701da6b6828d184e2408c426f58e23b3951316` |
 | part 04 | 104857600 | `a2df6bbfea8c6a8760e1c4e921222a81db1ab39b2c14e02b48c1af900949acdc` |
-| part 05 | 70079162 | `c3720fa28dde46fc8a4ba4f58c6d19fbea87ae5e48816bcbd30dea443739ee0c` |
+| part 05 | 70303562 | `c3720fa28dde46fc8a4ba4f58c6d19fbea87ae5e48816bcbd30dea443739ee0c` |
 
 The 0.1.1 documentation states that this refresh changes packaging documentation and read-only wrapper scripts only; no research source, CNF, solver report, proof-verification report, certificate log, or mathematical data file was modified.
 
