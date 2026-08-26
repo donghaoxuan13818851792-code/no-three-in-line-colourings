@@ -27,18 +27,13 @@ This file records the evidence status of the computational proof components.
 
 ### R import note
 
-The R import now contains:
+The small R evidence layer is now largely self-contained in Git. The repository contains the R0/R1 mathematical scope, the 44-profile coverage audit, the four small frozen catalogue/pair files, the exact frozen cap generator and D4 canonicalizer, triangle-free and 930→119 audit source, the compact 1309/1309 final-ledger summary, proof-verification driver source, and a fresh re-execution log for the small R0/R1 reconstruction.
 
-- the precise R0/R1 mathematical scope;
-- the 44-profile coverage audit and the identity `44 = 16 + 11 + 10 + 7`;
-- the 676/89 size-22 audit and triangle-free disjointness-graph result;
-- the sound residual line-capacity condition and the reconstructed `2138 → 930 → 119` pair reduction;
-- compact 1309/1309 final-ledger evidence;
-- exact frozen audit/coverage/proof-driver source files with recorded SHA-256 hashes;
-- a repository-session independent reconstruction log;
-- hashes and byte counts for the staged 0.1.0/0.1.1 certificate packages and the 45.7 GB proof-body archive.
+The repository also contains a reviewer-facing wrapper for exhaustive reconstruction of the size-22 catalogue. That full generator replay still needs to be run to completion and recorded as a repository evidence log; the current session imported the capability but did not record a completed 1120→676 replay.
 
-R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof-body archive and the large certificate packages still need stable public archival locations (or equivalent immutable release objects) before repository-level replay is self-contained. The small frozen data files used by the imported source are also currently tracked by immutable hashes while their byte-level public placement is being finalised.
+The fresh 2026-08-26 reconstruction is a re-execution of frozen source, not a separately implemented checker. A structurally independent implementation remains a separate evidence requirement.
+
+R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof-body archive and the large certificate packages still need stable public immutable archival locations, followed by a public full 1,309-proof replay and final independent audit.
 
 The table above is deliberately conservative. A reported result is not promoted to `COMPLETE` merely because a summary or manuscript statement says UNSAT.
 
