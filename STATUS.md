@@ -27,11 +27,11 @@ This file records the evidence status of the computational proof components.
 
 ### R import note
 
-The small R evidence layer is now largely self-contained in Git. The repository contains the R0/R1 mathematical scope, the 44-profile coverage audit, the four small frozen catalogue/pair files, the exact frozen cap generator and D4 canonicalizer, triangle-free and 930→119 audit source, the compact 1309/1309 final-ledger summary, proof-verification driver source, and a fresh re-execution log for the small R0/R1 reconstruction.
+The small R evidence layer is now largely self-contained in Git. The repository contains the R0/R1 mathematical scope, the 44-profile coverage audit, the four small frozen catalogue/pair files, the exact frozen cap generator and D4 canonicalizer, triangle-free and 930→119 audit source, the compact 1309/1309 final-ledger summary, proof-verification driver source, and fresh reconstruction logs for the small R0/R1 layer.
 
-The repository also contains a reviewer-facing wrapper for exhaustive reconstruction of the size-22 catalogue. That full generator replay still needs to be run to completion and recorded as a repository evidence log; the current session imported the capability but did not record a completed 1120→676 replay.
+A fresh exhaustive catalogue reconstruction was completed on 26 August 2026 from repository commit `8e35fc930de2d5ecb447759770415e283803a22d`. On an Apple M4 / macOS 27 system with clang 17 and Python 3.14.7, the frozen generator traversed 534,934,909 search nodes in approximately 30 seconds and reproduced 1,120 oriented solutions, 676 caps meeting both long diagonals, and 89 `D4` representatives. Both the 676-cap catalogue and the 89-orbit catalogue were reproduced byte-for-byte. The same replay reconfirmed 2,138 disjoint pairs, zero triangles, 930 capacity-feasible pairs and 119 `D4` × pair-swap orbits. The detailed log is `g11/R/evidence/catalogue_reconstruction_20260826_m4.txt`.
 
-The fresh 2026-08-26 reconstruction is a re-execution of frozen source, not a separately implemented checker. A structurally independent implementation remains a separate evidence requirement.
+The separate fresh 2026-08-26 frozen-source reconstruction is a re-execution of frozen source, not a separately implemented checker. A structurally independent implementation remains a separate evidence requirement.
 
 R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof-body archive and the large certificate packages still need stable public immutable archival locations, followed by a public full 1,309-proof replay and final independent audit.
 
