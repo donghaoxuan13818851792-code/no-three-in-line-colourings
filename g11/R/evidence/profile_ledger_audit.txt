@@ -1,0 +1,55 @@
+THREE_PLUS_SIZE22 count=16
+  deficits=0,0,0,0,0,11 sizes=22,22,22,22,22,11
+  deficits=0,0,0,0,1,10 sizes=22,22,22,22,21,12
+  deficits=0,0,0,0,2,9 sizes=22,22,22,22,20,13
+  deficits=0,0,0,0,3,8 sizes=22,22,22,22,19,14
+  deficits=0,0,0,0,4,7 sizes=22,22,22,22,18,15
+  deficits=0,0,0,0,5,6 sizes=22,22,22,22,17,16
+  deficits=0,0,0,1,1,9 sizes=22,22,22,21,21,13
+  deficits=0,0,0,1,2,8 sizes=22,22,22,21,20,14
+  deficits=0,0,0,1,3,7 sizes=22,22,22,21,19,15
+  deficits=0,0,0,1,4,6 sizes=22,22,22,21,18,16
+  deficits=0,0,0,1,5,5 sizes=22,22,22,21,17,17
+  deficits=0,0,0,2,2,7 sizes=22,22,22,20,20,15
+  deficits=0,0,0,2,3,6 sizes=22,22,22,20,19,16
+  deficits=0,0,0,2,4,5 sizes=22,22,22,20,18,17
+  deficits=0,0,0,3,3,5 sizes=22,22,22,19,19,17
+  deficits=0,0,0,3,4,4 sizes=22,22,22,19,18,18
+TWO_SIZE22 count=11
+  deficits=0,0,1,1,1,8 sizes=22,22,21,21,21,14
+  deficits=0,0,1,1,2,7 sizes=22,22,21,21,20,15
+  deficits=0,0,1,1,3,6 sizes=22,22,21,21,19,16
+  deficits=0,0,1,1,4,5 sizes=22,22,21,21,18,17
+  deficits=0,0,1,2,2,6 sizes=22,22,21,20,20,16
+  deficits=0,0,1,2,3,5 sizes=22,22,21,20,19,17
+  deficits=0,0,1,2,4,4 sizes=22,22,21,20,18,18
+  deficits=0,0,1,3,3,4 sizes=22,22,21,19,19,18
+  deficits=0,0,2,2,2,5 sizes=22,22,20,20,20,17
+  deficits=0,0,2,2,3,4 sizes=22,22,20,20,19,18
+  deficits=0,0,2,3,3,3 sizes=22,22,20,19,19,19
+Q1_Q4 count=4
+  deficits=0,1,1,1,1,7 sizes=22,21,21,21,21,15
+  deficits=0,1,1,1,2,6 sizes=22,21,21,21,20,16
+  deficits=0,1,1,1,3,5 sizes=22,21,21,21,19,17
+  deficits=0,1,1,1,4,4 sizes=22,21,21,21,18,18
+Q5_Q7 count=3
+  deficits=0,1,1,2,2,5 sizes=22,21,21,20,20,17
+  deficits=0,1,1,2,3,4 sizes=22,21,21,20,19,18
+  deficits=0,1,1,3,3,3 sizes=22,21,21,19,19,19
+Q8_Q9 count=2
+  deficits=0,1,2,2,2,4 sizes=22,21,20,20,20,18
+  deficits=0,1,2,2,3,3 sizes=22,21,20,20,19,19
+Q10 count=1
+  deficits=0,2,2,2,2,3 sizes=22,20,20,20,20,19
+P1_P3 count=3
+  deficits=1,1,1,1,1,6 sizes=21,21,21,21,21,16
+  deficits=1,1,1,1,2,5 sizes=21,21,21,21,20,17
+  deficits=1,1,1,1,3,4 sizes=21,21,21,21,19,18
+P4_P5 count=2
+  deficits=1,1,1,2,2,4 sizes=21,21,21,20,20,18
+  deficits=1,1,1,2,3,3 sizes=21,21,21,20,19,19
+P6 count=1
+  deficits=1,1,2,2,2,3 sizes=21,21,20,20,20,19
+P7 count=1
+  deficits=1,2,2,2,2,2 sizes=21,20,20,20,20,20
+LEDGER_OK total=44 three_plus22=16 two22=11 one22=10 no22=7
