@@ -23,6 +23,26 @@ Thus R0 eliminates
 16\text{ of the }44\text{ initial deficit profiles}.
 \]
 
+### Catalogue completeness
+
+There are two different claims here:
+
+1. the committed 676 masks are individually valid size-22 candidates; and
+2. the 676-mask list is exhaustive for the admissibility predicate used by R.
+
+The first is checked directly by `source/caps/audit_disjoint_caps.py`. For the second, the repository now includes the exact frozen exhaustive generator `source/generator/enumerate_caps.cpp`, the exact frozen `D4` canonicalizer, both frozen output tables, and the reviewer-facing wrapper `source/generator/rebuild_size22_catalogue.py`.
+
+A complete catalogue reconstruction must report
+
+```text
+oriented_solutions 1120
+meets_long_diagonals 676
+```
+
+and must reproduce both `data/caps22_diag_independent.hex` and the 89-line `data/caps22_d4.hex` byte-for-byte. See `REPRODUCE.md`.
+
+The generator and wrapper are now public in the repository, but a completed fresh full-generator run has not yet been recorded as repository evidence. Therefore catalogue-completeness replay remains an explicit completion item rather than being silently inferred from the supplied 676-line file.
+
 ## R1 — exactly two size-22 classes
 
 After R0, the R family means exactly two size-22 classes.
@@ -96,6 +116,8 @@ The intended reviewer-facing chain is
 ```text
 size-22 admissibility predicate
         ↓
+exhaustive generator: 1120 oriented → 676 meeting both long diagonals
+        ↓
 676 oriented caps / 89 D4 classes
         ↓
 disjointness graph: 2,138 edges, no triangles
@@ -116,13 +138,17 @@ residual line-capacity condition on all relevant lines
         ↓
 1,309 / 1,309 terminal verification
         ↓
-independent coverage and certificate audit
+public full proof replay + structurally independent audit
 ```
+
+## Independence terminology
+
+`evidence/independent_replay_20260826.txt` is retained under its historical filename, but its scope is explicit: it is a fresh re-execution and reconstruction using exact frozen source. It is **not** an independently implemented verifier. A structurally separate implementation is still required before the repository claims that strongest form of independent checking.
 
 ## Imported evidence
 
-Small audit material and branch metadata are stored under [`evidence/`](evidence/). The exact historical audit source and compact frozen inputs used for the R0/R1 reconstruction are being imported under `source/` and `data/`.
+Small audit material and branch metadata are stored under [`evidence/`](evidence/). Exact frozen source is under `source/`, and the four small frozen catalogue/pair files needed by the basic R reconstruction are now committed under `data/`.
 
 Large frozen archives are tracked in [`ARTIFACTS.md`](ARTIFACTS.md) and in the repository-wide artifact manifest.
 
-The R branch remains conservatively `AWAITING_ARTIFACT_IMPORT` until every large artifact needed for independent replay has a stable public archival location and immutable hash in the repository manifest.
+The R branch remains conservatively `AWAITING_ARTIFACT_IMPORT` until the remaining completion gates are closed: a recorded exhaustive catalogue-completeness replay, a structurally independent checker, stable public immutable locations for the large archives, and a public full 1,309-proof replay/audit.
