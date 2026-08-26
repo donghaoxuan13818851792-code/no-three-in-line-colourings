@@ -38,17 +38,44 @@ Since the six classes cover 121 points,
 \sum_{i=1}^6 d_i = 6\cdot22-121=11.
 \]
 
-Thus the possible class-size profiles are reduced to integer partitions of the deficit total.
+Thus the possible class-size profiles are reduced to nondecreasing six-part deficit vectors with total 11.
+
+## Complete profile coverage
+
+There are exactly 44 deficit profiles before using the size-22 compatibility obstruction. They split according to the number of zero deficits, equivalently the number of size-22 colour classes:
+
+- 16 profiles with at least three zero deficits;
+- 11 profiles with exactly two zero deficits;
+- 10 profiles with exactly one zero deficit;
+- 7 profiles with no zero deficits.
+
+The central coverage identity is therefore
+
+\[
+\boxed{44 = 16 + 11 + 10 + 7}.
+\]
+
+The 16 profiles with at least three size-22 classes are impossible because three pairwise disjoint size-22 colour classes would form a triangle in the verified size-22 disjointness graph, while that graph is triangle-free.
+
+After this reduction, the remaining 28 profiles are
+
+\[
+\boxed{28 = 11_R + 10_Q + 7_P}.
+\]
 
 ## Top-level profile families
 
-The final exhaustive proof is organised by the number of size-22 colour classes:
+The final exhaustive proof is organised as follows:
 
-- **R:** at least two size-22 classes;
-- **Q:** exactly one size-22 class;
-- **P:** no size-22 class.
+- **R:** at least two size-22 classes.
+  - **R0:** three or more size-22 classes; eliminated by triangle-freeness of the size-22 disjointness graph.
+  - **R1:** exactly two size-22 classes; 11 residual deficit profiles proceed to the certified two-size-22 computation.
+- **Q:** exactly one size-22 class; 10 profiles.
+- **P:** no size-22 class; 7 profiles.
 
-The Q family contains ten positive-deficit patterns after the single zero deficit is fixed. The P family contains seven positive-deficit patterns.
+The R computation is therefore not simply a 1,309-leaf search over the whole phrase “at least two size-22 classes”. The 1,309 residual leaves cover only R1 after R0 has already been removed mathematically/computationally by the verified triangle-free graph obstruction.
+
+See [`../g11/R/README.md`](../g11/R/README.md) for the R evidence chain.
 
 ## Proof obligations
 
