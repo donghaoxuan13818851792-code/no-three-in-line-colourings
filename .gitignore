@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build / temporary
+build/
+tmp/
+*.log
+
+# Large local artifacts: keep manifests/hashes in Git instead
+*.zip
+*.tar
+*.tar.gz
+*.7z
