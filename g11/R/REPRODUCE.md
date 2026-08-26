@@ -40,7 +40,13 @@ The final success line begins:
 CATALOGUE_RECONSTRUCTION_PASS caps=676 ... d4_orbits=89 ... caps_byte_identical=yes d4_byte_identical=yes
 ```
 
-This exhaustive generation is substantially slower than merely auditing the already frozen catalogue.
+A fresh exhaustive replay was completed on 26 August 2026 from repository commit `8e35fc930de2d5ecb447759770415e283803a22d`. On Apple M4 / macOS 27 with clang 17 and Python 3.14.7, the generator traversed 534,934,909 search nodes in approximately 30 seconds, reproduced 1,120 oriented solutions and 676 long-diagonal-feasible caps, and reproduced both the 676-cap catalogue and 89-orbit `D4` catalogue byte-for-byte. The evidence log is:
+
+```text
+evidence/catalogue_reconstruction_20260826_m4.txt
+```
+
+Thus the fresh catalogue-completeness replay is recorded **PASS**.
 
 ## 1. R0: validate the 676 caps and triangle-free disjointness graph
 
@@ -87,7 +93,7 @@ Then require byte identity with the frozen production table:
 
 ```bash
 cmp /tmp/generated_pairs.hex data/cap_pairs22_capacity_d4_swap.hex
-sha256sum /tmp/generated_pairs.hex
+shasum -a 256 /tmp/generated_pairs.hex
 ```
 
 Expected SHA-256:
@@ -155,8 +161,8 @@ A complete successful replay requires all 1,309 leaves to verify and the aggrega
 
 ## Current archival gate
 
-The public repository now contains the small frozen R inputs, the exhaustive cap generator, canonicalizers, audit source, compact audit outputs, final-ledger summary, package/proof hashes, and the fresh reconstruction log.
+The public repository now contains the small frozen R inputs, the exhaustive cap generator, a completed fresh catalogue-completeness replay, canonicalizers, audit source, compact audit outputs, final-ledger summary, package/proof hashes, and the fresh reconstruction logs.
 
-The 45.7 GB proof-body archive and the large certificate packages still require stable public immutable archival locations, and the full proof replay has not yet been made publicly reproducible from those locations.
+The 45.7 GB proof-body archive and the large certificate packages still require stable public immutable archival locations, and the full proof replay has not yet been made publicly reproducible from those locations. A structurally independent implementation of the small catalogue/pair/orbit checks also remains outstanding.
 
 Therefore these instructions do **not** yet justify changing R from `AWAITING_ARTIFACT_IMPORT` to `COMPLETE`.
