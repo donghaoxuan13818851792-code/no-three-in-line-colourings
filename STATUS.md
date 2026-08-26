@@ -7,7 +7,7 @@ This file records the evidence status of the computational proof components.
 ## Status vocabulary
 
 - `COMPLETE` — full scope covered and final evidence independently checked.
-- `AWAITING_ARTIFACT_IMPORT` — result is reported complete elsewhere, but the frozen evidence has not yet been imported and checked here.
+- `AWAITING_ARTIFACT_IMPORT` — the branch is reported complete, but at least one frozen artifact needed for repository-level independent replay still lacks a stable public archival location or has not yet been imported and checked here.
 - `INCOMPLETE` — global proof obligation remains open.
 - `NOT_APPLICABLE` — no computation is required.
 
@@ -15,7 +15,7 @@ This file records the evidence status of the computational proof components.
 
 | Branch | Profile family | Repository status |
 |---|---|---|
-| R | at least two size-22 classes | AWAITING_ARTIFACT_IMPORT |
+| R | R0: ≥3 size-22; R1: exactly two size-22 | AWAITING_ARTIFACT_IMPORT |
 | Q1–Q4 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
 | Q5–Q7 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
 | Q8–Q9 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
@@ -25,7 +25,13 @@ This file records the evidence status of the computational proof components.
 | P6 | (21,21,20,20,20,19) | INCOMPLETE |
 | P7 | (21,20,20,20,20,20) | INCOMPLETE |
 
-The table above is deliberately conservative. A reported result is not promoted to `COMPLETE` until its final ledger/certificate and verification material are present in this repository or in a frozen external archive referenced by hash.
+### R import note
+
+The first R import is now present: the repository contains the R0/R1 mathematical scope, the 44-profile coverage audit, the 676/89 size-22 audit, triangle-free disjointness-graph result, pair-orbit audit metadata, compact 1309/1309 final-ledger summary, reproduction metadata, and hashes for the staged 0.1.0/0.1.1 certificate packages.
+
+R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof-body archive and the large certificate packages still need stable public archival locations (or equivalent immutable release objects) before repository-level replay is self-contained.
+
+The table above is deliberately conservative. A reported result is not promoted to `COMPLETE` merely because a summary or manuscript statement says UNSAT.
 
 ## Final theorem gate
 
