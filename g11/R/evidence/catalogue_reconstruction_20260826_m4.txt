@@ -1,0 +1,94 @@
+R catalogue reconstruction — Apple M4 — 2026-08-26
+
+Purpose
+-------
+Fresh exhaustive reconstruction of the size-22 catalogue and the small R0/R1 catalogue/pair/orbit layer.
+
+Repository commit tested
+------------------------
+8e35fc930de2d5ecb447759770415e283803a22d
+
+Environment
+-----------
+Machine: Apple M4
+Operating system: macOS 27
+Compiler: clang 17
+Python: 3.14.7
+
+Catalogue completeness replay
+-----------------------------
+Command:
+  python3 source/generator/rebuild_size22_catalogue.py
+
+Exit status:
+  0
+
+Wall-clock runtime:
+  approximately 30 seconds
+
+Frozen exhaustive generator result:
+  search_nodes             534934909
+  oriented_solutions       1120
+  meets_long_diagonals     676
+
+Catalogue comparison:
+  generated size-22 catalogue rows   676
+  frozen size-22 catalogue rows      676
+  byte-identical                      yes
+
+D4 quotient:
+  generated D4 representatives        89
+  frozen D4 representatives           89
+  byte-identical                      yes
+
+Result:
+  CATALOGUE_COMPLETENESS_REPLAY PASS
+
+R0 graph audit
+--------------
+Using the reconstructed/frozen-identical 676-cap catalogue:
+
+  caps                 676
+  disjoint_pairs       2138
+  triangles            0
+
+Result:
+  R0 GRAPH AUDIT PASS
+
+R1 capacity/orbit reconstruction
+--------------------------------
+Applying the necessary four-colour complement line-capacity condition to all 2,138 disjoint pairs:
+
+  capacity_feasible_pairs             930
+  D4 x pair-swap canonical orbits     119
+
+The regenerated 119-pair table is byte-identical to the frozen production table.
+
+Result:
+  R1 PAIR/ORBIT RECONSTRUCTION PASS
+
+Frozen data hashes
+------------------
+caps22_diag_independent.hex
+  bytes   21632
+  sha256  2aed51282c1fb96e623e7c47c7e182ff2d914f80a414808898f526ac832f83bc
+
+caps22_d4.hex
+  bytes   2848
+  sha256  234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40
+
+cap_pairs22_capacity_d4_swap.hex
+  bytes   7616
+  sha256  5f6b9033e3eef7b0505be70b6e2eb98cc879984f2456ab0836567014a87f9c3c
+
+pairs22_filtered_ordered_d4.hex
+  bytes   7616
+  sha256  0aa91ddff6dc2fa6bf860919b0f779cec86674a88099fc1f44c32a2e4685b2ae
+
+Scope
+-----
+This run closes the repository gate "fresh exhaustive size-22 catalogue reconstruction": the frozen generator was rerun from scratch and reproduced the 676-cap and 89-orbit frozen catalogues byte-for-byte.
+
+It also re-confirms the small R0/R1 chain 676 -> 2138 -> 0 triangles and 2138 -> 930 -> 119.
+
+This does not by itself make R COMPLETE. A structurally independent implementation remains outstanding, and the 45.7 GB proof-body archive still requires a stable public immutable location followed by a public full 1,309-proof replay and final independent audit.
