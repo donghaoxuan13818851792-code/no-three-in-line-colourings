@@ -41,6 +41,20 @@ The certified two-size-22 reduction is:
    \]
    terminal residual instances.
 
+### Why the 2,138 → 930 capacity filter is sound
+
+Let \(C_1,C_2\) be the two fixed size-22 colour classes and let \(\ell\) be any grid line. The other four colours can each occur on \(\ell\) at most twice, so together they can cover at most eight points of \(\ell\). Therefore every extendible pair \((C_1,C_2)\) must satisfy
+
+\[
+|\ell|-|(C_1\cup C_2)\cap\ell|\le 8
+\]
+
+for every relevant grid line \(\ell\).
+
+Equivalently, the complement of \(C_1\cup C_2\) may contain at most eight points on any line. A disjoint pair that fails this inequality cannot be extended to a six-colouring, so discarding it is a logically necessary pruning step, not a heuristic filter.
+
+The imported audit source reconstructs all 628 maximal relevant grid lines, applies this condition to all 2,138 disjoint pairs, obtains exactly 930 retained pairs, and then canonicalises them under \(D_4\) together with pair-swap to obtain exactly 119 orbits.
+
 The 11 deficit profiles are:
 
 | deficits | colour-class sizes |
@@ -90,6 +104,8 @@ R0: ≥3 size-22 classes impossible (16 profiles)
         ↓
 R1: exactly two size-22 classes
         ↓
+residual line-capacity condition on all relevant lines
+        ↓
 930 capacity-feasible disjoint pairs
         ↓
 119 canonical D4 × pair-swap orbits
@@ -105,6 +121,8 @@ independent coverage and certificate audit
 
 ## Imported evidence
 
-Small audit material and branch metadata are stored under [`evidence/`](evidence/). Large frozen archives are tracked in [`ARTIFACTS.md`](ARTIFACTS.md) and in the repository-wide artifact manifest.
+Small audit material and branch metadata are stored under [`evidence/`](evidence/). The exact historical audit source and compact frozen inputs used for the R0/R1 reconstruction are being imported under `source/` and `data/`.
 
-The R branch should remain conservatively marked as awaiting full artifact import until every large artifact needed for independent replay has a stable public archival location and immutable hash in the repository manifest.
+Large frozen archives are tracked in [`ARTIFACTS.md`](ARTIFACTS.md) and in the repository-wide artifact manifest.
+
+The R branch remains conservatively `AWAITING_ARTIFACT_IMPORT` until every large artifact needed for independent replay has a stable public archival location and immutable hash in the repository manifest.
