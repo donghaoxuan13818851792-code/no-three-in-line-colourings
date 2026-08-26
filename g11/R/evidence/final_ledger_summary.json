@@ -1,0 +1,20 @@
+{
+  "schema": "grid11-twomax-drat-lrat-parallel-v1",
+  "expected_entries": 1309,
+  "completed": 1309,
+  "failures": 0,
+  "verified": true,
+  "workers": 4,
+  "drat_trim": {
+    "sha256": "64225379fcc22b847746f585c195ff2bdb9c5c67ba936c836dd60738ff62ff65",
+    "source_commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985"
+  },
+  "lrat_check": {
+    "sha256": "7c2164f4da22c37a8b983b121441c31f7da8d88e3912363f5cff2417a94ab75e"
+  },
+  "verification_driver_sha256": "54b2220be65156d2c991b5dda128193be658a84fafb06ade86f9ada83b1a8266",
+  "preflight_auditor_sha256": "d5a6832355b67701e68e65ce7b62eb8c117d50b948ac6aeb7296e1a8027f423a",
+  "preflight_log_sha256": "dd30ed2008b74c218df08081217792ce07eee3a443c12265e5ea12769f35e56d",
+  "preflight_summary_sha256": "dee32b2131040b401915d3d9ba27d6b2c749745ec32f3ec95f78cb5071cd8e98",
+  "source": "Imported as a compact summary from verification/final_ledger/batch-proof-report.json in the staged v0.1.1 certificate package. The original ledger contains 1309 per-leaf entries and remains part of the large frozen artifact rather than being duplicated here."
+}
