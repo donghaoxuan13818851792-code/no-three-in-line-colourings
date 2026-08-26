@@ -27,9 +27,18 @@ This file records the evidence status of the computational proof components.
 
 ### R import note
 
-The first R import is now present: the repository contains the R0/R1 mathematical scope, the 44-profile coverage audit, the 676/89 size-22 audit, triangle-free disjointness-graph result, pair-orbit audit metadata, compact 1309/1309 final-ledger summary, reproduction metadata, and hashes for the staged 0.1.0/0.1.1 certificate packages.
+The R import now contains:
 
-R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof-body archive and the large certificate packages still need stable public archival locations (or equivalent immutable release objects) before repository-level replay is self-contained.
+- the precise R0/R1 mathematical scope;
+- the 44-profile coverage audit and the identity `44 = 16 + 11 + 10 + 7`;
+- the 676/89 size-22 audit and triangle-free disjointness-graph result;
+- the sound residual line-capacity condition and the reconstructed `2138 → 930 → 119` pair reduction;
+- compact 1309/1309 final-ledger evidence;
+- exact frozen audit/coverage/proof-driver source files with recorded SHA-256 hashes;
+- a repository-session independent reconstruction log;
+- hashes and byte counts for the staged 0.1.0/0.1.1 certificate packages and the 45.7 GB proof-body archive.
+
+R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof-body archive and the large certificate packages still need stable public archival locations (or equivalent immutable release objects) before repository-level replay is self-contained. The small frozen data files used by the imported source are also currently tracked by immutable hashes while their byte-level public placement is being finalised.
 
 The table above is deliberately conservative. A reported result is not promoted to `COMPLETE` merely because a summary or manuscript statement says UNSAT.
 
