@@ -1,11 +1,110 @@
-# R family
+# R family — at least two size-22 colour classes
 
-Profiles with at least two size-22 colour classes.
+The R family is the part of the G11 six-colouring proof with at least two colour classes of size 22. It has two logically different subcases and they must not be conflated.
 
-Final evidence to import:
+## R0 — three or more size-22 classes
 
-- admissible size-22 catalogue metadata;
-- disjoint/capacity reduction;
-- symmetry quotient and complete leaf list;
-- terminal UNSAT certificates;
-- independent certificate/coverage verification.
+A valid size-22 colour class must belong to the verified admissible size-22 catalogue.
+
+The imported audit records:
+
+- 676 admissible oriented size-22 caps;
+- 89 orbits under the square symmetry group \(D_4\);
+- 2,138 edges in the graph whose vertices are the 676 caps and whose edges join disjoint caps;
+- 0 triangles in this disjointness graph.
+
+Three distinct colour classes in a colouring are pairwise disjoint. Hence three size-22 colour classes would give a triangle in this graph. Since the graph is triangle-free, every profile with at least three zero deficits is impossible.
+
+The profile audit contains exactly 16 such deficit profiles.
+
+Thus R0 eliminates
+
+\[
+16\text{ of the }44\text{ initial deficit profiles}.
+\]
+
+## R1 — exactly two size-22 classes
+
+After R0, the R family means exactly two size-22 classes.
+
+The certified two-size-22 reduction is:
+
+1. start with the 676 admissible size-22 caps;
+2. form the 2,138 disjoint pairs;
+3. apply the necessary residual line-capacity test, retaining 930 capacity-feasible pairs;
+4. quotient by the simultaneous action of \(D_4\) and swapping the two size-22 colour classes;
+5. obtain 119 canonical compatible-pair orbits;
+6. combine each pair orbit with each of the 11 exactly-two-zero deficit profiles;
+7. obtain exactly
+   \[
+   119\times11=1309
+   \]
+   terminal residual instances.
+
+The 11 deficit profiles are:
+
+| deficits | colour-class sizes |
+|---|---|
+| 0,0,1,1,1,8 | 22,22,21,21,21,14 |
+| 0,0,1,1,2,7 | 22,22,21,21,20,15 |
+| 0,0,1,1,3,6 | 22,22,21,21,19,16 |
+| 0,0,1,1,4,5 | 22,22,21,21,18,17 |
+| 0,0,1,2,2,6 | 22,22,21,20,20,16 |
+| 0,0,1,2,3,5 | 22,22,21,20,19,17 |
+| 0,0,1,2,4,4 | 22,22,21,20,18,18 |
+| 0,0,1,3,3,4 | 22,22,21,19,19,18 |
+| 0,0,2,2,2,5 | 22,22,20,20,20,17 |
+| 0,0,2,2,3,4 | 22,22,20,20,19,18 |
+| 0,0,2,3,3,3 | 22,22,20,19,19,19 |
+
+## Terminal verification
+
+The imported certificate metadata reports:
+
+- expected terminal instances: 1,309;
+- completed: 1,309;
+- failures: 0;
+- final ledger `verified=true`;
+- every leaf was solved UNSAT and passed the solver → DRAT → LRAT verification chain.
+
+The final ledger schema is `grid11-twomax-drat-lrat-parallel-v1`.
+
+The full compressed proof-body archive is a separate large artifact (45,687,997,349 bytes) with SHA-256
+
+`0087af20d68402c18728e56bc209e508b5565e9522c0b4185afaf2faf43f994f`.
+
+It is not committed directly to ordinary Git history.
+
+## Coverage chain
+
+The intended reviewer-facing chain is
+
+```text
+size-22 admissibility predicate
+        ↓
+676 oriented caps / 89 D4 classes
+        ↓
+disjointness graph: 2,138 edges, no triangles
+        ↓
+R0: ≥3 size-22 classes impossible (16 profiles)
+        ↓
+R1: exactly two size-22 classes
+        ↓
+930 capacity-feasible disjoint pairs
+        ↓
+119 canonical D4 × pair-swap orbits
+        ↓
+11 exactly-two deficit profiles
+        ↓
+1,309 residual instances
+        ↓
+1,309 / 1,309 terminal verification
+        ↓
+independent coverage and certificate audit
+```
+
+## Imported evidence
+
+Small audit material and branch metadata are stored under [`evidence/`](evidence/). Large frozen archives are tracked in [`ARTIFACTS.md`](ARTIFACTS.md) and in the repository-wide artifact manifest.
+
+The R branch should remain conservatively marked as awaiting full artifact import until every large artifact needed for independent replay has a stable public archival location and immutable hash in the repository manifest.
