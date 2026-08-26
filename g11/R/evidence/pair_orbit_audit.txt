@@ -1,0 +1,9 @@
+# Imported from the v0.1.1 certificate package symmetry audits.
+
+size22_two_max_pairtable119_audit:
+VERIFIED base_vars=1805 table_vars=1924 caps=676 edges=2138 pair_orbits=119 clauses=86709 sha256=4e6459c56682a1a1fd6a45fcc514b6c2ab77a747b2c1262867e394afe1329b95
+
+cap_pair119_table_audit:
+VERIFIED base_vars=870 table_vars=989 caps=676 edges=2138 pair_orbits=119 clauses=84133 sha256=77c68af43ede252f027b8c7ac5d235993f700698a87c72442365d5e5e4aeab51
+
+The authoritative pair list in the package is `caps/capacity_filter/cap_pairs22_capacity_d4_swap.hex`. Package documentation states that 2,138 disjoint pairs are reduced by the necessary residual line-capacity test to 930 capacity-feasible pairs and then to 119 D4 × pair-swap canonical representatives.
