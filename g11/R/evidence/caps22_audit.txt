@@ -1,0 +1,5 @@
+caps=676 valid=676 d4_orbits=89
+represented_orbit_size_distribution {4: 9, 8: 80}
+disjointness_graph_vertices=676 edges=2138 triangles=0
+caps22_diag_independent.hex 2aed51282c1fb96e623e7c47c7e182ff2d914f80a414808898f526ac832f83bc
+caps22_d4.hex 234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40
