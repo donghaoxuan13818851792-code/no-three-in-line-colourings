@@ -30,18 +30,18 @@ There are two different claims here:
 1. the committed 676 masks are individually valid size-22 candidates; and
 2. the 676-mask list is exhaustive for the admissibility predicate used by R.
 
-The first is checked directly by `source/caps/audit_disjoint_caps.py`. For the second, the repository now includes the exact frozen exhaustive generator `source/generator/enumerate_caps.cpp`, the exact frozen `D4` canonicalizer, both frozen output tables, and the reviewer-facing wrapper `source/generator/rebuild_size22_catalogue.py`.
+The first is checked directly by `source/caps/audit_disjoint_caps.py`. For the second, the repository includes the exact frozen exhaustive generator `source/generator/enumerate_caps.cpp`, the exact frozen `D4` canonicalizer, both frozen output tables, and the reviewer-facing wrapper `source/generator/rebuild_size22_catalogue.py`.
 
-A complete catalogue reconstruction must report
+A fresh exhaustive reconstruction was completed on 26 August 2026 from repository commit `8e35fc930de2d5ecb447759770415e283803a22d`. On Apple M4 / macOS 27 with clang 17 and Python 3.14.7, the run traversed 534,934,909 search nodes in approximately 30 seconds and reported
 
 ```text
 oriented_solutions 1120
 meets_long_diagonals 676
 ```
 
-and must reproduce both `data/caps22_diag_independent.hex` and the 89-line `data/caps22_d4.hex` byte-for-byte. See `REPRODUCE.md`.
+The regenerated 676-cap catalogue was byte-for-byte identical to `data/caps22_diag_independent.hex`, and its regenerated 89-element `D4` quotient was byte-for-byte identical to `data/caps22_d4.hex`.
 
-The generator and wrapper are now public in the repository, but a completed fresh full-generator run has not yet been recorded as repository evidence. Therefore catalogue-completeness replay remains an explicit completion item rather than being silently inferred from the supplied 676-line file.
+Thus the fresh size-22 catalogue-completeness replay is **REPRODUCED / PASS**. The detailed environment, counts, hashes and replay scope are recorded in [`evidence/catalogue_reconstruction_20260826_m4.txt`](evidence/catalogue_reconstruction_20260826_m4.txt).
 
 ## R1 — exactly two size-22 classes
 
@@ -73,7 +73,7 @@ for every relevant grid line \(\ell\).
 
 Equivalently, the complement of \(C_1\cup C_2\) may contain at most eight points on any line. A disjoint pair that fails this inequality cannot be extended to a six-colouring, so discarding it is a logically necessary pruning step, not a heuristic filter.
 
-The imported audit source reconstructs all 628 maximal relevant grid lines, applies this condition to all 2,138 disjoint pairs, obtains exactly 930 retained pairs, and then canonicalises them under \(D_4\) together with pair-swap to obtain exactly 119 orbits.
+The imported audit source reconstructs all 628 maximal relevant grid lines, applies this condition to all 2,138 disjoint pairs, obtains exactly 930 retained pairs, and then canonicalises them under \(D_4\) together with pair-swap to obtain exactly 119 orbits. The same 26 August reconstruction reproduced the 930 and 119 counts, and the regenerated 119-pair production table was byte-for-byte identical to the frozen table.
 
 The 11 deficit profiles are:
 
@@ -147,8 +147,8 @@ public full proof replay + structurally independent audit
 
 ## Imported evidence
 
-Small audit material and branch metadata are stored under [`evidence/`](evidence/). Exact frozen source is under `source/`, and the four small frozen catalogue/pair files needed by the basic R reconstruction are now committed under `data/`.
+Small audit material and branch metadata are stored under [`evidence/`](evidence/). Exact frozen source is under `source/`, and the four small frozen catalogue/pair files needed by the basic R reconstruction are committed under `data/`.
 
 Large frozen archives are tracked in [`ARTIFACTS.md`](ARTIFACTS.md) and in the repository-wide artifact manifest.
 
-The R branch remains conservatively `AWAITING_ARTIFACT_IMPORT` until the remaining completion gates are closed: a recorded exhaustive catalogue-completeness replay, a structurally independent checker, stable public immutable locations for the large archives, and a public full 1,309-proof replay/audit.
+The fresh exhaustive catalogue-completeness gate is now closed. The R branch nevertheless remains conservatively `AWAITING_ARTIFACT_IMPORT` until the remaining completion gates are closed: a structurally independent checker, stable public immutable locations for the large archives, and a public full 1,309-proof replay/final audit.
