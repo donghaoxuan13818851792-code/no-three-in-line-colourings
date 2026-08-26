@@ -1,12 +1,7 @@
-# SHA-256 hashes of frozen repository artifacts.
-
-# G11 R small frozen inputs
 2aed51282c1fb96e623e7c47c7e182ff2d914f80a414808898f526ac832f83bc  g11/R/data/caps22_diag_independent.hex
 234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40  g11/R/data/caps22_d4.hex
 5f6b9033e3eef7b0505be70b6e2eb98cc879984f2456ab0836567014a87f9c3c  g11/R/data/cap_pairs22_capacity_d4_swap.hex
 0aa91ddff6dc2fa6bf860919b0f779cec86674a88099fc1f44c32a2e4685b2ae  g11/R/data/pairs22_filtered_ordered_d4.hex
-
-# G11 R exact frozen source
 c47a5a4488a6963be51defdfbe135b9637442ee26b798188be84279fed48a824  g11/R/source/generator/enumerate_caps.cpp
 d67cd40f91a907bac8519d300f50f68a85bcd36c525dd3dbaeb92dab415dedcf  g11/R/source/caps/canonicalize_caps.py
 3364c0cd6db3010608cc1ff0c7e063f89185f7dd99b2419c05c82f1839303a9e  g11/R/source/caps/audit_disjoint_caps.py
@@ -15,6 +10,5 @@ d67cd40f91a907bac8519d300f50f68a85bcd36c525dd3dbaeb92dab415dedcf  g11/R/source/c
 d5a6832355b67701e68e65ce7b62eb8c117d50b948ac6aeb7296e1a8027f423a  g11/R/source/verification/audit_twomax_leaf_batch.py
 54b2220be65156d2c991b5dda128193be658a84fafb06ade86f9ada83b1a8266  g11/R/source/verification/verify_twomax_proofs_parallel.py
 85064205d05f5fcde9184a6c077c6403142f089e6e50335ac758e0a1988c6fbf  g11/R/source/verification/verify_metadata.py
-
-# G11 R fresh frozen-source re-execution log
 2ce2306f722c733c2c40e295d141c474eb43bad3014cc1a1a65733f2beb5217f  g11/R/evidence/independent_replay_20260826.txt
+b64298b9925eee3822a59cb4395d630dff8ef965b43b6a2cc69c907d19029977  g11/R/evidence/catalogue_reconstruction_20260826_m4.txt
