@@ -1,5 +1,8 @@
 R independent reconstruction check — 2026-08-26
 
+Terminology / scope note:
+This is an independent re-execution and reconstruction in a fresh working session using exact source from the frozen package. It is not an independently implemented checker. A separately implemented checker remains a distinct evidence requirement before the strongest form of independent verification is claimed.
+
 Input archive reconstructed from the uploaded 0.1.1 refresh parts:
   bytes   594591562
   sha256  e5bc7cb32befb06fedb64803aeead269f232665069721e872ca6ec8e20adab0e
@@ -95,4 +98,4 @@ verify_twomax_proofs_parallel.py
   sha256  54b2220be65156d2c991b5dda128193be658a84fafb06ade86f9ada83b1a8266
 
 Scope note:
-This replay independently reconstructs the small R0/R1 catalogue/pair/orbit layer from the uploaded frozen archive. It does not replace the final public replay of the 45.7 GB proof-body archive. The R branch therefore remains AWAITING_ARTIFACT_IMPORT.
+This replay independently reconstructs the small R0/R1 catalogue/pair/orbit layer from the uploaded frozen archive. It does not replace either (a) a separately implemented checker or (b) the final public replay of the 45.7 GB proof-body archive. The R branch therefore remains AWAITING_ARTIFACT_IMPORT.
