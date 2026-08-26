@@ -33,7 +33,15 @@ The proof is organised into three top-level families:
 - **Q** — exactly one size-22 colour class;
 - **P** — no size-22 colour class.
 
-Each family is then reduced to symmetry-quotiented exact residual problems.
+The R family has two logically distinct stages. The subcase with three or more size-22 classes is eliminated by triangle-freeness of the size-22 disjointness graph. The remaining exactly-two subcase is reduced to 119 canonical compatible-pair orbits, 11 residual deficit profiles, and 1,309 terminal residual instances. See [`g11/R/README.md`](g11/R/README.md).
+
+The complete deficit-profile coverage checksum is
+
+\[
+44 = 16 + 11 + 10 + 7,
+\]
+
+where 16 profiles have at least three zero deficits, 11 have exactly two, 10 have exactly one, and 7 have none.
 
 See:
 
@@ -51,4 +59,4 @@ Timeouts, resource limits, interrupted runs, bounded searches, near-colourings, 
 
 ## Repository status
 
-This repository skeleton is being assembled before the final artifact import. `STATUS.md` is the authoritative public status ledger inside the repository.
+`STATUS.md` is the authoritative public status ledger inside the repository. Large final proof archives are imported by immutable metadata and hashes before a branch is promoted to `COMPLETE`.
