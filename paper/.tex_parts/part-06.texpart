@@ -1,0 +1,251 @@
+prefixes and finds no feasible residual partition.  Since
+\(\mathcal U_{89}\) contains a representative of every possible
+\(Q_8\)- or \(Q_9\)-colouring, this eliminates both profiles.
+
+\medskip\noindent\textbf{The profile \(Q_{10}\).}\quad
+Once a size-\(22\) anchor is fixed, the residual has \(99\) points.  A second
+independently audited unconditional encoding contains no size-\(21\) selector:
+it assigns each residual point to exactly one of five arc colours, each of
+size at most \(20\).  Therefore the only possible unordered residual profile
+is
+\[
+  20+20+20+20+19.
+\]
+The five residual colours have identical constraints; ordering their first
+occurrences is an exact \(S_5\) symmetry break.  Thus, for each of the \(89\)
+anchors, this base formula is satisfiable exactly when the anchor extends to a
+\(Q_{10}\)-colouring.  This proves equivalence of the unconditional formulation to the
+fixed-anchor problem.
+
+For this anchor \(A\), a direct exact formulation selects four pairwise
+disjoint members of \(\mathcal A_{20}(G_{11}\setminus A)\) and checks
+whether the remaining \(19\) points form an arc.  Every \(Q_{10}\)
+colouring supplies such a selection, and every successful selection
+reconstructs a \(Q_{10}\) colouring.
+
+The production computation uses an anchor-relative size-\(20\) catalogue,
+an unordered four-arc join, and the forced \(19\)-point remainder check.
+Its catalogue-coverage argument must show that every size-\(20\) class
+in a possible completion is retained; it need not retain arcs excluded by
+proved necessary conditions.
+% TEAM-R1: Insert the actual anchor-relative predicate and catalogue-generation coverage argument here.
+The completed computation covers
+all \(89\) anchors, examines \(74\,011\,954\) catalogue masks, and finds no
+witness.  Every join terminates with status
+\begin{center}
+\small\texttt{UNSAT\_RELATIVE\_TO\_COMPLETE\_CAP\_CATALOGUE}.
+\end{center}
+Catalogue coverage,
+the exact four-arc join and the forced-complement test establish infeasibility
+of each fixed-anchor problem.  The unconditional formulation above provides
+an independent check of the residual problem's semantics.
+
+Thus none of the profiles \(Q_1,\ldots,Q_{10}\) is realisable.
+\end{proof}
+
+\subsubsection{The \texorpdfstring{\(\mathcal P\)}{P}-family}
+
+The profiles in \(\mathcal P\) contain no size-\(22\) class.
+The search fixes size-\(21\) classes in the following blocks:
+\[
+\begin{array}{c|cccc}
+\text{profile block} & P_1\text{--}P_3 & P_4,P_5 & P_6 & P_7\\
+\hline
+\#\text{ fixed size-21 classes} & 4 & 3 & 2 & 1\\
+\text{residual points} & 37 & 58 & 79 & 100.
+\end{array}
+\]
+In \(P_1\), the fifth size-\(21\) class is handled within the residual
+problem.
+
+\begin{proposition}[P-family elimination]\label{prop:g11-P}
+
+None of \(P_1,\ldots,P_7\) is realised by an arc-proper six-colouring of
+\(G_{11}\).
+
+\end{proposition}
+
+\begin{proof}[Computational proof]
+\medskip\noindent\textbf{The profiles \(P_1\)--\(P_3\).}\quad
+Every colouring in these three profiles contains at least four size-\(21\)
+classes.  Choose four of them.  They occupy \(84\) points and leave a
+\(37\)-point residual.  Since no residual class can exceed \(21\), its two
+unordered class sizes are exactly
+\[
+  21+16,\qquad 20+17,\qquad 19+18,
+\]
+which are precisely \(P_1,P_2,P_3\).  Conversely every colouring of one of
+these profiles supplies such a four-arc prefix.
+
+The first size-\(21\) arc is taken from the \(127\,491\) individual
+\(\Dfour\)-representatives and the remaining three mask IDs are increasing.
+The global-minimum argument under the common \(\Dfour\) action shows that
+every unordered four-arc packing has such a representative.  Pairwise
+disjointness, Lemma~\ref{lem:g11-singleton-separation}, and the prefix
+capacity bound of Lemma~\ref{lem:g11-prefix-capacity} are the only
+mathematical prefix restrictions.  After four arcs, every residual line has
+at most four points.
+
+The residual is solved exactly as a two-colour Boolean problem, with at most
+two points of either colour on every line and global size at most \(21\).
+Fixing the least residual point to one colour removes only the residual colour
+swap.  Six shards partition the \(127\,491\) first-arc representatives by
+index modulo six.  The complete aggregate is
+\[
+\begin{array}{c|r}
+\text{stage} & \text{count}\\ \hline
+\text{first arcs} & 127\,491\\
+\text{depth-2 survivors} & 514\,209\,820\\
+\text{depth-3 survivors} & 1\,505\,452\,322\\
+\text{depth-4 / terminal residuals} & 708\,638.
+\end{array}
+\]
+All six shards exit normally with zero satisfiable residuals.  A separately
+authored verifier reconstructs the arc list and maximal lines by a different
+representation, re-enumerates every prefix, streams the same residual masks,
+and solves each by NAE-triple DPLL rather than the production line-count
+solver.  This independently checks both prefix coverage and the terminal decisions
+for \(P_1,P_2,P_3\).
+
+\medskip\noindent\textbf{The profiles \(P_4\) and \(P_5\).}\quad
+The three size-\(21\) classes are interchangeable.  Before profile-transfer
+pruning, the raw geometric outer objects are fixed-first occurrences of
+unordered triples \(T=\{A,B,C\}\subset\mathcal C_{21}\) whose members are
+pairwise disjoint, have pairwise distinct singleton rows and singleton
+columns, and satisfy the \(r=3\) instance of
+Lemma~\ref{lem:g11-prefix-capacity}.  These are necessary conditions for the
+three size-\(21\) classes of either profile.
+
+The nonextendibility reduction is also explicit.  In \(P_4\), a one-point
+extension of a size-\(21\) recipient from a donor of size \(21,20,18\) would
+produce respectively \(Q_8,Q_6,Q_5\).  In \(P_5\), donors of size
+\(21,20,19\) would produce respectively \(Q_9,Q_7,Q_6\).  Since those target
+profiles have already been eliminated, Lemma~\ref{lem:g11-profile-transfer}
+shows that every size-\(21\) class occurring in a \(P_4\) or \(P_5\) colouring
+is globally nonextendible.  The frozen full-count audit gives the complete
+chain
+\[
+  1\,699\,467\,737
+  \;\xrightarrow{\text{certified nonextendibility/dependency filter}}\;
+  1\,633\,664\,146
+  \;\xrightarrow{/\,(\Dfour\times S_3)}\;
+  544\,481\,464.
+\]
+The first number counts raw compatible, duplicate-retaining arc-triple
+occurrences; the second is the complete dependency-reduced occurrence count;
+the third is the number of canonical arc-triple records after exact joint
+\(\Dfour\times S_3\) canonical augmentation.  None of these numbers counts
+distinct residual masks.
+
+For completeness, the frozen exactly-one-orbit argument can be stated directly.
+Order the 121-bit arc masks as unsigned integers and, for an unordered triple
+\(T=\{A,B,C\}\), define
+\[
+ K_3(T)=\min_{g\in\Dfour}\operatorname{sort}(gA,gB,gC),
+\]
+where the sorted triple is compared lexicographically.  A fixed-first
+occurrence \((F,A,B)\) is retained exactly when \(F<A\), \(F<B\), and
+\(\operatorname{sort}(F,A,B)=K_3(T)\).  Write
+\(K_3(T)=(k_0,k_1,k_2)\) with \(k_0<k_1<k_2\).  The first member \(k_0\) is
+itself \(\Dfour\)-canonical: otherwise a symmetry sending \(k_0\) below itself
+would send the sorted triple below the defining minimum \(K_3(T)\).  Hence the
+audited fixed-first list contains \(k_0\), and its unordered pair loop contains
+\(\{k_1,k_2\}\).  All geometric and nonextendibility conditions above are
+\(\Dfour\)-invariant, so this occurrence survives.  Conversely, every retained
+occurrence has sorted tuple equal to the unique \(K_3(T)\); its distinguished
+member must be the strict minimum \(k_0\), and the unordered pair is emitted
+once.  Thus exactly one representative of every admissible
+\(\Dfour\times S_3\) orbit is retained.  Square symmetries preserve arc validity,
+disjointness and the residual geometry, while \(S_3\) merely relabels the
+three equal size-\(21\) colours, so feasibility is constant on each orbit.
+
+Each retained triple leaves \(58\) points, with residual profile
+\[
+  P_4:\quad20+20+18,
+  \qquad
+  P_5:\quad20+19+19.
+\]
+The residual solver chooses one required large arc and closes the final two
+colours by forced complement.  The completed terminal campaign exhausts all
+\(544\,481\,464\) canonical records and returns UNSAT for both profiles.
+The raw-universe, transfer and orbit arguments above establish coverage of
+every possible colouring with either profile.
+
+\medskip\noindent\textbf{The profile \(P_6\).}\quad
+The two size-\(21\) classes are interchangeable, so their outer universe is a
+joint \(\Dfour\times S_2\) orbit problem, not two independently reduced arc
+orbits.  A completed global pair-enumeration audit reports the following
+stage counts:
+{\small
+\[
+\begin{array}{@{}l|r|r|r@{}}
+\text{stage} & \text{ordered oriented} & \text{unordered oriented}
+& \Dfour\times S_2\text{ canonical}\\ \hline
+\text{all distinct pairs} & 1\,039\,664\,709\,960 & 519\,832\,354\,980 & 64\,979\,365\,359\\
+\text{disjoint} & 14\,835\,875\,072 & 7\,417\,937\,536 & 927\,247\,231\\
+\text{singleton-row/column compatible} & 11\,294\,847\,960 & 5\,647\,423\,980 & 705\,931\,816\\
+\text{structurally compatible} & 4\,362\,894\,528 & 2\,181\,447\,264 & 272\,681\,893\\
+\text{after certified }Q_8/Q_9\text{ transfers} & 4\,268\,334\,336 & 2\,134\,167\,168 & 266\,771\,874\rlap{.}
+\end{array}
+\]
+}
+The global enumeration uses five disjoint production shards covering all
+\(127\,491\) first-arc representatives.  An independent Burnside count over
+all \(1\,019\,640\) oriented arcs agrees at every \(\Dfour\)-invariant
+stage, including the contribution of nontrivial stabilisers.
+
+The structural predicate is as follows.  Let \(s_r(A)\) and \(s_c(A)\) be the singleton row and column of
+\(A\in\mathcal C_{21}\).  The pre-transfer P6 pair universe is
+\[
+\begin{aligned}
+\mathcal U^{\mathrm{str}}_6=\bigl\{\{A,B\}\subset\mathcal C_{21}:\;&
+ A\cap B=\varnothing,\quad s_r(A)\ne s_r(B),\\
+& s_c(A)\ne s_c(B),\\
+& |(A\cup B)\cap L|\ge |L|-8
+   \text{ for every grid line }L\bigr\}.
+\end{aligned}
+\]
+Every genuine P6 pair belongs to
+\(\mathcal U^{\mathrm{str}}_6\): membership in \(\mathcal C_{21}\) follows from
+long-line rigidity, disjointness from being colour classes, singleton
+separation from Lemma~\ref{lem:g11-singleton-separation}, and the final
+inequality from Lemma~\ref{lem:g11-prefix-capacity} with \(r=2\).
+
+The exact joint orbit key is
+\[
+ K_2(A,B)=\min_{g\in\Dfour}\operatorname{sort}(gA,gB),
+\]
+with the same symmetry applied to both arcs; sorting quotients the exchange of
+the two equal size-\(21\) colours.  Thus stabilisers, size-4 and size-8 arc
+orbits, same-individual-orbit pairs, and pair exchange are all handled by one
+group action.  The \(272\,681\,893\) structural count in the table is the
+number of \(K_2\)-orbits of \(\mathcal U^{\mathrm{str}}_6\).  The independent
+Burnside enumeration provides a separate exact check of this orbit count; the
+mathematical coverage claim itself follows from the displayed predicate and
+joint orbit key.
+
+The final transfer stage is narrower and can be stated mathematically.  For
+either fixed size-\(21\) recipient, moving an admissible point from a residual
+size-\(20\) donor produces profile \(Q_9\), while moving an admissible point
+from the residual size-\(19\) donor produces \(Q_8\):
+\[
+  Q_9:(22,21,20,20,19,19),
+  \qquad
+  Q_8:(22,21,20,20,20,18).
+\]
+After \(Q_8,Q_9\) have been eliminated, Lemma~\ref{lem:g11-profile-transfer}
+therefore excludes these donor-to-recipient moves.
+For an arc \(A\), define
+\[
+ \operatorname{Ext}(A)=
+ \{v\in G_{11}\setminus A:\ A\cup\{v\}\text{ is an arc}\}.
+\]
+For a structural pair \(\{A,B\}\), put \(R=G_{11}\setminus(A\cup B)\).
+A necessary condition for this pair to occur in a \(P_6\) colouring is
+\begin{equation}\label{eq:p6-transfer-predicate}
+ R\cap\bigl(\operatorname{Ext}(A)\cup\operatorname{Ext}(B)\bigr)
+ =\varnothing.
+\end{equation}
+Indeed, in any completion every point of \(R\) belongs to a donor of size
+\(20\) or \(19\), so an extension of either recipient would produce
+\(Q_9\) or \(Q_8\).  Points in the other size-\(21\) class are outside

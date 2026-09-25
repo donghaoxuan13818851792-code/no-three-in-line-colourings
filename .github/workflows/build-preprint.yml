@@ -48,7 +48,7 @@ jobs:
         shell: bash
         run: |
           mv paper/preprint-build.pdf paper/preprint.pdf
-          rm -f paper/preprint-build.aux paper/preprint-build.log paper/preprint-build.out paper/preprint-build.tex
+          rm -f paper/preprint-build.*
           rm -rf paper/.tex_parts
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
