@@ -2,6 +2,15 @@
 
 Computational companion repository for the project on arc-proper colourings of square integer grids.
 
+## Preprint
+
+**The arc chromatic number of square grids** — Jason Dong, Matthew Lewis, Ivet Lobo, Thomas Prellberg and Ian Wanless.
+
+- [Preprint PDF](paper/preprint.pdf) — 28 pages, 22 September 2026
+- [LaTeX source used for the arXiv submission](paper/arxiv.tex)
+
+The paper was submitted to arXiv on 20 September 2026. While arXiv processing is pending, the preprint is also available directly from this repository.
+
 For
 \[
 G_n = \{0,1,\ldots,n-1\}^2,

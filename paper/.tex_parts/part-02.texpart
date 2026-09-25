@@ -1,0 +1,263 @@
+Let \(p\equiv3\pmod4\) be a prime and let \(\qc\) be the quadratic
+character of \(\GF(p)\), that is the Legendre symbol, with \(\qc(0)=0\).
+We identify \(\GF(p)^2\) with \(\GF(p^2)=\GF(p)(i)\), where \(i^2=-1\),
+and write \(N(z)=z\bar z\), so that \(N(x+iy)=x^2+y^2\).  Since \(-1\) is
+a nonsquare in \(\GF(p)\), the norm is anisotropic: \(N(z)=0\) only for
+\(z=0\).  A primitive direction \(v\in\Z^2\) has \emph{square norm
+modulo \(p\)} if \(\qc(N(v))=1\); for \(\height{v}<p\) the norm \(N(v)\)
+is nonzero modulo \(p\) by anisotropy, so this condition only concerns
+the sign of the character.
+
+\begin{theorem}\label{thm:eight-saving}
+Let \(p\ge67\) be a prime with \(p\equiv3\pmod4\) such that
+\begin{equation}\label{eq:eight-hyp}
+  \qc(a^2+b^2)=1
+  \qquad\text{for every primitive \((a,b)\in\Z^2\) with
+  \(\height{(a,b)}\le15\)}.
+\end{equation}
+Then \(\chi_{\mathcal{A}}(G_{8p})\le 8p-8\).
+\end{theorem}
+
+\begin{corollary}\label{cor:eight-saving}
+There are infinitely many \(n\) with \(\chi_{\mathcal{A}}(G_n)\le n-8\).
+\end{corollary}
+
+Theorem~\ref{thm:eight-saving} is proved in
+Sections~\ref{sec:field-partition}--\ref{sec:eight-seed};
+Section~\ref{sec:eight-admissible} makes the hypothesis
+\eqref{eq:eight-hyp} explicit and proves the corollary.
+
+\subsection{A partition of the punctured plane}
+\label{sec:field-partition}
+
+A subset of \(\GF(p)^2\) is a \emph{field arc} if it is an arc of the
+affine plane \(\AG(2,p)\), that is, no three of its points are collinear
+over \(\GF(p)\); it has \emph{nonsquare chords} if \(\qc(N(z-z'))=-1\)
+for all distinct points \(z,z'\) in it.
+
+\begin{lemma}\label{lem:field-partition}
+Let \(p\equiv3\pmod4\) be prime.  Then \(\GF(p)^2\setminus\{0\}\) is the
+disjoint union of \(2(p-1)\) field arcs with nonsquare chords, each of
+size \((p+1)/2\).  Exactly \(p-1\) of them, the \emph{half-circles}, lie
+on the circles \(N(z)=\nu\) with \(\nu\) a nonsquare, and every
+half-circle is invariant under \(z\mapsto-z\).
+\end{lemma}
+
+\begin{proof}
+The norm-one group \(U=\{z\in\GF(p^2)^*:N(z)=1\}\) is the kernel of the
+surjective norm map \(\GF(p^2)^*\to\GF(p)^*\), hence cyclic of order
+\(p+1\).  Let \(U^2\) be its subgroup of squares, of index two.  For each
+nonsquare \(\nu\in\GF(p)^*\) choose \(\beta_\nu\) with
+\(N(\beta_\nu)=\nu\) and take the two cosets of \(U^2\) in
+\(\beta_\nu U\).  This gives \(p-1\) sets of size \((p+1)/2\)
+partitioning the nonsquare-norm region \(\{z:\qc(N(z))=-1\}\).  Two
+distinct points of one coset have ratio \(w^2\) with \(w=x+iy\in U\) and
+\(y\ne0\), and
+\[
+  N(1-w^2)=-(w-w^{-1})^2=4y^2
+\]
+is a nonzero square, so their chord has norm \(4y^2\nu\), of character
+\(\qc(\nu)=-1\).  Each coset is invariant under negation because \(-1\),
+the unique element of order two in \(U\), lies in \(U^2\): the order
+\((p+1)/2\) of \(U^2\) is even.  Each coset is a field arc, since a line
+\(\{z+tD\}\) with \(D\ne0\) meets the circle \(N=\nu\) in at most two
+points: \(N(z+tD)\) is a quadratic polynomial in \(t\) with leading
+coefficient \(N(D)\ne0\).
+
+For the square-norm region fix \(\alpha\in\GF(p^2)\) with \(N(\alpha)\) a
+nonsquare.  For \(c\in\GF(p)^*\) consider the line
+\[
+  L_c=\{z\in\GF(p^2):\operatorname{Re}(\alpha z)=c\}
+     =\{(c+iu)/\alpha:\ u\in\GF(p)\}
+\]
+and the inverted set of its square-norm points,
+\[
+  H_c=\{z^{-1}:\ z\in L_c,\ \qc(N(z))=1\}.
+\]
+Since \(N((c+iu)/\alpha)=(c^2+u^2)/N(\alpha)\), the retained points are
+those with \(\qc(c^2+u^2)=-1\).  There are exactly \((p+1)/2\) of them,
+because no summand of \(\sum_{u\in\GF(p)}\qc(c^2+u^2)\) vanishes and the
+sum equals \(-1\): the number of pairs \((u,v)\) with \(v^2-u^2=c^2\) is
+\(p+\sum_u\qc(c^2+u^2)\) by character counting and \(p-1\) by the
+factorisation \((v-u)(v+u)=c^2\).  Distinct \(z,z'\in L_c\) have
+\(z-z'=i(u-u')/\alpha\), of nonsquare norm, and the identity
+\begin{equation}\label{eq:inversion}
+  N(z^{-1}-z'^{-1})=\frac{N(z-z')}{N(z)N(z')}
+\end{equation}
+shows that \(H_c\) has nonsquare chords.  Every \(P\in H_c\) satisfies
+\(N(P)=c^{-1}\operatorname{Re}(P\bar\alpha)\), that is
+\(N\bigl(P-\alpha/(2c)\bigr)=N(\alpha)/(4c^2)\ne0\); so \(H_c\) lies on
+a circle and is a field arc.  Finally, the line
+\(\operatorname{Re}(\alpha z)=0\) consists of the points \(iu/\alpha\),
+of nonsquare norm for \(u\ne0\).  Hence the lines \(L_c\), \(c\ne0\),
+contain all nonzero points of square norm, and since inversion permutes
+the square-norm region, the sets \(H_c\) partition it.
+\end{proof}
+
+The cosets in this proof are the point sets of Kurz
+\cite[Lemma~26]{Kurz2009} multiplied by an element of nonsquare norm; by
+\cite[Corollary~4]{Kurz2009} the size \((p+1)/2\) is the maximum for a
+field arc with nonsquare chords.
+
+\subsection{Lifting a seed colouring and absorbing the origin}
+\label{sec:lift-absorb}
+
+Let \(s\ge1\), let \(A_1,\ldots,A_h\) be the colour classes of an
+arc-proper \(h\)-colouring of \(G_s\), the \emph{seed}, and let
+\(p\equiv3\pmod4\) be prime.  Represent the points of \(\GF(p)^2\) by
+their canonical representatives in \(G_p\).  Every point of \(G_{sp}\) is
+then uniquely \(P+pI\) with \(P\in G_p\) and \(I\in G_s\); we say that the
+point \emph{reduces to} \(P\).
+
+\begin{lemma}[Lift]\label{lem:lift}
+Suppose that every primitive direction of height at most \(s-1\) has
+square norm modulo \(p\).  For each part \(H\) of
+Lemma~\ref{lem:field-partition} and each \(P\in H\) choose a permutation
+\(\pi_P\) of \([h]\), independently, and colour
+\begin{equation}\label{eq:lift-colour}
+  P+pI\longmapsto (H,\pi_P(j))\qquad(I\in A_j).
+\end{equation}
+This is an arc-proper colouring of \(G_{sp}\setminus pG_s\) with
+\(2(p-1)h\) colours.
+\end{lemma}
+
+\begin{proof}
+Let three distinct collinear points have the same colour \((H,t)\), and
+consider their residues in \(H\).  If the three residues are distinct,
+they are three collinear points of the field arc \(H\), since the
+determinant criterion \eqref{e:detcond} survives reduction modulo
+\(p\).  If all three residues equal \(P\), the three points are
+\(P+pI_1,P+pI_2,P+pI_3\) with \(I_1,I_2,I_3\) collinear in the single
+seed class \(A_j\), \(j=\pi_P^{-1}(t)\).  If exactly two residues occur,
+two of the points are \(P+pI_1\) and \(P+pI_2\) with \(I_1\ne I_2\), so
+the primitive direction \(d\) of the line satisfies
+\(\height{d}\le s-1\) and has square norm modulo \(p\).  The third point
+\(P'+pI_3\) has \(P'\ne P\), and \(P'-P\equiv\lambda d\pmod p\) for
+some integer \(\lambda\), which is nonzero modulo \(p\); thus
+\(N(P'-P)=\lambda^2N(d)\) is a nonzero square, contradicting the
+nonsquare chords of \(H\).
+\end{proof}
+
+The remaining points form \(pG_s\).  A fresh copy of the seed palette on
+them would cost \(h\) further colours; the following finite condition on
+the seed avoids that cost by reusing, for each \(T\in G_s\), the tag
+\(1\) of a half-circle reserved for \(T\).
+
+\begin{proposition}[Absorption]\label{prop:absorb}
+Let \(p\equiv3\pmod4\) be prime with \(p-1\ge s^2\), and suppose that
+every primitive direction of height at most \(2s-1\) has square norm
+modulo \(p\).  Suppose moreover that for every \(T\in G_s\) there are
+seed colours \(j_1(T),j_2(T)\in[h]\), not necessarily distinct, with
+\begin{equation}\label{eq:reflection}
+  A_{j_1(T)}\cap\bigl(2T-(1,1)-A_{j_2(T)}\bigr)=\emptyset.
+\end{equation}
+Then \(\chi_{\mathcal{A}}(G_{sp})\le2(p-1)h\).
+\end{proposition}
+
+\begin{proof}
+Assign to each \(T\in G_s\) a different half-circle \(H(T)\) of
+Lemma~\ref{lem:field-partition}; there are \(p-1\ge s^2\) of them.  Give
+\(pT\) the colour \((H(T),1)\).
+
+Each \(H(T)\) is a disjoint union of antipodal pairs \(\{P,-P\}\).  Orient
+every pair in some fixed way.  At its first endpoint \(P\) choose
+\(\pi_P\) with \(\pi_P(j_1(T))=1\), at its second endpoint \(-P\) choose
+\(\pi_{-P}\) with \(\pi_{-P}(j_2(T))=1\), and complete both
+permutations arbitrarily.  At all other field points use arbitrary
+permutations.  By Lemma~\ref{lem:lift} the colouring of
+\(G_{sp}\setminus pG_s\) is arc-proper.
+
+Distinct points of \(pG_s\) have different colours, so a monochromatic
+collinear triple would consist of some \(pT\) and two points \(X,Y\) of
+colour \((H(T),1)\), whose residues lie in \(H(T)\).
+
+If \(X\) and \(Y\) reduce to the same \(P\), the primitive direction
+\(d\) of the line has height at most \(s-1\), and \(X-pT=\lambda d\)
+with \(\lambda\in\Z\).  Reducing modulo \(p\) gives \(P\equiv\lambda d\)
+with \(\lambda\not\equiv0\), so \(N(P)\) is a nonzero square; but
+\(P\) lies on a circle of nonsquare norm.
+
+If the residues differ, they are two points of the circle \(N=\nu\) that
+are collinear with the origin over \(\GF(p)\), so they are antipodal.
+Neither coordinate of a point of nonsquare norm is zero, so the canonical
+representative of \(-P\) is \((p,p)-P\).  Let \(P\) be the first endpoint
+of its antipodal pair.  The point of colour \((H(T),1)\) over \(P\) has
+seed index \(\pi_P^{-1}(1)=j_1(T)\), and the one over \(-P\) has seed
+index \(\pi_{-P}^{-1}(1)=j_2(T)\), so we may write
+\[
+  X=P+pI,\qquad Y=(p,p)-P+pJ,\qquad I\in A_{j_1(T)},\quad J\in A_{j_2(T)},
+\]
+and therefore
+\begin{equation}\label{eq:absorb-W}
+  X+Y-2pT=pW,\qquad W=I+J+(1,1)-2T,
+\end{equation}
+where every coordinate of \(W\) lies in \([3-2s,2s-1]\).  Both
+\(X-pT\) and \(Y-pT\) are parallel to the line through \(X,Y,pT\), hence
+so is their sum \(pW\).  If \(W\ne0\), the primitive direction \(d\) of
+that line is therefore \(\pm W/g\), where \(g\) is the greatest common
+divisor of the coordinates of \(W\); it has height at most \(2s-1\) and
+square norm modulo \(p\); as before \(X-pT=\lambda d\) reduces to
+\(P\ne0\), forcing \(N(P)\) to be a square, a contradiction.  If
+\(W=0\), then \(I=2T-(1,1)-J\) with \(I\in A_{j_1(T)}\) and
+\(J\in A_{j_2(T)}\), contradicting \eqref{eq:reflection}.
+\end{proof}
+
+\subsection{The seed and its absorption table}
+\label{sec:eight-seed}
+
+Take \(s=8\), \(h=4\), and as seed the colouring on the left of
+Figure~\ref{fig:eight}, where the cell with lower-left corner \((x,y)\)
+carries the label \(\kappa(x,y)\); explicitly, with rows \(y=0,\ldots,7\)
+from top to bottom and columns \(x=0,\ldots,7\),
+\begin{equation}\label{eq:eight-seed}
+\kappa=
+\begin{pmatrix}
+1&2&3&4&1&2&3&4\\
+2&4&2&4&1&3&1&3\\
+3&2&1&1&4&4&3&2\\
+4&4&3&2&3&2&1&1\\
+3&3&4&1&4&1&2&2\\
+4&1&2&2&3&3&4&1\\
+1&3&1&3&2&4&2&4\\
+2&1&4&3&2&1&4&3
+\end{pmatrix}.
+\end{equation}
+This colouring is arc-proper by Theorem~\ref{thm:eight-classification};
+directly, the \(4\binom{16}{3}=2240\) determinants \eqref{e:detcond}
+are nonzero, and each of the four classes determines exactly
+\(\binom{16}{2}=120\) distinct lines.
+
+The following table supplies the choices in \eqref{eq:reflection}: in the
+same layout as \eqref{eq:eight-seed}, the entry at position \((x,y)\)
+lists \(j_1(T)\) followed by \(j_2(T)\) for \(T=(x,y)\).
+\begin{equation}\label{eq:eight-table}
+\begin{pmatrix}
+11&11&11&11&11&11&11&11\\
+11&11&11&11&11&11&11&11\\
+11&11&11&11&14&33&22&11\\
+11&22&11&22&14&33&22&11\\
+11&33&12&34&11&12&12&11\\
+11&11&22&11&14&44&11&11\\
+11&22&22&11&23&33&11&11\\
+11&22&22&22&22&11&11&11
+\end{pmatrix}.
+\end{equation}
+For every \(T=(x,y)\), none of the \(16\) points \((u,v)\) of
+\(A_{j_1(T)}\) has \((2x-1-u,\,2y-1-v)\) in \(A_{j_2(T)}\); this is
+\eqref{eq:reflection}, checked in \(64\cdot16=1024\) memberships, or
+equivalently \((2x-1,2y-1)\notin A_{j_1(T)}+A_{j_2(T)}\).  At the eight
+sites with \(j_1(T)\ne j_2(T)\) no single class satisfies
+\eqref{eq:reflection} with \(j_1(T)=j_2(T)\); the freedom to permute the
+seed colours differently at the two antipodes is what makes absorption
+possible there.
+
+\begin{proof}[Proof of Theorem~\ref{thm:eight-saving}]
+Apply Proposition~\ref{prop:absorb} with \(s=8\) and \(h=4\).  The
+hypothesis \eqref{eq:eight-hyp} is the square-norm condition for heights
+up to \(2s-1=15\), the condition \(p-1\ge64\) holds for \(p\ge67\), and
+the table \eqref{eq:eight-table} supplies \eqref{eq:reflection}.  The
+resulting colouring of \(G_{8p}\) uses \(2(p-1)\cdot4=8p-8\) colours.
+\end{proof}
+
+\subsection{Admissible primes}
+\label{sec:eight-admissible}

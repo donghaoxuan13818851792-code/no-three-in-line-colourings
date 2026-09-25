@@ -1,0 +1,290 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{placeins}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,
+  urlcolor=MidnightBlue]{hyperref}
+
+\definecolor{MidnightBlue}{HTML}{17365D}
+\definecolor{col1}{HTML}{0072B2}
+\definecolor{col2}{HTML}{E69F00}
+\definecolor{col3}{HTML}{009E73}
+\definecolor{col4}{HTML}{CC29A7}
+\definecolor{col5}{HTML}{C7C9A7}
+\definecolor{col6}{HTML}{FF0000}
+\definecolor{col7}{HTML}{00FF00}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\GF}{\operatorname{GF}}
+\newcommand{\AG}{\operatorname{AG}}
+\newcommand{\Dfour}{D_4}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\qc}{\eta_p}
+\newcommand{\height}[1]{\lVert #1\rVert_\infty}
+
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
+
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\le}{\leqslant}
+\renewcommand\emptyset{\varnothing}
+
+% Paint one row of a small colouring diagram.  The second argument is a
+% comma-separated list of colour labels.
+\newcommand{\paintrow}[2]{%
+  \foreach \c [count=\x from 0] in {#2}{%
+    \fill[col\c] (\x,#1) rectangle ++(1,1);
+    \node[font=\sffamily\scriptsize] at (\x+0.5,#1+0.5) {\c};
+  }%
+}
+
+\newcommand{\finishgrid}[1]{%
+  \draw[step=1,white,line width=0.35pt] (0,0) grid (#1,#1);
+  \draw[black,line width=0.6pt] (0,0) rectangle (#1,#1);
+}
+
+\newcommand{\GridEightA}{%
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,baseline=(current bounding box.center)]
+  \paintrow{7}{2,1,4,3,2,1,4,3}
+  \paintrow{6}{1,3,1,3,2,4,2,4}
+  \paintrow{5}{4,1,2,2,3,3,4,1}
+  \paintrow{4}{3,3,4,1,4,1,2,2}
+  \paintrow{3}{4,4,3,2,3,2,1,1}
+  \paintrow{2}{3,2,1,1,4,4,3,2}
+  \paintrow{1}{2,4,2,4,1,3,1,3}
+  \paintrow{0}{1,2,3,4,1,2,3,4}
+  \finishgrid{8}
+\end{tikzpicture}}
+
+\newcommand{\GridEightB}{%
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,baseline=(current bounding box.center)]
+  \paintrow{7}{2,1,4,3,4,1,2,3}
+  \paintrow{6}{1,3,1,3,4,2,4,2}
+  \paintrow{5}{4,1,2,4,3,3,2,1}
+  \paintrow{4}{3,3,2,1,2,1,4,4}
+  \paintrow{3}{2,2,3,4,3,4,1,1}
+  \paintrow{2}{3,4,1,1,2,4,3,2}
+  \paintrow{1}{4,2,4,2,1,3,1,3}
+  \paintrow{0}{1,4,3,2,1,2,3,4}
+  \finishgrid{8}
+\end{tikzpicture}}
+
+\title{The arc chromatic number of square grids}
+
+\author{%
+  Jason Dong\thanks{Melbourne, Australia;
+    \texttt{donghaoxuan13818851792@gmail.com}.}
+  \and Matthew Lewis\thanks{School of Mathematical Sciences, Queen Mary
+    University of London; \texttt{matthew.lewis@qmul.ac.uk}.}
+  \and Ivet Lobo\thanks{School of Electronic Engineering and Computer Science, Queen Mary
+    University of London; \texttt{i.lobo@se23.qmul.ac.uk}.}
+  \and Thomas Prellberg\thanks{School of Mathematical Sciences, Queen Mary
+    University of London; \texttt{t.prellberg@qmul.ac.uk}.}
+  \and Ian Wanless\thanks{School of Mathematics, Monash University;
+    \texttt{ian.wanless@monash.edu}.}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let \(G_n=[n]\times[n]\), where \([n]=\{1,\ldots,n\}\), and let
+\(\chi_{\mathcal{A}}(G_n)\) be the minimum number of
+colours needed to colour \(G_n\) with no monochromatic collinear triple.  We
+prove \(\chi_{\mathcal{A}}(G_{11})=\chi_{\mathcal{A}}(G_{12})=7\) and give
+constructions and proofs for the previously announced values
+\(\chi_{\mathcal{A}}(G_9)=5\) and \(\chi_{\mathcal{A}}(G_{10})=6\).
+We also enumerate optimal
+colourings up to square symmetry and colour permutation.  In particular,
+\(C(6)=2\,949\,015\,889\), \(C(8)=2\), and \(C(9)=743\).
+We also show that \(\chi_{\mathcal A}(G_{8p})\le 8p-8\) for infinitely
+many primes \(p\).
+
+%The \(G_{11}\) lower bound is obtained by a computer-assisted exhaustion based on deficit profiles, large-arc catalogues, joint symmetry reduction, and exact residual packing.
+\end{abstract}
+
+\noindent\emph{Keywords:} no-three-in-line problem; general position; arc
+chromatic number; grid colouring; finite fields; computer-assisted proof.
+
+\noindent\emph{MSC 2020:} 05C15, 52C10, 05B25, 68R05.
+
+\section{Introduction}
+
+A set of planar points is in general position if no three are collinear.  The
+classical no-three-in-line problem
+\cite{Dudeney1917,Flammenkamp1992,Flammenkamp1998,GuyKelly1968,HallEtAl1975,Prellberg2027}
+asks for the largest such subset of an \(n\times n\) integer grid \(G_n\).
+The trivial upper bound of \(2n\) points is attained for every \(n\le74\) and
+for \(n=76\) \cite{FlammenkampHistory,Prellberg2027}, while a heuristic of
+Guy and Kelly \cite{GuyKelly1968} suggests that it is not attained for any large
+\(n\).  Here we study the partition version: the grid is split into
+general-position sets, and \(\chi_{\mathcal{A}}(G_n)\) denotes the minimum
+number of parts in such a partition.  Wood \cite{Wood2004} introduced this
+parameter and proved \(\chi_{\mathcal{A}}(G_n)\le n+p-1\), where \(p\) is the
+least prime with \(p\ge n\), using finite-field parabolas.  Araujo-Pardo and
+Mart\'inez-Sandoval \cite{AraujoMartinez2026,AraujoMartinezCode2026} later
+studied it as the arc chromatic number of the Euclidean grid, determined
+\(\chi_{\mathcal{A}}(G_n)\) for \(n\le8\), and showed that
+\(\chi_{\mathcal{A}}(G_n)\le(1+\epsilon)n\) for every \(\epsilon>0\) and all
+sufficiently large \(n\).  Their first public version left
+\(5\le\chi_{\mathcal A}(G_9)\le6\).  The public second version, dated
+12 August 2026, records Dong's subsequent \(5\)-colouring of \(G_9\), and an
+independent \(5\)-colouring of \(G_9\) and the announced value
+\(\chi_{\mathcal A}(G_{10})=6\) of Yoon, Lee, Lim, and Schin
+\cite[Section~6]{AraujoMartinez2026}.
+
+The present paper establishes the values for \(G_{11}\) and \(G_{12}\),
+gives explicit witnesses and proofs for \(G_9\) and \(G_{10}\), and
+classifies the optimal colourings of the small grids.  All upper bounds
+mentioned so far use at least \(n\) colours.  Section~\ref{sec:eight-saving}
+lifts the four-colouring of \(G_8\) through a partition of a finite-field
+plane and gives \(\chi_{\mathcal A}(G_{8p})\le 8p-8\) for infinitely many
+primes \(p\); in particular \(\chi_{\mathcal A}(G_n)\le n-8\) for infinitely
+many \(n\), which improves the bound \((1+\epsilon)n\) of
+\cite{AraujoMartinez2026} to a bound below \(n\) on an infinite set of grid
+sizes.
+
+Since a colour occurs at most twice in a row, every colour class has size
+at most \(2n\).  Equality in all classes turns the colouring problem into a
+partition by arcs of size \(2n\).  This approach was used for \(G_8\)
+by Araujo-Pardo and Mart\'inez-Sandoval
+\cite[Sections~4.2 and~5]{AraujoMartinez2026}; here it gives further
+even-grid obstructions and the complete classification of \(G_8\).  We count the \(G_6\) orbits with Burnside's lemma
+and classify \(G_9\) by exhaustive generation.  The search data, representative catalogues and completed computational
+certificates will be released in the accompanying GitHub repository; see
+Section~\ref{sec:computational-supplement}.
+
+\section{Definitions and general bounds}
+\label{sec:general-bounds}
+
+Following Araujo-Pardo and Mart\'inez-Sandoval \cite{AraujoMartinez2026},
+we write \([n]=\{1,\ldots,n\}\) and let \(G_n\) be the Euclidean grid with
+point set \([n]\times[n]\) and collinearity inherited from the Euclidean plane.
+We identify \(G_n\) with its point set when taking subsets or partitions.
+A \emph{grid line} is the finite set \(G_n\cap\ell\), where \(\ell\) is a
+Euclidean line.  When enumerating arc constraints we use the maximal such
+sets containing at least three points; smaller intersections impose no
+nontrivial constraint.
+
+\begin{definition}
+An \emph{arc} in \(G_n\) is a subset containing no three collinear points.
+A \(k\)-colouring \(c:G_n\to[k]\) is \emph{arc-proper} if each colour class
+is an arc.  The \emph{arc chromatic number} \(\chi_{\mathcal{A}}(G_n)\) is the
+least \(k\) for which an arc-proper \(k\)-colouring exists. The \emph{profile} of a $k$-colouring is a list of the sizes of its colour classes, sorted in nonincreasing order.
+\end{definition}
+
+For a prime power \(q\), we denote the finite field of order \(q\) by
+\(\GF(q)\).
+
+Since a row contains at most two points of an arc, every arc in \(G_n\) has
+size at most \(2n\).  We call an arc of size \(2n\) a \emph{full arc}.
+This differs from a \emph{complete arc}, which usually means an arc that
+cannot be extended by another point.  Hence
+\begin{equation}\label{eq:row-lower}
+  \chi_{\mathcal{A}}(G_n)\ge \left\lceil\frac n2\right\rceil.
+\end{equation}
+We also use monotonicity,
+\[
+  \chi_{\mathcal{A}}(G_n)\le \chi_{\mathcal{A}}(G_{n+1}),
+\]
+obtained by restricting a colouring of \(G_{n+1}\) to an \(n\times n\)
+subgrid.
+Whenever we wish to check collinearity of points 
+$(a_x,a_y)$, $(b_x,b_y)$ and $(c_x,c_y)$ we use the determinant criterion
+\begin{equation}\label{e:detcond}
+\det\left[\begin{array}{cc}
+   b_x-a_x  & c_x-a_x \\
+b_y-a_y & c_y-a_y
+\end{array}\right]=
+ (b_x-a_x)(c_y-a_y)-(b_y-a_y)(c_x-a_x)=0.
+\end{equation}
+
+Wood \cite{Wood2004} proved \(\chi_{\mathcal{A}}(G_n)\le n+p-1\) when \(p\) is the least prime at least
+\(n\).  We record explicitly the prime-modulus bound implicit in the proof of
+\cite[Proposition~5.1]{AraujoMartinez2026}.  The construction restricts the
+standard partition of an affine plane into parabolas
+\cite{CsimaFuredi1986}; the following direct proof also covers \(p=2\).
+
+\begin{proposition}[Parabolic residue colouring]\label{prop:parabola}
+If \(p\ge n\) is prime, then \(\chi_{\mathcal{A}}(G_n)\le p\).
+\end{proposition}
+
+\begin{proof}
+Colour \((x,y)\in G_n\) by
+\[
+  c(x,y)=y-x^2\pmod p,
+\]
+identifying the \(p\) residue classes with the colour labels in \([p]\).
+Suppose that three distinct collinear grid points receive the same residue
+\(r\).  Reduction modulo \(p\) preserves both their distinctness, because
+\(p\ge n\), and the vanishing of the determinant $(\ref{e:detcond})$.  Thus
+the three images are collinear points of \(\GF(p)^2\) on the parabola
+\(y=x^2+r\).  A vertical line meets this parabola at most once.  A nonvertical line
+\(y=mx+b\) meets it at solutions of the quadratic equation
+\(x^2-mx+(r-b)=0\), and therefore in at most two distinct points of
+\(\GF(p)^2\).  Hence no line contains three distinct points of the parabola,
+a contradiction.
+\end{proof}
+
+In particular, if \(p(n)\) is the least prime at least \(n\), then
+\[
+  \left\lceil\frac n2\right\rceil\le \chi_{\mathcal{A}}(G_n)\le p(n).
+\]
+
+\section{Exact values and packing bounds}
+
+The known values for \(n\le8\) from
+\cite{AraujoMartinez2026,AraujoMartinezCode2026} and the values established
+below are given in Table~\ref{T:exactval}.
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{@{}c*{12}{c}@{}}
+\toprule
+\(n\) & 1&2&3&4&5&6&7&8&9&10&11&12\\
+\midrule
+\(\chi_{\mathcal{A}}(G_n)\) & 1&1&2&2&3&4&4&4&5&6&7&7\\
+\bottomrule
+\end{tabular}
+\caption{\label{T:exactval}Exact values of \(\chi_{\mathcal{A}}(G_n)\)}
+\end{center}
+\end{table}
+
+
+\subsection{Enumeration of optimal colourings for
+  \texorpdfstring{\(n\le9\)}{n at most 9}}
+
+For an optimal colouring of \(G_n\), write \(C(n)\) for the number of
+orbits under \(\Dfour\times S_{\chi_{\mathcal{A}}(G_n)}\), where \(\Dfour\) is the order-eight
+symmetry group of the square and \(S_{\chi_{\mathcal{A}}(G_n)}\) relabels the colours.
+Table~\ref{tab:small-orbits} uses this
+convention throughout.  We store orbit representatives except for \(n=6\),
+where the count is obtained directly from Burnside's lemma.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{@{}ccrl@{}}
+\toprule
+\(n\) & \(\chi_{\mathcal{A}}(G_n)\) & \(C(n)\) & method\\
+\midrule
+1 & 1 & 1 & direct enumeration\\
+2 & 1 & 1 & direct enumeration\\
+3 & 2 & 3 & direct enumeration\\
+4 & 2 & 3 & direct enumeration\\
