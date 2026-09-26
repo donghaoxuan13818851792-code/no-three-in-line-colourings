@@ -1,0 +1,33 @@
+fixed 1 candidates 16525
+completed_fixed 1 tested1 16525 passed1 14571 tested2 439792 passed2 125824 tested3 1978 passed3 178 residual_instances 178 residual_nodes 2718 residual_sat 0 seconds 0.203484
+fixed 7 candidates 14524
+completed_fixed 7 tested1 31049 passed1 23434 tested2 701427 passed2 176053 tested3 2461 passed3 193 residual_instances 193 residual_nodes 3013 residual_sat 0 seconds 0.305249
+fixed 13 candidates 6236
+completed_fixed 13 tested1 37285 passed1 25762 tested2 720676 passed2 179013 tested3 2468 passed3 193 residual_instances 193 residual_nodes 3013 residual_sat 0 seconds 0.317686
+fixed 19 candidates 7550
+completed_fixed 19 tested1 44835 passed1 30591 tested2 777466 passed2 191571 tested3 2498 passed3 197 residual_instances 197 residual_nodes 3089 residual_sat 0 seconds 0.336506
+fixed 25 candidates 8867
+completed_fixed 25 tested1 53702 passed1 34629 tested2 829126 passed2 200455 tested3 2532 passed3 199 residual_instances 199 residual_nodes 3131 residual_sat 0 seconds 0.357515
+fixed 31 candidates 5566
+completed_fixed 31 tested1 59268 passed1 39109 tested2 862861 passed2 208238 tested3 2550 passed3 200 residual_instances 200 residual_nodes 3144 residual_sat 0 seconds 0.366385
+fixed 37 candidates 10504
+completed_fixed 37 tested1 69772 passed1 41539 tested2 899607 passed2 211241 tested3 2561 passed3 201 residual_instances 201 residual_nodes 3159 residual_sat 0 seconds 0.380833
+fixed 43 candidates 11135
+completed_fixed 43 tested1 80907 passed1 46300 tested2 961215 passed2 219723 tested3 2585 passed3 201 residual_instances 201 residual_nodes 3159 residual_sat 0 seconds 0.416126
+fixed 49 candidates 13298
+completed_fixed 49 tested1 94205 passed1 59598 tested2 1158406 passed2 290740 tested3 2974 passed3 234 residual_instances 234 residual_nodes 3650 residual_sat 0 seconds 0.540052
+fixed 55 candidates 12226
+completed_fixed 55 tested1 106431 passed1 62992 tested2 1233280 passed2 300632 tested3 3054 passed3 241 residual_instances 241 residual_nodes 3757 residual_sat 0 seconds 0.564833
+fixed 61 candidates 9019
+completed_fixed 61 tested1 115450 passed1 68171 tested2 1286933 passed2 308269 tested3 3080 passed3 243 residual_instances 243 residual_nodes 3791 residual_sat 0 seconds 0.589403
+fixed 67 candidates 6497
+completed_fixed 67 tested1 121947 passed1 70628 tested2 1304046 passed2 310756 tested3 3088 passed3 243 residual_instances 243 residual_nodes 3791 residual_sat 0 seconds 0.594465
+fixed 73 candidates 15790
+completed_fixed 73 tested1 137737 passed1 74678 tested2 1387038 passed2 318157 tested3 3121 passed3 243 residual_instances 243 residual_nodes 3791 residual_sat 0 seconds 0.621283
+fixed 79 candidates 9651
+completed_fixed 79 tested1 147388 passed1 77576 tested2 1423667 passed2 322574 tested3 3154 passed3 243 residual_instances 243 residual_nodes 3791 residual_sat 0 seconds 0.634652
+fixed 85 candidates 7109
+completed_fixed 85 tested1 154497 passed1 79225 tested2 1438446 passed2 324049 tested3 3159 passed3 243 residual_instances 243 residual_nodes 3791 residual_sat 0 seconds 0.640017
+real 1.26
+user 0.96
+sys 0.06

@@ -1,0 +1,7 @@
+label	w00
+start	0
+end	147227
+count	147227
+start_utc	2026-07-22T08:21:06Z
+command	build/q567_residual_cap_search --input data/q567_all_residuals.tsv --profiles q56 --start 0 --count 147227 --progress-every 5000
+pid	80175

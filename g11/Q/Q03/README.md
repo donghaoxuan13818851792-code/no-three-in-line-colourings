@@ -1,12 +1,7 @@
 # Q3
 
-Placeholder for the final frozen evidence package for profile Q3.
+Status: `COMPLETE` within the documented Q1–Q4 cap-packing reduction.
 
-Before changing this branch to `COMPLETE`, deposit or reference:
-
-- exact profile definition;
-- outer catalogue scope;
-- symmetry/canonicalisation rule;
-- complete work-item ledger;
-- terminal evidence;
-- independent verification.
+Q3 has profile `(22,21,21,21,19,17)`. Its final evidence shares one exact
+search and six-shard run with Q1, Q2, and Q4. See [the shared evidence and
+replay instructions](../evidence/README.md).

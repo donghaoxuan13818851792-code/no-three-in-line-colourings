@@ -1,12 +1,6 @@
 # Q6
 
-Placeholder for the final frozen evidence package for profile Q6.
+Status: `COMPLETE` within the documented Q5/Q6 reduction.
 
-Before changing this branch to `COMPLETE`, deposit or reference:
-
-- exact profile definition;
-- outer catalogue scope;
-- symmetry/canonicalisation rule;
-- complete work-item ledger;
-- terminal evidence;
-- independent verification.
+Q6 shares the complete nine-shard Q5/Q6 archive and coverage audit. See the
+[archive, hash, audit result, and download instructions](../evidence/Q56/README.md).

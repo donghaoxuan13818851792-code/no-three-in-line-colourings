@@ -1,0 +1,153 @@
+relative_path	size	sha256	category	required_for_reproduction	generated	description
+AUDIT.md	1190	64b3c5b44fb1770a2bf070d196eb27dc5860e708c08481062527c9fe2b92e5d5	AUDIT.md	yes	no	AUDIT.md
+README.md	1063	b299aaf4fc8244666c1b1e855d2b74b3c527d51e89f383702813277104a0fd84	README.md	yes	no	README.md
+REPRODUCE.md	1416	5eafe1ccbbc5cebeafca67ebd213c063778804606905d8eb90a7c0a16fe815d4	REPRODUCE.md	yes	no	REPRODUCE.md
+STATUS.md	683	c17922f625558198e5f0ce854d04472551e1b36debf43fbf61bf5002d6b926c0	STATUS.md	yes	no	STATUS.md
+VALIDATION.md	1173	6782aa3f5336770add0d409c166178397a72cfbba8926a2927e6f087f89898b0	VALIDATION.md	yes	no	VALIDATION.md
+VERSION	31	0e0bdd3da29514c4035153e51a56a152eb169fda735c9477d3a9ff0f88499b52	VERSION	no	no	VERSION
+audits/DOMINANCE_AND_Q10_AUDIT_20260722.md	4454	f224faade4547262e593f0da6eeee1b2d7a4e6bf0211753a040c1c296f588d57	audits	yes	no	audits/DOMINANCE AND Q10 AUDIT 20260722.md
+audits/DOMINANCE_SCOPE.md	867	c8d611554473fccf391be1d7e40bdf5003b32c5a7e3b4578a2c4c460c79b32d5	audits	yes	no	audits/DOMINANCE SCOPE.md
+audits/binary_residual_cnf_audit.md	7287	e7b29fdb0f929353ed2f61b8b1ce5f64a257634da7057b7a1ebf1d601559b95f	audits	yes	no	audits/binary residual cnf audit.md
+audits/final_audit_output.txt	46	de708b1b0b7bcbba8aefae86050d328339fe4d7226fd417e7330b47effe9a0a8	audits	yes	no	audits/final audit output.txt
+build/q567_residual_cap_search_rebuilt	76960	f02500334042ac1435f777ac55a4bbe6f793de58d422519dfffc1703066bc744	build	no	yes	freshly rebuilt executable (smoke test only)
+canonical/q567_residual_cap_search_macos_arm64	76952	aca1e0b634e6ea201810d542ccd6d6794f0afa9eaa7c4ccde6b3b4542267e140	canonical	yes	no	canonical macOS arm64 executable (immutable)
+data/FINAL_SHARD_LEDGER.tsv	1809	e5a83d9c59dbe36ed33bfbcf3c2d2c1725ae36547eda72700c132862e5317acc	data	yes	no	data/FINAL SHARD LEDGER.tsv
+data/caps21_r0_diag.hex	1138016	c4ba6b9aa11f4b9b7d1f7c2cd74eada8b727c40851c57e25a553142c4e12df3e	data	yes	no	data/caps21 r0 diag.hex
+data/caps21_r1_diag.hex	1070304	62d025e2de26afe788057cc1a4525302d8a56c1be8ae4baf3d6d129f115b3895	data	yes	no	data/caps21 r1 diag.hex
+data/caps21_r2_diag.hex	2057056	14f89035771e3428d0d6465d02ebea8430fb101cd0d6e3c972a8e98062d180e5	data	yes	no	data/caps21 r2 diag.hex
+data/caps21_r3_diag.hex	2768896	92f7ea6aec073e2b335e089a56634f08ba34d1dab18e6b3c3935b70c2a157b42	data	yes	no	data/caps21 r3 diag.hex
+data/caps21_r4_diag.hex	6847424	b1df4d6c48aeaad56d674b688e9398d05ef529409a9f4502fac212a7f4f78060	data	yes	no	data/caps21 r4 diag.hex
+data/caps21_r5_diag.hex	4865088	47d59957a0f5f3d83298041cf4d8a3f99c5f5dc5211524c42e74235ea2561f9e	data	yes	no	data/caps21 r5 diag.hex
+data/caps22_d4.hex	2848	234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40	data	yes	no	data/caps22 d4.hex
+data/q567_all_residuals.tsv	149311162	a9860cd6043c4ded1bac5482068813fc642fefc4e00b3be4954d083fc80cd282	data	yes	no	data/q567 all residuals.tsv
+generators/__pycache__/grid_sat.cpython-314.pyc	18770	15c9ba843341ff69aafd626c6e1244f387e83d454ffbe1f84880a70c11b0f5fc	generators	yes	no	generators/  pycache  /grid sat.cpython-314.pyc
+generators/__pycache__/local_repair.cpython-314.pyc	11561	a39d65a268a0f0d8beac3daa0d9430c07b77cfe89cd1a0f22bb6bd5f564ef101	generators	yes	no	generators/  pycache  /local repair.cpython-314.pyc
+generators/__pycache__/q1_cap_selector_cnf.cpython-314.pyc	20506	8e61f1698c09a272c0c6dead42cbaea704203ac3f7af2d980d3c6457ff500a8c	generators	yes	no	generators/  pycache  /q1 cap selector cnf.cpython-314.pyc
+generators/__pycache__/q567_cap_selector_cnf.cpython-314.pyc	18923	9e25a5cf5db2f104fdeef052fc6083beb878a1b8505a608e190324c4d4f94649	generators	yes	no	generators/  pycache  /q567 cap selector cnf.cpython-314.pyc
+generators/grid_sat.py	9664	6388126b44c100e134e63d049480170d7137625bda44c79ff39f0bd25fdb22ca	generators	yes	no	generators/grid sat.py
+generators/local_repair.py	5649	1ae05e22d52a7fbfc68256e5c045878de81678a6df04bac7457027f23cdc6430	generators	yes	no	generators/local repair.py
+generators/q1_cap_selector_cnf.py	10739	3f57306ac78c83ebc25a28b2f408c7e45a6c723b32ccde17ee6a582249f50751	generators	yes	no	generators/q1 cap selector cnf.py
+generators/q567_cap_selector_cnf.py	11483	66ffa3a098fb161f44038dbe9c90b2d39394c036680b7e59f208ec7ee4230a68	generators	yes	no	generators/q567 cap selector cnf.py
+results/POSTHOC_METADATA_NOTE.md	524	f08f66fefdf9c118ff19c2c848c1835ceb9fdc96a7482fa6d953fbfda14cfb05	results	yes	yes	results/POSTHOC METADATA NOTE.md
+results/run_manifest.tsv	576	eadcdc4e5b3f5b96112fb11b066443b1ea7d1ea702140cbd55c97c5e361dba4a	results	no	yes	results/run manifest.tsv
+results/slurm/w00.meta.tsv	653	7e24b75d19e87df4c43426bf5b094a9e9cb6bd8c60321dec36ca75e6a5e3ba0f	results	no	yes	results/slurm/w00.meta.tsv
+results/slurm/w00.stderr	2842	3d188d0d966a640055dfe533cf82174261a7801f48e808e2fc401a4877ab6013	results	no	yes	results/slurm/w00.stderr
+results/slurm/w00.stdout	222	7719375b9c64fef16cc9a02bae58649b506d15ced6df7b662f0f2af0c1da711e	results	no	yes	results/slurm/w00.stdout
+results/slurm/w01.meta.tsv	663	3e65cd7766a1c9e823db25dff18f45835648ee3b667a95a499516ffa3bed608f	results	no	yes	results/slurm/w01.meta.tsv
+results/slurm/w01.stderr	2816	e6ee83ad9857a9f10c45f41357e8351fad8958fe0c1326ab5044dec36385b6c3	results	no	yes	results/slurm/w01.stderr
+results/slurm/w01.stdout	221	ef3ce5261c0e54923d366097ccf25eaddd05f07e874403138951b9f68b5428ef	results	no	yes	results/slurm/w01.stdout
+results/slurm/w02.meta.tsv	641	4f7172d46c0f17926e1be65590dc1f247969e4af8d87c1ce0c4680a36bf005ac	results	no	yes	results/slurm/w02.meta.tsv
+results/slurm/w02.stderr	2831	670a9f5059f3a76371ec041b3fddfd98b764be6629e5d0a7df1383b26267aed4	results	no	yes	results/slurm/w02.stderr
+results/slurm/w02.stdout	221	ebef0a7f3d38bfcebbfaccb8a66dc7d672d81ba0c962cec8775f1e0ed19a6114	results	no	yes	results/slurm/w02.stdout
+results/slurm/w03.meta.tsv	641	8ea3d51007886b7ada2cf92d129a7aa6baf2a92549efa71da66bbd9e2f4cce90	results	no	yes	results/slurm/w03.meta.tsv
+results/slurm/w03.stderr	2828	b6f93f5fc4479f01b8ea41c48d7e95a654717b3cd0a44852ef44db9e99b3b19b	results	no	yes	results/slurm/w03.stderr
+results/slurm/w03.stdout	221	8dbb069fc92796f0695580841da2474ef8197cf1e88f2502598a96f2bb2ea0a4	results	no	yes	results/slurm/w03.stdout
+results/slurm/w04.meta.tsv	641	425fce34311feb3bed87300c17dd647b1a1b7441a607b7db4660b5e06a18db51	results	no	yes	results/slurm/w04.meta.tsv
+results/slurm/w04.stderr	2823	49c8be47e6cd451f721c138e1e634ceee5329c09e90a1fb01a08658bd1c31871	results	no	yes	results/slurm/w04.stderr
+results/slurm/w04.stdout	221	a68e9b4869b4427fa649d466f4e4dfb9734c31751b6451813debc9756214f618	results	no	yes	results/slurm/w04.stdout
+results/slurm/w05.meta.tsv	641	e1a096300a37724f1bc14230ea1c96c805dbaecfb18afe6a08c285073a2c3fe4	results	no	yes	results/slurm/w05.meta.tsv
+results/slurm/w05.stderr	2839	7623a37b50661531277693e372f41cfaba67724f63fc656664ddbade6a22fbea	results	no	yes	results/slurm/w05.stderr
+results/slurm/w05.stdout	221	028235db830f5d017c77b19cdb8749a56682ab9b4f89ec3499ece5ab0468010d	results	no	yes	results/slurm/w05.stdout
+results/slurm/w06.meta.tsv	643	a6ec316859fd62e9fe215881fe453898df3a1d38bcd4f77c553aea419f9077a6	results	no	yes	results/slurm/w06.meta.tsv
+results/slurm/w06.stderr	2928	d2bbc24e7355c44e971ebaaa7a53b1bdee89f9266f9ac9e56e05043b233360d0	results	no	yes	results/slurm/w06.stderr
+results/slurm/w06.stdout	222	3cb8eb0bc92d253417cee22fa934e245e0c2d608cf7866a2fa9fd824e30ecd40	results	no	yes	results/slurm/w06.stdout
+results/slurm/w07.meta.tsv	645	0e7c5468c9275565353ede8975a2ca143ba03b3c4f4c30fa7745d8feccb25335	results	no	yes	results/slurm/w07.meta.tsv
+results/slurm/w07.stderr	2808	c3ed4493bab89fa020826a52a17382b40db24af7332e8679962e1913747766cf	results	no	yes	results/slurm/w07.stderr
+results/slurm/w07.stdout	220	68c6221d8847324efdcaf707d39d7fc18fa7dc8f65408ccc74004830aebbb2b5	results	no	yes	results/slurm/w07.stdout
+results/slurm/w08.meta.tsv	645	b5b3a1689aa208a87ebd1dd62d9ec1fa251f087348ebe179c626e2019b2c1d71	results	no	yes	results/slurm/w08.meta.tsv
+results/slurm/w08.stderr	2724	151cda0d4c8631ebcdfdba2c29d38a07191a1a1e50c922110ecf3eeb8850884a	results	no	yes	results/slurm/w08.stderr
+results/slurm/w08.stdout	222	d1daee13da5915141a62ac37e679c278e1ad6547d9a6004eeeee32f247213e77	results	no	yes	results/slurm/w08.stdout
+results/w00.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w00.exitcode
+results/w00.launch.tsv	220	99871731ee207f7299e25ec7497d5eaf996175acd5736f8f1a634d4ca194d7bb	results	no	yes	results/w00.launch.tsv
+results/w00.meta.tsv	653	7e24b75d19e87df4c43426bf5b094a9e9cb6bd8c60321dec36ca75e6a5e3ba0f	results	no	yes	results/w00.meta.tsv
+results/w00.pid	6	330616cadc7b5baec51382dcab743a1f7b408dce5233c9b8f40fa6b4fea666bc	results	no	yes	results/w00.pid
+results/w00.stderr	2842	3d188d0d966a640055dfe533cf82174261a7801f48e808e2fc401a4877ab6013	results	no	yes	results/w00.stderr
+results/w00.stdout	222	7719375b9c64fef16cc9a02bae58649b506d15ced6df7b662f0f2af0c1da711e	results	no	yes	results/w00.stdout
+results/w01.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w01.exitcode
+results/w01.launch.tsv	230	00be952b109bc994a9ad9abc3ce82584e90e57f8119c44a0e58240b0c1dc7093	results	no	yes	results/w01.launch.tsv
+results/w01.meta.tsv	663	3e65cd7766a1c9e823db25dff18f45835648ee3b667a95a499516ffa3bed608f	results	no	yes	results/w01.meta.tsv
+results/w01.pid	6	82c28f90d60f4f19d865701f1dd03766e93dc6a0ec9d18a6f266fcb296ec1732	results	no	yes	results/w01.pid
+results/w01.stderr	2816	e6ee83ad9857a9f10c45f41357e8351fad8958fe0c1326ab5044dec36385b6c3	results	no	yes	results/w01.stderr
+results/w01.stdout	221	ef3ce5261c0e54923d366097ccf25eaddd05f07e874403138951b9f68b5428ef	results	no	yes	results/w01.stdout
+results/w02.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w02.exitcode
+results/w02.launch.tsv	230	945115b642b783d493164c3aed009a90fe56ce7b59f01ea07f50647d0c53cf68	results	no	yes	results/w02.launch.tsv
+results/w02.meta.tsv	641	4f7172d46c0f17926e1be65590dc1f247969e4af8d87c1ce0c4680a36bf005ac	results	no	yes	results/w02.meta.tsv
+results/w02.pid	6	8fedf5d1cee9305eb2ce4a7cade445a19e1b30f00c7d01b2c9bd2a3933aa3332	results	no	yes	results/w02.pid
+results/w02.stderr	2831	670a9f5059f3a76371ec041b3fddfd98b764be6629e5d0a7df1383b26267aed4	results	no	yes	results/w02.stderr
+results/w02.stdout	221	ebef0a7f3d38bfcebbfaccb8a66dc7d672d81ba0c962cec8775f1e0ed19a6114	results	no	yes	results/w02.stdout
+results/w03.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w03.exitcode
+results/w03.launch.tsv	230	4d13b69fde8cb442f17a1530aa9b419015f0134d44195189abef807bb31cf5c6	results	no	yes	results/w03.launch.tsv
+results/w03.meta.tsv	641	8ea3d51007886b7ada2cf92d129a7aa6baf2a92549efa71da66bbd9e2f4cce90	results	no	yes	results/w03.meta.tsv
+results/w03.pid	6	9dcef0e060bd0f295797a83fc3cb0c83d3b81fff87c5039745839b7ffda31b10	results	no	yes	results/w03.pid
+results/w03.stderr	2828	b6f93f5fc4479f01b8ea41c48d7e95a654717b3cd0a44852ef44db9e99b3b19b	results	no	yes	results/w03.stderr
+results/w03.stdout	221	8dbb069fc92796f0695580841da2474ef8197cf1e88f2502598a96f2bb2ea0a4	results	no	yes	results/w03.stdout
+results/w04.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w04.exitcode
+results/w04.launch.tsv	230	235fe1066bf19d1f18e97b75db86e2770631e9b483c64d708c9ab47379b8f9ae	results	no	yes	results/w04.launch.tsv
+results/w04.meta.tsv	641	425fce34311feb3bed87300c17dd647b1a1b7441a607b7db4660b5e06a18db51	results	no	yes	results/w04.meta.tsv
+results/w04.pid	6	6cc88e6bccaf8dbb9fb7fc5b27e72ab28344566bb5e5be2ecb12af7815294e1e	results	no	yes	results/w04.pid
+results/w04.stderr	2823	49c8be47e6cd451f721c138e1e634ceee5329c09e90a1fb01a08658bd1c31871	results	no	yes	results/w04.stderr
+results/w04.stdout	221	a68e9b4869b4427fa649d466f4e4dfb9734c31751b6451813debc9756214f618	results	no	yes	results/w04.stdout
+results/w05.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w05.exitcode
+results/w05.launch.tsv	230	9a6a82fdfb4b1848c770b6a1ef7edd87449426c0fdf5febf853de44e73c1fba6	results	no	yes	results/w05.launch.tsv
+results/w05.meta.tsv	641	e1a096300a37724f1bc14230ea1c96c805dbaecfb18afe6a08c285073a2c3fe4	results	no	yes	results/w05.meta.tsv
+results/w05.pid	6	5994d08f18766d7f8a57a76d612cedde82a58b7232ae86ee5f398e68164653a6	results	no	yes	results/w05.pid
+results/w05.stderr	2839	7623a37b50661531277693e372f41cfaba67724f63fc656664ddbade6a22fbea	results	no	yes	results/w05.stderr
+results/w05.stdout	221	028235db830f5d017c77b19cdb8749a56682ab9b4f89ec3499ece5ab0468010d	results	no	yes	results/w05.stdout
+results/w06.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w06.exitcode
+results/w06.launch.tsv	231	708ffb53002801449aec23b821bd0ab42e493aeb2f6b1e707ac70ed66e7a18c2	results	no	yes	results/w06.launch.tsv
+results/w06.meta.tsv	643	a6ec316859fd62e9fe215881fe453898df3a1d38bcd4f77c553aea419f9077a6	results	no	yes	results/w06.meta.tsv
+results/w06.pid	6	4f6ae341593ddd35b1a291949fa5683b0a731739afe39048807ceafd5b9d1763	results	no	yes	results/w06.pid
+results/w06.stderr	2928	d2bbc24e7355c44e971ebaaa7a53b1bdee89f9266f9ac9e56e05043b233360d0	results	no	yes	results/w06.stderr
+results/w06.stdout	222	3cb8eb0bc92d253417cee22fa934e245e0c2d608cf7866a2fa9fd824e30ecd40	results	no	yes	results/w06.stdout
+results/w07.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w07.exitcode
+results/w07.launch.tsv	233	85218a78544b8b246443f4dba2a64aa24e1d7feab2c16770a90bd3995d5209f7	results	no	yes	results/w07.launch.tsv
+results/w07.meta.tsv	645	0e7c5468c9275565353ede8975a2ca143ba03b3c4f4c30fa7745d8feccb25335	results	no	yes	results/w07.meta.tsv
+results/w07.pid	6	efdade0936e4bd4043adf3b3f5c6d62c93649d27599a7eb7c377191aefebf9e4	results	no	yes	results/w07.pid
+results/w07.stderr	2808	c3ed4493bab89fa020826a52a17382b40db24af7332e8679962e1913747766cf	results	no	yes	results/w07.stderr
+results/w07.stdout	220	68c6221d8847324efdcaf707d39d7fc18fa7dc8f65408ccc74004830aebbb2b5	results	no	yes	results/w07.stdout
+results/w08.exitcode	3	5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3	results	no	yes	results/w08.exitcode
+results/w08.launch.tsv	233	6e8cf8f5798cad732c9d2c39a04c5a166f85c9d9916ff02e97a50d011f15c94e	results	no	yes	results/w08.launch.tsv
+results/w08.meta.tsv	645	b5b3a1689aa208a87ebd1dd62d9ec1fa251f087348ebe179c626e2019b2c1d71	results	no	yes	results/w08.meta.tsv
+results/w08.pid	6	4840b5f570825251d2437110015453b557adb17fad75a0a38ebfe7bdf94fe24d	results	no	yes	results/w08.pid
+results/w08.stderr	2724	151cda0d4c8631ebcdfdba2c29d38a07191a1a1e50c922110ecf3eeb8850884a	results	no	yes	results/w08.stderr
+results/w08.stdout	222	d1daee13da5915141a62ac37e679c278e1ad6547d9a6004eeeee32f247213e77	results	no	yes	results/w08.stdout
+scripts/__pycache__/audit_coverage.cpython-314.pyc	9237	8abf05aa2b79e77f9a3d8cfabe842e56eb6f2ba6ac2ca2bf5d500a735e15e5a4	scripts	yes	no	scripts/  pycache  /audit coverage.cpython-314.pyc
+scripts/__pycache__/audit_slurm.cpython-314.pyc	7649	7e5e5ff2d5b3045a477d614cd3feda660ca2ee4ab8721d3f2e50c62f4e699227	scripts	yes	no	scripts/  pycache  /audit slurm.cpython-314.pyc
+scripts/__pycache__/test_slurm_audit_negative.cpython-314.pyc	4356	b553fd71342a2dde96b290818a5fe4cf596dc9860b9c3e629e6907632474025c	scripts	yes	no	scripts/  pycache  /test slurm audit negative.cpython-314.pyc
+scripts/__pycache__/verify_coloring.cpython-314.pyc	3375	50f051e1dee7006b0ae29dbd7045f877fd9b33a93ac601022179097f03bd8248	scripts	yes	no	scripts/  pycache  /verify coloring.cpython-314.pyc
+scripts/__pycache__/verify_prefix_ledger.cpython-314.pyc	2193	2bf1de7acd0974b2f82a64025518023e775ed3e724eb60142b0a603c9290497b	scripts	yes	no	scripts/  pycache  /verify prefix ledger.cpython-314.pyc
+scripts/audit_coverage.py	4465	7973972bed050447bf8f0e12ac3c9c91813debf06e49455a5b74f04fec9005a3	scripts	yes	no	scripts/audit coverage.py
+scripts/audit_slurm.py	3105	02921f98d89b8220dfd477da9c2f96d991449c540356dd320d40ecbc6a0fd193	scripts	yes	no	scripts/audit slurm.py
+scripts/build.sh	230	203cc20682b6119aa318aa3a9450bf466dcbb7e40ab85dbd1af13881e7e8166d	scripts	yes	no	scripts/build.sh
+scripts/regenerate_prefixes.sh	734	efac757a0bb47ebbeb961b735c8e0f6b107e1f7a6bc4ce5ed802b8b356eae899	scripts	yes	no	scripts/regenerate prefixes.sh
+scripts/smoke_test.sh	290	017758c7d7eb4d79fc49b3e4098ef1fdb79e2c7a32c8d006e087b6c33906f074	scripts	yes	no	scripts/smoke test.sh
+scripts/test_slurm_audit_negative.py	1762	7affcc0b79734efbe9cf7494a3eaddca87b0d9ca61ec69d82abf8dcf5f031dbf	scripts	yes	no	scripts/test slurm audit negative.py
+scripts/verify_coloring.py	1096	4809efb93e6601d6b0491424da985af2d618643df47efbd67ee5db6e2849890a	scripts	yes	no	scripts/verify coloring.py
+scripts/verify_prefix_ledger.py	800	35a758ef9f446d0acb5322a7aff5308f500a60b3fb398e98e2168f3fbb5a20cf	scripts	yes	no	scripts/verify prefix ledger.py
+slurm/README.md	773	48690cb3357bfb0537f38fb4e522f9fda9322570586093609d3622d27df98b1b	slurm	yes	no	slurm/README.md
+slurm/array_worker.sh	560	9e2a09d53a095276c5cd952ad90d985bf945739eabc810db9a6392bb684c246a	slurm	yes	no	slurm/array worker.sh
+slurm/audit_results.sh	49	45f8c225e8a64a793bb170d892f0ce62438a065e77504c889df871aaa0798f60	slurm	yes	no	slurm/audit results.sh
+slurm/collect_results.sh	97	e49afbd4e0df42fc74f15857d8520aaf025cd1dc2b2fbee075bc2ae9d5798934	slurm	yes	no	slurm/collect results.sh
+slurm/run_one_shard.sh	1351	3c0cfb2f3789b40a4acb5a6fddcbb03bcc6f881c79e997ca8e4ea282c433df7d	slurm	yes	no	slurm/run one shard.sh
+slurm/submit_index.sh	105	833de541086355e323a191310c35949f2768e68f2fdf2bc7d2ee0322134fbc3f	slurm	yes	no	slurm/submit index.sh
+slurm/submit_multi_index_array.sh	45	41dd6c38b7a12b5ac2c35fc96c3b4e46ec88f0aa4d2f73bc8270db3d600b256f	slurm	yes	no	slurm/submit multi index array.sh
+slurm/submit_pilot.sh	135	bb5f9a906067428c3bf8c8dcac6f208933e659ffee16366f6dff79e0d6957889	slurm	yes	no	slurm/submit pilot.sh
+src/__pycache__/binary_residual_cnf.cpython-314.pyc	16668	38d323fe56fabbe875c22f54ed610e615dc9f0bbe63e3b4719e364efe47f72dd	src	yes	no	src/  pycache  /binary residual cnf.cpython-314.pyc
+src/__pycache__/canonicalize_caps.cpython-314.pyc	2795	e1995474a1ed9160eb7421c419944cc6345799d322e5bb4332b7d317febeb48e	src	yes	no	src/  pycache  /canonicalize caps.cpython-314.pyc
+src/__pycache__/canonicalize_pairs22.cpython-314.pyc	11015	5e253b7d9d7ab143ffc710736f6a94a075ef08620f26f129b4caf091262fb18a	src	yes	no	src/  pycache  /canonicalize pairs22.cpython-314.pyc
+src/__pycache__/grid_sat.cpython-314.pyc	18763	00f3770455240486238bc8bebab91c21e5ff1f171c38e3590f592349c949361a	src	yes	no	src/  pycache  /grid sat.cpython-314.pyc
+src/__pycache__/local_repair.cpython-314.pyc	11554	e2a2e2680acb8db40549df82abc8f1ea596596330fcca7525fdc1f75cf92fe61	src	yes	no	src/  pycache  /local repair.cpython-314.pyc
+src/__pycache__/q1_cap_selector_cnf.cpython-314.pyc	20499	2cc4a0f31aba9b76281faa8109310e2dc4f76bd30b888b95782388724f7bda55	src	yes	no	src/  pycache  /q1 cap selector cnf.cpython-314.pyc
+src/__pycache__/q567_cap_selector_cnf.cpython-314.pyc	18916	4bc83b457aa1cc9fd2f9af77f9db3e5dda8eabd722504135e2a0244f52483c59	src	yes	no	src/  pycache  /q567 cap selector cnf.cpython-314.pyc
+src/binary_residual_cnf.py	9597	0aecae7065458b8aaf1a7ff0d6f68d908d22febd98abbc771a36e0942cb38f95	src	yes	no	src/binary residual cnf.py
+src/canonicalize_caps.py	1145	d67cd40f91a907bac8519d300f50f68a85bcd36c525dd3dbaeb92dab415dedcf	src	yes	no	src/canonicalize caps.py
+src/canonicalize_pairs22.py	6559	e26c81d09b3c82483e08acc3b0d59f1b36ceb0a6efda914c5f27d7e395703b15	src	yes	no	src/canonicalize pairs22.py
+src/enumerate_caps.cpp	3733	c47a5a4488a6963be51defdfbe135b9637442ee26b798188be84279fed48a824	src	yes	no	src/enumerate caps.cpp
+src/grid_sat.py	9664	6388126b44c100e134e63d049480170d7137625bda44c79ff39f0bd25fdb22ca	src	yes	no	src/grid sat.py
+src/local_repair.py	5649	1ae05e22d52a7fbfc68256e5c045878de81678a6df04bac7457027f23cdc6430	src	yes	no	src/local repair.py
+src/p1_cap_packing.cpp	20727	a350116782dc376ac4df2a90ae38abe5a7ec81d8f080a07f8b03871ddcce7bb4	src	yes	no	src/p1 cap packing.cpp
+src/q1234_cap_packing.cpp	19519	bb7c4f43ba0dc5da3970ebb45ebaf01a4b057100375bc9b50f7c57dd45ffabc5	src	yes	no	src/q1234 cap packing.cpp
+src/q1_cap_selector_cnf.py	10739	3f57306ac78c83ebc25a28b2f408c7e45a6c723b32ccde17ee6a582249f50751	src	yes	no	src/q1 cap selector cnf.py
+src/q567_cap_packing.cpp	33145	4257690a36d0c52bdc1d5841f23e6a4289ddb422d1d5c56a95d733bb9e752df7	src	yes	no	src/q567 cap packing.cpp
+src/q567_cap_selector_cnf.py	11483	66ffa3a098fb161f44038dbe9c90b2d39394c036680b7e59f208ec7ee4230a68	src	yes	no	src/q567 cap selector cnf.py
+src/q567_residual_cap_search.cpp	21613	8608dce848381a7e69a5c057cd98acba9d4c6646775fa0a1b32b53b21b4849d1	src	yes	no	src/q567 residual cap search.cpp

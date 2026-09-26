@@ -1,0 +1,10 @@
+# shard\tstart\tend\tcount\tcommand\tstdout\tstderr\texitcode\tpid
+w00\t0\t147227\t147227\t--input data/q567_all_residuals.tsv --profiles q56 --start 0 --count 147227 --progress-every 5000\tresults/w00.stdout\tresults/w00.stderr\tresults/w00.exitcode\tresults/w00.pid
+w01\t147227\t294454\t147227\t--input data/q567_all_residuals.tsv --profiles q56 --start 147227 --count 147227 --progress-every 5000\tresults/w01.stdout\tresults/w01.stderr\tresults/w01.exitcode\tresults/w01.pid
+w02\t294454\t441681\t147227\t--input data/q567_all_residuals.tsv --profiles q56 --start 294454 --count 147227\tresults/w02.stdout\tresults/w02.stderr\tresults/w02.exitcode\tresults/w02.pid
+w03\t441681\t588908\t147227\t--input data/q567_all_residuals.tsv --profiles q56 --start 441681 --count 147227\tresults/w03.stdout\tresults/w03.stderr\tresults/w03.exitcode\tresults/w03.pid
+w04\t588908\t736135\t147227\t--input data/q567_all_residuals.tsv --profiles q56 --start 588908 --count 147227\tresults/w04.stdout\tresults/w04.stderr\tresults/w04.exitcode\tresults/w04.pid
+w05\t736135\t883361\t147226\t--input data/q567_all_residuals.tsv --profiles q56 --start 736135 --count 147226\tresults/w05.stdout\tresults/w05.stderr\tresults/w05.exitcode\tresults/w05.pid
+w06\t883361\t1034587\t151226\t--input data/q567_all_residuals.tsv --profiles q56 --start 883361 --count 151226\tresults/w06.stdout\tresults/w06.stderr\tresults/w06.exitcode\tresults/w06.pid
+w07\t1034587\t1181813\t147226\t--input data/q567_all_residuals.tsv --profiles q56 --start 1034587 --count 147226\tresults/w07.stdout\tresults/w07.stderr\tresults/w07.exitcode\tresults/w07.pid
+w08\t1181813\t1325039\t143226\t--input data/q567_all_residuals.tsv --profiles q56 --start 1181813 --count 143226\tresults/w08.stdout\tresults/w08.stderr\tresults/w08.exitcode\tresults/w08.pid
