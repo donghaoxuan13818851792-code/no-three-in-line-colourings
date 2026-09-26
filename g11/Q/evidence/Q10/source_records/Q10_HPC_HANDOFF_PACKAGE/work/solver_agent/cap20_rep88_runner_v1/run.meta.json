@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-08-02T12:11:36.511095+00:00",
+  "identity": {
+    "anchor_hex": "0140220300078009050001480444084",
+    "auditor": {
+      "path": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/q10_cap20_catalogue_audit",
+      "sha256": "6a4dc009e780bd4dcd47cc6f490e80c3f2f9a51707719cdd56d57e681dc5bea4"
+    },
+    "caps": {
+      "path": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/package/Q10_ULTRA_RESEARCH_LEAN_20260802/data/caps22_diag.hex",
+      "sha256": "2aed51282c1fb96e623e7c47c7e182ff2d914f80a414808898f526ac832f83bc"
+    },
+    "expected_key_count": 3025,
+    "fixture_mode": false,
+    "generator": {
+      "path": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/q10_cap20_enum_v4",
+      "sha256": "653f6416f65ec6b8f01599af775a0c70179b3f53b6757f80884c7c22404a8b8f"
+    },
+    "generator_source": {
+      "path": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/q10_cap20_enum.cpp",
+      "sha256": "7e261aecc4165e3330f3e2713ea9f75fc2afa78aee14573a4edf45f2577ca2d8"
+    },
+    "key_ids_sha256": "7e1e9dae93315a07813551fcf2014814767d371bbca6cb17d8a7a29f07084d4e",
+    "runner_sha256": "b5011e6bd402502cc473b1a86849678b418d5bd985f3703edd14e1ff12adbb93",
+    "schema": "q10-cap20-catalogue-run-identity-v1",
+    "shard_auditor": {
+      "path": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/audit_cap20_shards.py",
+      "sha256": "4413354a44f069c5fa20a595e9606d806730c9b25c00223692c83076afb0767d"
+    },
+    "summarizer": {
+      "path": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/summarize_cap20.py",
+      "sha256": "d5b46a0f1f1d9ca2e52f8f8c743183e3b24a2c05737b927c350e25e630035c80"
+    },
+    "time_per_shard": 300.0
+  },
+  "identity_sha256": "e38840954062da2288f2bad160fa5c2c2066b37262f41d84a350a34f092dd1bd"
+}

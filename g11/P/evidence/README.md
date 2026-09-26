@@ -1,26 +1,15 @@
-# P1–P3 primary evidence import
+# P1–P3 evidence
 
-Status: `INDEPENDENT_VERIFICATION_PENDING`.
+Status: `COMPLETE`.
 
-The imported primary package contains the frozen P1–P3 source and source
-dependency, six size-21 catalogues, the D4 size-22 table, the run manifest,
-six primary `.out`/`.log`/`.status` records, and the six P1 baseline outputs
-used by the primary audit. The captured primary audit is in
-[`audits/p123_primary_results_audit_20260926.txt`](audits/p123_primary_results_audit_20260926.txt).
+The primary six-shard result is audited in [`audits/p123_primary_results_audit_20260926.txt`](audits/p123_primary_results_audit_20260926.txt). The fresh independent six-shard run is in [`P123Independent/run_20260926T032326Z/`](P123Independent/run_20260926T032326Z/), with each shard's output, log, exit status, residual stream, timestamps, and command string. [`run_manifest.tsv`](P123Independent/run_20260926T032326Z/run_manifest.tsv) records their SHA-256 values; [`source_inputs.tsv`](P123Independent/run_20260926T032326Z/source_inputs.tsv) records the frozen verifier and catalogue inputs.
 
-The existing primary audit passes: 127,491 first caps, 708,638 residual
-instances, and zero residual SAT results across all six shards. Run it from
-the repository root with:
+Run the import audit from the repository root:
 
 ```sh
-cd g11/P
-python3 evidence/Audits/audit_p123_shard_results.py
+python3 g11/P/evidence/Audits/audit_p123_independent_import.py
 ```
 
-Independent verification is not complete. The independent implementation,
-executable, and results auditor are included for follow-up. The auditor
-expects one output and one exit-status record for each of six independent
-shards. The available independent `.out` files are zero bytes, and the
-required `.status` files are absent. See
-[`audits/independent_verification_pending.md`](audits/independent_verification_pending.md).
-No status files or terminal results were synthesized.
+The audit runs the existing independent result checker in a temporary path-compatible mirror, checks the output statistics against the primary run, and verifies the frozen input and output hashes. It passes with 127,491 first caps, 708,638 residual instances, and zero residual SAT results. Of those instances, 707,115 distinct mask encodings appear; the remaining 1,523 occurrences repeat across different instances. The count is by residual instance, not by globally unique mask string.
+
+The recorded independent run used the frozen verifier and inputs; it did not rerun the primary production search. See [`independent_verification_20260926.md`](Audits/independent_verification_20260926.md). The earlier pending-state note remains at [`independent_verification_pending.md`](audits/independent_verification_pending.md) with a superseded-status note.

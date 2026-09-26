@@ -1,0 +1,8 @@
+anchor 00442800c50180005104043008a00a0
+caps /data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/runs/rep28_catalogue/all_masks.hex
+caps_sha256 56490599741fc0a079a105085c6870b327ee6207eaf6c891da226df72f16c422
+caps_count 387034
+jobs 16
+seconds_per_shard 7200
+binary /tmp/q10-rep28-26188932/capset_join
+binary_sha256 2247456f9f199952d236d87f6ec80ec5f30cecbde9f7c11119a96304f2e4f52d

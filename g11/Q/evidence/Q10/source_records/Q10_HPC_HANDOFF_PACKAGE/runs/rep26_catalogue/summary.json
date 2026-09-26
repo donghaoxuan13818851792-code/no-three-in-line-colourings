@@ -1,0 +1,22 @@
+{
+  "complete_records": 3025,
+  "duplicate_record_count": 0,
+  "exact_extendible_count": 155,
+  "exact_least_eligible_count": 156059,
+  "exact_nonextendible_count": 278102,
+  "exact_self_secant_rejects": 0,
+  "exact_total_count": 278257,
+  "extra_keys": [],
+  "incomplete_records": 0,
+  "input": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/runs/rep26_catalogue/shards.log",
+  "input_sha256": "87b8cac49367a40820b33aea45d9d15f57ba2b352fc435ca90cc73f95c6c522f",
+  "max_shard_count": 1739,
+  "max_shard_seconds": 2.068,
+  "missing_keys": [],
+  "nonzero_exit_records": 0,
+  "nonzero_shards": 3023,
+  "records": 3025,
+  "sum_shard_seconds": 3181.9829230000055,
+  "total_nodes": 1926657646,
+  "unique_keys": 3025
+}

@@ -1,3 +1,5 @@
+> Superseded on 26 September 2026. The missing records described below were subsequently imported, and the independent six-shard run and repository import audit now pass. See [the completed verification record](../Audits/independent_verification_20260926.md). This file is retained as the earlier repository status snapshot.
+
 # P1–P3 independent verification pending
 
 The existing `audit_p123_independent_results.py` was inspected and attempted

@@ -1,0 +1,30 @@
+{
+  "anchor_hex": "0060c001228180002c2000611140028",
+  "audit_scope": "checks exact shard coverage and payloads, catalogue identity and independent validation log, and the complete join result; source-code correctness is established by review/reproduction, not formally proved by this manifest",
+  "enumeration": {
+    "all_complete_exit_zero": true,
+    "candidate_count": 289590,
+    "catalogue_sha256": "54ef39928a170625452cf843def3d86d0e242478405a4097236e5c6b3e150f34",
+    "extendible_count": 6,
+    "independent_catalogue_audit_sha256": "29d4e230f0b0ae7c8fb27c8997ff33c004dff13b3fffb556cdbb07be6d4ea457",
+    "least_eligible_count": 158232,
+    "nonextendible_count": 289584,
+    "self_secant_rejects": 0,
+    "shard_log_sha256": "c76456159c1795828e0d5114d14dd09f091b24f94cfce4af8b89883bba6f671b",
+    "shard_summary_sha256": "8b20b775f9a7ff886976ca4820edeae9d1d77aeedafd66dc5bbc854c5283cbcc",
+    "shards": 3025
+  },
+  "global_q10_status": "INCOMPLETE: 88 other representatives are not covered by this result",
+  "join": {
+    "final_pool_candidates": 0,
+    "log_sha256": "19c4b2392ccbd7631a31a8f23504fc19e0444e4d9d0a8da6c96c2aed934d2111",
+    "pair_candidates": 37666625,
+    "roots_examined": 289590,
+    "seconds": 185.203,
+    "status": "COMPLETE_NO_WITNESS",
+    "triple_candidates": 490113
+  },
+  "mathematical_status": "representative 53 exhaustively UNSAT relative to the frozen anchor dependency",
+  "representative_index": 53,
+  "status": "PASS"
+}

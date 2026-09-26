@@ -1,0 +1,1 @@
+/tmp/no-three-import.HdZt1G/repo/g11/P/work/independent_agent/p123_verifier_build/p123_independent_verifier 2 6 /tmp/g11-finalize-2026-09/p123-independent/run-20260926T032326Z/work/independent_agent/p123_independent_full_shard2.residuals.hex /tmp/no-three-import.HdZt1G/repo/g11/P/work/math_agent

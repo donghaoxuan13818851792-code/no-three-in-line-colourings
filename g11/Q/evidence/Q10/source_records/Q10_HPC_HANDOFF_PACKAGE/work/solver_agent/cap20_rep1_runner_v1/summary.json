@@ -1,0 +1,22 @@
+{
+  "complete_records": 3025,
+  "duplicate_record_count": 0,
+  "exact_extendible_count": 2517,
+  "exact_least_eligible_count": 1699316,
+  "exact_nonextendible_count": 2733789,
+  "exact_self_secant_rejects": 0,
+  "exact_total_count": 2736306,
+  "extra_keys": [],
+  "incomplete_records": 0,
+  "input": "/Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/cap20_rep1_runner_v1/shards.log",
+  "input_sha256": "77f665bf6dc70ba05d9ed5c89fe5c5969c3beec180a5881d9528239ccd0301c8",
+  "max_shard_count": 14966,
+  "max_shard_seconds": 5.28648,
+  "missing_keys": [],
+  "nonzero_exit_records": 0,
+  "nonzero_shards": 3025,
+  "records": 3025,
+  "sum_shard_seconds": 6861.04253,
+  "total_nodes": 3859378413,
+  "unique_keys": 3025
+}

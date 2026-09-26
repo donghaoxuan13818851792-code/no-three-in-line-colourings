@@ -1,0 +1,15 @@
+{
+  "catalogue_masks_across_89_representatives": 75666410,
+  "each_55_shard_join": "55/55 exit 20 COMPLETE_NO_WITNESS, no witness, zero final pool candidates",
+  "fresh_85_join_summary_candidate_masks": 74011954,
+  "historical_join_status": "85 MISSING rows preserved; later 2026-09-10 summary and raw audits supersede this earlier snapshot",
+  "new_raw_55_shard_join_audits": 85,
+  "prior_raw_55_shard_join_audits": 3,
+  "rep53_join": "complete native terminal log, COMPLETE_NO_WITNESS, zero final pool candidates",
+  "rep53_native_chain_audit": "PASS",
+  "representatives_audited": 89,
+  "source_archive_bytes": 10399498240,
+  "source_archive_sha256": "7e20e19f7428ca8a084c1a561b5ed97e69bbb9647e8098d1024a8114b4028eaa",
+  "status": "PASS",
+  "supplemental_rep53_records": "PASS"
+}

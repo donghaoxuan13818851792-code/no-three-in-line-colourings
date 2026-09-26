@@ -1,0 +1,72 @@
+{
+  "anchor_hex": "0030411203000a20140108880508050",
+  "claim_boundary": {
+    "catalogue_dependency": "The join UNSAT claim requires the separately audited exhaustive enumeration of every compatible size-20 cap for this fixed anchor.",
+    "fixed_anchor_result": "UNSAT",
+    "global_q10_status": "INCOMPLETE",
+    "remaining_unexhausted_frozen_representatives": 85
+  },
+  "catalogue": {
+    "audit_log": {
+      "path": "work/solver_agent/cap20_rep17_all_masks_v4.audit.log",
+      "sha256": "28393cf5c942ce7b63eeb876781a49e593815a73b95bfbaf4e9cb5ce4bcc3a8a",
+      "status": "AUDIT_OK"
+    },
+    "enumeration": {
+      "complete_shards": 3025,
+      "duplicate_keys": 0,
+      "extendible_caps": 410,
+      "missing_keys": 0,
+      "nonextendible_caps": 1001874,
+      "nonzero_exits": 0,
+      "resume_method": "EXACT_DISJOINT_RESUME_OF_1447_MISSING_KEYS_AFTER_EXTERNAL_KILL",
+      "shard_log_sha256": "64b8994beef00efc9c894fad0a85f54c5d257be3e4b0163b8c2d5dbfef24250a",
+      "shard_summary_sha256": "28c56a4796ce97413649f7d49410dce7dc31d08f0a007e830134e9fbb386a75e",
+      "shard_union_audit_sha256": "315ee46096de786c82da0cab13cd4b36ec518550b5f5e4b880069b5d9613271a",
+      "status": "COMPLETE"
+    },
+    "masks": 1002284,
+    "path": "work/solver_agent/cap20_rep17_all_masks_v4.hex",
+    "sha256": "d6e04b6b027de103703ea903c191233dbaa0764df9fafb206d669aec3145dcc3"
+  },
+  "join": {
+    "aggregate": {
+      "final_pool_candidates": 0,
+      "final_pools_built": 8864427,
+      "pair_candidates": 326773984,
+      "pair_pools_built": 1002284,
+      "roots_examined": 1002284,
+      "triple_candidates": 8864427,
+      "triple_pools_built": 326773984
+    },
+    "audit": {
+      "mathematical_status": "UNSAT_RELATIVE_TO_COMPLETE_CAP_CATALOGUE",
+      "path": "work/math_agent/nonextendible_structure/rep17_join_shards/audit.json",
+      "sha256": "1a1e53961999d341f77124f0bb6004bb497c52f49a742f93b9da549516aa451b",
+      "status": "PASS"
+    },
+    "audit_script_sha256": "b5f575ee5055a8a05ed5e6f6f939b77b8718a697770d01e16943e95d5ae34620",
+    "binary_sha256": "032b43a7c8a4ef3526ca1601b22ff5e7d70d00ca687a47d551547676c76ab098",
+    "maximum_shard_search_seconds": 198.355,
+    "resources": {
+      "makespan_seconds_runmeta_to_last_stdout_mtime": 1067.269889831543,
+      "maximum_resident_set_size_bytes": 1384792064,
+      "resource_records": 55,
+      "sum_external_real_seconds": 4256.54,
+      "sum_external_system_seconds": 47.64,
+      "sum_external_user_seconds": 3441.36
+    },
+    "root_row_pair_shards": 55,
+    "run_metadata_sha256": "d683efb84502d511d4b006bb21d16cc246f28739600f88f6674aeecad27a78c6",
+    "runner_script_sha256": "475eaf69249000af7cb403cf481d4970a46b59ee4bbf5f9abec2117044a31e3c",
+    "source_sha256": "f9c1eaf77e15eae03fbb95760af5c2268f2194e21d2e22b39d9f6ee3b344fa24",
+    "status_histogram": {
+      "COMPLETE_NO_WITNESS": 55
+    },
+    "sum_search_seconds": 3897.8089745,
+    "witnesses": 0
+  },
+  "mathematical_status": "REPRESENTATIVE_17_UNSAT",
+  "representative_index_zero_based": 17,
+  "schema": "q10-fixed-anchor-result-v1"
+}

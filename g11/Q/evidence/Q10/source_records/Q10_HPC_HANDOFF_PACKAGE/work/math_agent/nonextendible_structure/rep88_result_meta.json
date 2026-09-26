@@ -1,0 +1,88 @@
+{
+  "anchor_hex": "0140220300078009050001480444084",
+  "claim_boundary": {
+    "catalogue_dependency": "The join UNSAT claim requires the separately audited exhaustive enumeration of every compatible size-20 cap for this fixed anchor.",
+    "fixed_anchor_result": "UNSAT",
+    "global_q10_status": "INCOMPLETE",
+    "remaining_unexhausted_frozen_representatives": 85
+  },
+  "catalogue": {
+    "audit_log": {
+      "path": "work/solver_agent/cap20_rep88_runner_v1/catalogue.audit.log",
+      "sha256": "8b451e8c303d9911f2c2778ace1996f31101f2d0dbb8f5a8decac4e67010a1ff",
+      "status": "AUDIT_OK"
+    },
+    "enumeration": {
+      "complete_shards": 3025,
+      "duplicate_keys": 0,
+      "extendible_caps": 119,
+      "missing_keys": 0,
+      "nonextendible_caps": 110184,
+      "nonzero_exits": 0,
+      "result_json_sha256": "3bb087ae2e9ca37c346dfa41ad360c9f13d7ac3960748d9baec33756b834269d",
+      "run_identity_sha256": "e38840954062da2288f2bad160fa5c2c2066b37262f41d84a350a34f092dd1bd",
+      "run_metadata_sha256": "88be253b54a5146fc03a70ee0cc6ebdc54a4d38eeafa88565ff2a6a26d6e18ca",
+      "runner_makespan_seconds_from_utc_records": 1197.592518,
+      "shard_log_sha256": "7d0b426386916aea3a7cb923c1f5212e8effb4ed086a7a1414309195063d530f",
+      "shard_summary_sha256": "8e729ab470feb35a6f359bd616a16612499b236365a077c29ce0b64c214c7c7b",
+      "shard_union_audit_sha256": "28ed73f5864baedf99b1112dbe58e05b5c461ca281c7f4e0cd76a5a60448b5b8",
+      "status": "COMPLETE_AUDITED",
+      "sum_enumerator_wall_seconds": 4734.644372149138,
+      "sum_reported_shard_seconds": 4695.927642
+    },
+    "masks": 110303,
+    "path": "work/solver_agent/cap20_rep88_runner_v1/all_masks.hex",
+    "sha256": "6d9944f33a2689d5c2fdfaaf9158392e160fee62bb032d2a035e52723dcc353f"
+  },
+  "completion_matching_census": {
+    "extendible_caps": 119,
+    "frozen_containments": 119,
+    "nonextendible_caps": 110184,
+    "nonextendible_requires_double_blocker": 48,
+    "nonextendible_single_blockers_suffice": 110136,
+    "path": "work/math_agent/nonextendible_structure/rep88_completion_blockers.out",
+    "sha256": "d7e318ce11fea60f3566796af84958113a3578b610d7a0039aae8b3e622ca22c",
+    "status": "PASS",
+    "unblocked_extensions": 119
+  },
+  "join": {
+    "aggregate": {
+      "final_pool_candidates": 0,
+      "final_pools_built": 100654,
+      "pair_candidates": 10189371,
+      "pair_pools_built": 110303,
+      "roots_examined": 110303,
+      "triple_candidates": 100654,
+      "triple_pools_built": 10189371
+    },
+    "audit": {
+      "mathematical_status": "UNSAT_RELATIVE_TO_COMPLETE_CAP_CATALOGUE",
+      "path": "work/math_agent/nonextendible_structure/rep88_join_shards/audit.json",
+      "sha256": "833d6380c9d1620b800cadfb8c6388be4dbbbada721677e1f38e6997840c2b61",
+      "status": "PASS"
+    },
+    "audit_script_sha256": "b5f575ee5055a8a05ed5e6f6f939b77b8718a697770d01e16943e95d5ae34620",
+    "binary_sha256": "032b43a7c8a4ef3526ca1601b22ff5e7d70d00ca687a47d551547676c76ab098",
+    "maximum_shard_search_seconds": 2.26368,
+    "resources": {
+      "makespan_seconds_runmeta_to_last_stdout_mtime": 21.446857929229736,
+      "maximum_resident_set_size_bytes": 168148992,
+      "resource_records": 55,
+      "sum_external_real_seconds": 83.03,
+      "sum_external_system_seconds": 1.49,
+      "sum_external_user_seconds": 71.38
+    },
+    "root_row_pair_shards": 55,
+    "run_metadata_sha256": "f7065a77cd3a1a5f3df1e878bea1f55953caadabd6309e1c2a513e37d812c65b",
+    "runner_script_sha256": "475eaf69249000af7cb403cf481d4970a46b59ee4bbf5f9abec2117044a31e3c",
+    "source_sha256": "f9c1eaf77e15eae03fbb95760af5c2268f2194e21d2e22b39d9f6ee3b344fa24",
+    "status_histogram": {
+      "COMPLETE_NO_WITNESS": 55
+    },
+    "sum_search_seconds": 48.21646133,
+    "witnesses": 0
+  },
+  "mathematical_status": "REPRESENTATIVE_88_UNSAT",
+  "representative_index_zero_based": 88,
+  "schema": "q10-fixed-anchor-result-v1"
+}

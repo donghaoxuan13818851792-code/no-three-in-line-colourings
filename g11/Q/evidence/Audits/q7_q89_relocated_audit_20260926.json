@@ -1,0 +1,17 @@
+{
+  "q7": {
+    "package_audit": "Q7_PACKAGE_VERIFICATION PASS files=151 workers=9 coverage=[0,1325039) cap_nodes=227833758030 cap_leaves=13366857 two_colour_nodes=181478898",
+    "strict_audit_diagnostic": "Q7_FINAL_AUDIT FAIL: w00 executed-command record mismatch",
+    "strict_diagnostic_class": "historical absolute executed-command mismatch after relocation",
+    "terminal_scope": "9 workers, [0,1325039) complete coverage; package verifier checked hashes, terminal exit/status, SAT/UNKNOWN/INCOMPLETE exclusions and independent ledgers"
+  },
+  "q89": {
+    "package_audit": "Q8_FINAL_AUDIT PASS status=UNSAT workers=5 fixed_coverage=[0,89) prefixes=412995 global_cap_nodes=267205518698 global_candidates=195343877 pair_tests=571544352604 binary_instances=37232526 binary_nodes=916625078\nQ9_FINAL_AUDIT PASS status=UNSAT workers=4 fixed_coverage=[0,89) prefixes=412995 global_cap_nodes=267205518698 global_candidates=195343877 pair_tests=571544352604 binary_instances=37232526 binary_nodes=562882890\nQ89_FINAL_AUDIT PASS workers=9 profiles=Q8,Q9 status=UNSAT",
+    "prefix_universe_audit": "Q89_PREFIX_UNIVERSE_AUDIT PASS rows=412995 fixed=89 caps21=1019640 lines=628 triples=6992 active_lines=32 ledger_sha256=0668a356abb4562d1be089d5992bf85fc7ec708f43ae8dba1ef00cb140c66a5a",
+    "strict_audit_diagnostic": "Q89_FINAL_AUDIT FAIL: executed command mismatch for q8w0",
+    "strict_diagnostic_class": "historical absolute executed-command mismatch after relocation",
+    "terminal_scope": "Q8 five workers plus Q9 four workers; exact fixed coverage and the shared 412995-row prefix universe verified"
+  },
+  "relocation_mode": true,
+  "status": "PASS"
+}

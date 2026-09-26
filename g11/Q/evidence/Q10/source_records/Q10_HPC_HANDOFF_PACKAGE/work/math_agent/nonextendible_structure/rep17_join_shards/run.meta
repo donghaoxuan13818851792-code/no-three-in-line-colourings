@@ -1,0 +1,8 @@
+anchor 0030411203000a20140108880508050
+caps /Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/solver_agent/cap20_rep17_all_masks_v4.hex
+caps_sha256 d6e04b6b027de103703ea903c191233dbaa0764df9fafb206d669aec3145dcc3
+caps_count 1002284
+jobs 4
+seconds_per_shard 1200
+binary /Users/donghaoxuan/Documents/Codex/2026-08-02/q10-exact-computational-research-task-study/work/math_agent/nonextendible_structure/capset_join
+binary_sha256 032b43a7c8a4ef3526ca1601b22ff5e7d70d00ca687a47d551547676c76ab098

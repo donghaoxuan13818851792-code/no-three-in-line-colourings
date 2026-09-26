@@ -1,0 +1,22 @@
+{
+  "complete_records": 3025,
+  "duplicate_record_count": 0,
+  "exact_extendible_count": 25,
+  "exact_least_eligible_count": 150078,
+  "exact_nonextendible_count": 252254,
+  "exact_self_secant_rejects": 0,
+  "exact_total_count": 252279,
+  "extra_keys": [],
+  "incomplete_records": 0,
+  "input": "work/solver_agent/cap20_rep76_v4_shards.log",
+  "input_sha256": "c7ad839e7eb4c2b660f962a01497fa95fac871a1b42c5cdafb34815eac68285c",
+  "max_shard_count": 1851,
+  "max_shard_seconds": 4.20265,
+  "missing_keys": [],
+  "nonzero_exit_records": 0,
+  "nonzero_shards": 3020,
+  "records": 3025,
+  "sum_shard_seconds": 5513.690541,
+  "total_nodes": 2211411907,
+  "unique_keys": 3025
+}

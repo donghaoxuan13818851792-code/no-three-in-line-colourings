@@ -1,0 +1,18 @@
+status PASS
+caps 110303
+caps_one_eligible_matching 16382
+caps_two_eligible_matchings 93921
+eligible_matchings 204224
+matching_unblocked 119
+matching_single_only 136834
+matching_double_only 48
+matching_single_and_double 67223
+extendible_caps 119
+nonextendible_caps 110184
+nonextendible_single_blockers_suffice 110136
+nonextendible_requires_double_blocker 48
+frozen_containments 119
+unblocked_extensions 119
+first_double_required_cap 000880009a00028482015001100a420
+first_double_required_holes 9,5 10,6
+first_double_required_blocker 4,0
