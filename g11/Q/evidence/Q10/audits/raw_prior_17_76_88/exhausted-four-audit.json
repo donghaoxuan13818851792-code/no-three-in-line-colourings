@@ -1,0 +1,75 @@
+{
+  "audit_scope": "Binds fixed-anchor manifests to the frozen representative table; rehashes, recounts, and strict-order checks catalogues; checks terminal join identity, coverage, and zero final pools. Source semantics remain a review/reproduction obligation.",
+  "claim_boundary": "Only the listed frozen size-22 representatives are exhaustively UNSAT; the other representatives and hence global Q10 remain unresolved.",
+  "exhausted_representative_count": 4,
+  "exhausted_representative_indices_zero_based": [
+    17,
+    53,
+    76,
+    88
+  ],
+  "frozen_representative_count": 89,
+  "frozen_representative_table": "work/package/Q10_ULTRA_RESEARCH_LEAN_20260802/data/caps22_d4.hex",
+  "frozen_representative_table_sha256": "234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40",
+  "mathematical_status": "INCOMPLETE",
+  "remaining_unexhausted_representative_count": 85,
+  "representatives": [
+    {
+      "anchor_hex": "0030411203000a20140108880508050",
+      "candidate_count": 1002284,
+      "catalogue_sha256": "d6e04b6b027de103703ea903c191233dbaa0764df9fafb206d669aec3145dcc3",
+      "final_pool_candidates": 0,
+      "fixed_anchor_status": "UNSAT",
+      "join_audit_path": "work/math_agent/nonextendible_structure/rep17_join_shards/audit.json",
+      "join_audit_sha256": "1a1e53961999d341f77124f0bb6004bb497c52f49a742f93b9da549516aa451b",
+      "manifest_path": "work/math_agent/nonextendible_structure/rep17_result_meta.json",
+      "manifest_sha256": "b395ad69fd70de46989472e096fd71a98cfba55d1c202bd6c8609211618412e4",
+      "pair_candidates": 326773984,
+      "representative_index_zero_based": 17,
+      "triple_candidates": 8864427
+    },
+    {
+      "anchor_hex": "0060c001228180002c2000611140028",
+      "candidate_count": 289590,
+      "catalogue_sha256": "54ef39928a170625452cf843def3d86d0e242478405a4097236e5c6b3e150f34",
+      "final_pool_candidates": 0,
+      "fixed_anchor_status": "UNSAT",
+      "join_audit_path": "work/math_agent/nonextendible_structure/rep53_result_audit.json",
+      "join_audit_sha256": "f0c4fd33aafad7ab8ef04efd26cc5a319f1e388cec40bab8940e8bc7d3f03b51",
+      "manifest_path": "work/math_agent/nonextendible_structure/rep53_result_audit.json",
+      "manifest_sha256": "f0c4fd33aafad7ab8ef04efd26cc5a319f1e388cec40bab8940e8bc7d3f03b51",
+      "pair_candidates": 37666625,
+      "representative_index_zero_based": 53,
+      "triple_candidates": 490113
+    },
+    {
+      "anchor_hex": "00a044140a0000c2260050001808830",
+      "candidate_count": 252279,
+      "catalogue_sha256": "d4b6ba4d66754097779b6d82c162a5db70577cb0ffc4a35731db72af6756ce5f",
+      "final_pool_candidates": 0,
+      "fixed_anchor_status": "UNSAT",
+      "join_audit_path": "work/math_agent/nonextendible_structure/rep76_join_shards/audit.json",
+      "join_audit_sha256": "a0a2e04c66881927f7c28ca079a404594c82f5a8fb5ac758eb4c215d2ef645a5",
+      "manifest_path": "work/math_agent/nonextendible_structure/rep76_result_meta.json",
+      "manifest_sha256": "6245bb355cd963c8c33c6421a950596540c1fb08424f99a67d6bbe795e32c37d",
+      "pair_candidates": 25285442,
+      "representative_index_zero_based": 76,
+      "triple_candidates": 245447
+    },
+    {
+      "anchor_hex": "0140220300078009050001480444084",
+      "candidate_count": 110303,
+      "catalogue_sha256": "6d9944f33a2689d5c2fdfaaf9158392e160fee62bb032d2a035e52723dcc353f",
+      "final_pool_candidates": 0,
+      "fixed_anchor_status": "UNSAT",
+      "join_audit_path": "work/math_agent/nonextendible_structure/rep88_join_shards/audit.json",
+      "join_audit_sha256": "833d6380c9d1620b800cadfb8c6388be4dbbbada721677e1f38e6997840c2b61",
+      "manifest_path": "work/math_agent/nonextendible_structure/rep88_result_meta.json",
+      "manifest_sha256": "80e4e80ec612d635f797a85a9b184449181d566ad8b7c280d9260b7a91d03079",
+      "pair_candidates": 10189371,
+      "representative_index_zero_based": 88,
+      "triple_candidates": 100654
+    }
+  ],
+  "status": "PASS"
+}

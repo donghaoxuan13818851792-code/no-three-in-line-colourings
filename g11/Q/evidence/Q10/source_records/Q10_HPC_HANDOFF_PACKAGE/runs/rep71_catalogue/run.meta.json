@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-08-28T15:08:49.500545+00:00",
+  "identity": {
+    "anchor_hex": "00a0123008040146020810540008850",
+    "auditor": {
+      "path": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/build/linux/q10_cap20_catalogue_audit",
+      "sha256": "36161ca36bb1f534efd73e65f9e4c13b45d9d22fee9a34ecd2643f24a503bae1"
+    },
+    "caps": {
+      "path": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/work/package/Q10_ULTRA_RESEARCH_LEAN_20260802/data/caps22_diag.hex",
+      "sha256": "2aed51282c1fb96e623e7c47c7e182ff2d914f80a414808898f526ac832f83bc"
+    },
+    "expected_key_count": 3025,
+    "fixture_mode": false,
+    "generator": {
+      "path": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/build/linux/q10_cap20_enum",
+      "sha256": "ff9dfc6b09f64353858884e85d6c9ab0b4f00bebd2fd376478f5414fcde62d9f"
+    },
+    "generator_source": {
+      "path": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/work/solver_agent/q10_cap20_enum.cpp",
+      "sha256": "7e261aecc4165e3330f3e2713ea9f75fc2afa78aee14573a4edf45f2577ca2d8"
+    },
+    "key_ids_sha256": "7e1e9dae93315a07813551fcf2014814767d371bbca6cb17d8a7a29f07084d4e",
+    "runner_sha256": "b5011e6bd402502cc473b1a86849678b418d5bd985f3703edd14e1ff12adbb93",
+    "schema": "q10-cap20-catalogue-run-identity-v1",
+    "shard_auditor": {
+      "path": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/work/solver_agent/audit_cap20_shards.py",
+      "sha256": "4413354a44f069c5fa20a595e9606d806730c9b25c00223692c83076afb0767d"
+    },
+    "summarizer": {
+      "path": "/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/work/solver_agent/summarize_cap20.py",
+      "sha256": "d5b46a0f1f1d9ca2e52f8f8c743183e3b24a2c05737b927c350e25e630035c80"
+    },
+    "time_per_shard": 1200.0
+  },
+  "identity_sha256": "9a6d2015aac9498fd38dd8f2ebcf3617c82958baa5b72ec13ee26724809f470b"
+}

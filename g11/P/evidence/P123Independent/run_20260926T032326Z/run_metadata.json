@@ -1,0 +1,14 @@
+{
+  "auditor": "g11/P/evidence/Audits/audit_p123_independent_results.py",
+  "command_template": "p123_independent_verifier SHARD 6 OUTPUT_HEX g11/P/work/math_agent",
+  "first_caps_total": 127491,
+  "host_date": "2026-09-26",
+  "partition": "representative_index modulo 6",
+  "production_search_rerun": false,
+  "representatives_covered": 89,
+  "residual_instances": 708638,
+  "residual_sat": 0,
+  "run_id": "20260926T032326Z",
+  "shards": 6,
+  "status": "PASS"
+}
