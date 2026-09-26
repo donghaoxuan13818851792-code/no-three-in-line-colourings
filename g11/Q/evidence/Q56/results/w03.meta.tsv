@@ -1,0 +1,16 @@
+label	w03
+prefix_start	441681
+prefix_end	588908
+prefix_count	147227
+command	--input data/q567_all_residuals.tsv --profiles q56 --start 441681 --count 147227
+pid	80184
+start_utc	2026-07-22T08:21:06Z
+end_file_mtime_utc	2026-07-22T09:33:31.337909Z
+exit_code	20
+status	UNSAT
+prefixes_completed	147227
+current_prefix	588907
+source_sha256	8608dce848381a7e69a5c057cd98acba9d4c6646775fa0a1b32b53b21b4849d1
+executable_sha256	aca1e0b634e6ea201810d542ccd6d6794f0afa9eaa7c4ccde6b3b4542267e140
+input_sha256	a9860cd6043c4ded1bac5482068813fc642fefc4e00b3be4954d083fc80cd282
+catalogue_sha256	234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40

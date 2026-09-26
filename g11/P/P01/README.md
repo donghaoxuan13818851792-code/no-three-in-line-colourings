@@ -1,12 +1,7 @@
 # P1
 
-Placeholder for the final frozen evidence package for profile P1.
+Status: `INDEPENDENT_VERIFICATION_PENDING`.
 
-Before changing this branch to `COMPLETE`, deposit or reference:
-
-- exact profile definition;
-- outer catalogue scope;
-- symmetry/canonicalisation rule;
-- complete work-item ledger;
-- terminal evidence;
-- independent verification.
+P1 is included in the shared P1–P3 primary six-shard run. The primary audit
+passes, but the available independent verifier records are incomplete. See
+the [shared import status and audit details](../evidence/README.md).

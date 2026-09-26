@@ -1,0 +1,8 @@
+run_start_utc	2026-07-22T08:21:06Z
+source_sha256	8608dce848381a7e69a5c057cd98acba9d4c6646775fa0a1b32b53b21b4849d1
+executable_sha256	aca1e0b634e6ea201810d542ccd6d6794f0afa9eaa7c4ccde6b3b4542267e140
+input_sha256	a9860cd6043c4ded1bac5482068813fc642fefc4e00b3be4954d083fc80cd282
+catalogue_sha256	234108ff1e1922c5385eb7714c799a677d10913396427ec17e7aa8e411621e40
+compiler_version	Apple clang version 17.0.0 (clang-1700.6.3.2)
+build_command	c++ -std=c++20 -O3 -DNDEBUG q567_residual_cap_search.cpp -o q567_residual_cap_search_canonical9
+all_workers_launched_utc	2026-07-22T08:21:06Z

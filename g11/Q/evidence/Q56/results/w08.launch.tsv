@@ -1,0 +1,7 @@
+label	w08
+start	1181813
+end	1325039
+count	143226
+start_utc	2026-07-22T08:21:06Z
+command	build/q567_residual_cap_search --input data/q567_all_residuals.tsv --profiles q56 --start 1181813 --count 143226 --progress-every 5000
+pid	80202
