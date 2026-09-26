@@ -36,7 +36,8 @@ repository tree. They cover all 89 fixed size-22 representatives and 670
 residual instances, with zero satisfiable residuals. The search itself was
 not rerun during this import.
 
-Q5–Q6 are backed by the exact 41,823,110-byte v2 archive at the public
+Q5–Q6 are complete within the documented Q5/Q6 reduction, backed by the exact
+41,823,110-byte v2 archive at the versioned public
 [Q5/Q6 evidence release](https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/q56-complete-elimination-v2/g11_q56_complete_elimination_v2.zip).
 Its SHA-256 is
 `781859c9be9f6ba023399b91eae21814be365f28134394afb4c87954a182c46b`.

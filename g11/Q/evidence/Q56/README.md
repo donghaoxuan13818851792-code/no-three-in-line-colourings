@@ -1,6 +1,6 @@
 # Q5/Q6 archive and audit
 
-Status: `COMPLETE`, conditional on the certified Q1–Q4 reduction.
+Status: `COMPLETE` within the documented Q5/Q6 reduction.
 
 The exact v2 archive is published as the
 [Q5/Q6 evidence release asset](https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/q56-complete-elimination-v2/g11_q56_complete_elimination_v2.zip).
