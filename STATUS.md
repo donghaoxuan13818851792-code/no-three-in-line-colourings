@@ -74,6 +74,22 @@ R nevertheless remains `AWAITING_ARTIFACT_IMPORT` because the full 45.7 GB proof
 
 The table above is deliberately conservative. A reported result is not promoted to `COMPLETE` merely because a summary or manuscript statement says UNSAT.
 
+## P6 handoff — 6 October 2026
+
+The new P6 archive adds 10,787/10,787 terminal UNSAT records for one historical
+fixed-A branch, in 169 chunks. The repository evidence audit passes, and a
+freshly compiled backend replays all 10,787 supplied candidate lists with
+matching deterministic search counters. The candidate enumeration itself was
+not repeated or independently proved complete. The supplied handoff verifier
+rejects the delivered archive because 87,907 added files are absent from its
+old manifest; all 2,516 old manifested files still match. The exact rejection,
+observed failed launch/rerun, replay ledger and remaining gaps are retained in
+[g11/P/evidence/P6/AUDIT.md](g11/P/evidence/P6/AUDIT.md).
+
+P6 remains INCOMPLETE: this local branch does not cover the 266,771,874 retained
+canonical pairs in the global frozen scope, and independent terminal
+verification remains outstanding.
+
 ## Final theorem gate
 
 The repository may support the statement

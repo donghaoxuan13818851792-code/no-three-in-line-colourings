@@ -1,0 +1,8 @@
+SOURCE_INPUT_BINARY_HASH_BINDING_PASS files=7
+RECEIVED_MANIFEST_DIFF {"actual": 90423, "added": 87907, "changed": [], "listed": 2516, "missing": []}
+CHUNKS_CHECKED 32/169
+CHUNKS_CHECKED 64/169
+CHUNKS_CHECKED 96/169
+CHUNKS_CHECKED 128/169
+CHUNKS_CHECKED 160/169
+FIXED_A_EVIDENCE_AUDIT_PASS {"candidate_enumeration_replayed": false, "candidate_occurrences": 13510361, "canonical_pair_keys": 10787, "chunks": 169, "fixed_orientation_inputs": 10787, "global_P6": "INCOMPLETE", "independent_UNSAT_proof": false, "terminal_unsat": 10787}

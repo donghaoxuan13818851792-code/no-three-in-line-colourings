@@ -1,0 +1,16 @@
+{
+  "agent1_median_seconds": 3.2182,
+  "agent1_median_speedup": 4.649,
+  "cap_d4_representative_count": 127491,
+  "cap_oriented_count": 1019640,
+  "collinear_triples": 6992,
+  "family_branch_ledgers": 9,
+  "global256_records": 256,
+  "maximal_lines": 628,
+  "outer_hash_changes_after_user_repacking_are_provenance_only": true,
+  "p6_status": "PARTIAL_TERMINAL_PROGRESS",
+  "retained_canonical_pairs": 266771874,
+  "schema": "p6-multi-module-common-context-v1",
+  "structurally_compatible_canonical_pairs": 272681893,
+  "terminal_unsat_regression_cases": 26
+}
