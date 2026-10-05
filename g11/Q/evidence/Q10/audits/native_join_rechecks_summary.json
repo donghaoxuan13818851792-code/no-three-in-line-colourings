@@ -1,0 +1,7 @@
+{
+  "checked": 85,
+  "passed": 85,
+  "failed": [],
+  "wall_seconds": 14.856088916014414,
+  "scope": "supplied join auditor re-executed, no join search or candidate enumeration replay"
+}

@@ -1,0 +1,93 @@
+{
+  "filename": "Q10_HPC_HANDOFF_PACKAGE.zip",
+  "bytes": 3140960671,
+  "sha256": "1ea37d8321c44a018efc37694e21e2d8dacc4870224a540ea14b5609cbc2000e",
+  "entries": 557252,
+  "expanded_bytes": 10023870270,
+  "parts": [
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_00",
+      "bytes": 250000000,
+      "sha256": "69f0d56a59e63ba0578c87872f6b538e8965ff34acac6887851b98fa57167bdf",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_00"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_01",
+      "bytes": 250000000,
+      "sha256": "f3695dadc824dcf7224a28191cb77e21bdcab3afdd93c3a5cb010f1c994dac14",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_01"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_02",
+      "bytes": 250000000,
+      "sha256": "9534340aca005b13aa98375a0ae438922680e898bc197b9512fac7d091a36fc0",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_02"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_03",
+      "bytes": 250000000,
+      "sha256": "1d8b2eaf988e883661abe8ad67aace002d16d637084a6fc69ed0697b18c32c4b",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_03"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_04",
+      "bytes": 250000000,
+      "sha256": "c663907f3b8b26694e0275adfcd66e4f128438c1327fa8abfc00cb869f7b2f9b",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_04"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_05",
+      "bytes": 250000000,
+      "sha256": "a7123830a405778aff3b505bbad869dd493004b435b5a7481a4f8720e53cc7e3",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_05"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_06",
+      "bytes": 250000000,
+      "sha256": "abcff18cd0bbbc160091a7b861268ac68ac398d0e62f4f40905a30d5a159ef04",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_06"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_07",
+      "bytes": 250000000,
+      "sha256": "a6c4a77a37141cfe02eaf9fc1743656c8fede819996da4fcdc1caaccba3f08d7",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_07"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_08",
+      "bytes": 250000000,
+      "sha256": "b0aab129d4f40117f42821407020ee863fa3b643859b9c69000447f40d54e704",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_08"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_09",
+      "bytes": 250000000,
+      "sha256": "16caf66753d41075d496e837aac4ecf9ad3a2ecc789f252198a3b118a230816a",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_09"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_10",
+      "bytes": 250000000,
+      "sha256": "3dc117eec7a83bb4618fd15392e6950ee09cd829dd2224d32ef282e7a6e6b208",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_10"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_11",
+      "bytes": 250000000,
+      "sha256": "d4950276df125d4271600b88721ac4a293316972e88cc39369956fb19f13d101",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_11"
+    },
+    {
+      "filename": "Q10_HPC_HANDOFF_PACKAGE.zip.part_12",
+      "bytes": 140960671,
+      "sha256": "4882de50591269ca2904ef6d368f4c9b4fb640cd03c8e9ca3c6af67711c8a876",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_HANDOFF_PACKAGE.zip.part_12"
+    }
+  ],
+  "release_tag": "g11-handoff-20261006",
+  "received_date": "2026-10-06",
+  "source_message_date_utc": "2026-10-05T15:39:11Z",
+  "source_sender": "Matthew Lewis",
+  "reassembly": "Concatenate parts 00 through 12 in numeric order in binary mode; verify the whole archive SHA-256 before extraction.",
+  "split_bytes": 250000000
+}

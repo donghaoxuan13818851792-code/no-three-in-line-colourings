@@ -1,0 +1,18 @@
+Starting representative 67
+Catalogue: /data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/runs/rep67_catalogue/all_masks.hex
+Output: /data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/runs/rep67_join
+Representative 67 finished
+{
+  "status": "PASS",
+  "mathematical_status": "UNSAT_RELATIVE_TO_COMPLETE_CAP_CATALOGUE",
+  "candidate_count": 500983,
+  "maximum_shard_search_seconds": 21.5816,
+  "resources": {
+    "makespan_seconds_runmeta_to_last_stdout_mtime": 44.16983699798584,
+    "maximum_resident_set_size_bytes": 431587328,
+    "measurement_note": "resource sums are over 55 BSD /usr/bin/time -l shard records; makespan is filesystem-mtime derived and operational, not proof evidence",
+    "sum_external_real_seconds": 661.74,
+    "sum_external_system_seconds": 8.940000000000003,
+    "sum_external_user_seconds": 646.25
+  }
+}

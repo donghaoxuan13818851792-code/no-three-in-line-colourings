@@ -1,0 +1,2 @@
+# Preserve received evidence bytes, including original whitespace.
+received/** -text -whitespace

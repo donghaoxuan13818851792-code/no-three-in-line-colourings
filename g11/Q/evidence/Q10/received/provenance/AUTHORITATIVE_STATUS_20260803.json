@@ -1,0 +1,93 @@
+{
+  "schema": "q10-research-handoff-status-v1",
+  "profile": [22, 20, 20, 20, 20, 19],
+  "grid_side": 11,
+  "grid_points": 121,
+  "global_mathematical_status": "INCOMPLETE",
+  "global_claim": "No colouring was found, but only the listed frozen size-22 representatives have complete arbitrary-cap no-witness results. Global Q10 SAT/UNSAT is unresolved.",
+  "frozen_dependency_boundary": "The supplied exhaustive 676-anchor catalogue is a certified upstream dependency; this handoff independently validates it and its 89 D4 representatives but does not rederive the omitted historical enumeration.",
+  "supplied_zip_sha256": "11e210729d92bdc3bc93ac600d72a6079654dfd2e81ee38a6441245daf04ff7f",
+  "global_exact_theorem": {
+    "statement": "Relative to the frozen size-22 catalogue, every Q10 colouring has at most one size-20 class extendible by two points to a frozen size-22 cap; therefore at least three of its four size-20 classes are nonextendible.",
+    "capacity_feasible_unordered_pairs": 13680,
+    "ordinary_drat_representatives": 88,
+    "ordinary_nontrivial_drat": 70,
+    "ordinary_explicit_empty_clause": 18,
+    "representative_1_idrup_queries": 2200,
+    "certificate_bytes": 3690379185,
+    "status": "PROOF_CERTIFIED"
+  },
+  "representative_indexing": "zero_based_into_caps22_d4.hex",
+  "exhausted_representative_indices_zero_based": [17, 53, 76, 88],
+  "remaining_representative_indices_zero_based": [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
+    34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+    50, 51, 52, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66,
+    67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83,
+    84, 85, 86, 87
+  ],
+  "fixed_anchor_results": [
+    {
+      "index_zero_based": 17,
+      "anchor_hex": "0030411203000a20140108880508050",
+      "status": "UNSAT_FOR_FIXED_ANCHOR",
+      "catalogue_path": "work/solver_agent/cap20_rep17_all_masks_v4.hex",
+      "catalogue_sha256": "d6e04b6b027de103703ea903c191233dbaa0764df9fafb206d669aec3145dcc3",
+      "catalogue_masks": 1002284,
+      "least_eligible_caps": 619570,
+      "extendible_caps": 410,
+      "nonextendible_caps": 1001874,
+      "enumeration_shards_path": "work/solver_agent/cap20_rep17_v4_shards",
+      "enumeration_log_path": "work/solver_agent/cap20_rep17_v4_shards.log",
+      "join_kind": "55_shards",
+      "join_path": "work/math_agent/nonextendible_structure/rep17_join_shards"
+    },
+    {
+      "index_zero_based": 53,
+      "anchor_hex": "0060c001228180002c2000611140028",
+      "status": "UNSAT_FOR_FIXED_ANCHOR",
+      "catalogue_path": "work/solver_agent/cap20_rep53_all_masks_v4.hex",
+      "catalogue_sha256": "54ef39928a170625452cf843def3d86d0e242478405a4097236e5c6b3e150f34",
+      "catalogue_masks": 289590,
+      "least_eligible_caps": 158232,
+      "extendible_caps": 6,
+      "nonextendible_caps": 289584,
+      "enumeration_shards_path": "work/solver_agent/cap20_rep53_v4_shards",
+      "enumeration_log_path": "work/solver_agent/cap20_rep53_v4_shards.log",
+      "join_kind": "monolithic",
+      "join_path": "work/root/rep53_capset_join.log",
+      "join_sha256": "19c4b2392ccbd7631a31a8f23504fc19e0444e4d9d0a8da6c96c2aed934d2111"
+    },
+    {
+      "index_zero_based": 76,
+      "anchor_hex": "00a044140a0000c2260050001808830",
+      "status": "UNSAT_FOR_FIXED_ANCHOR",
+      "catalogue_path": "work/solver_agent/cap20_rep76_all_masks_v4.hex",
+      "catalogue_sha256": "d4b6ba4d66754097779b6d82c162a5db70577cb0ffc4a35731db72af6756ce5f",
+      "catalogue_masks": 252279,
+      "least_eligible_caps": 150078,
+      "extendible_caps": 25,
+      "nonextendible_caps": 252254,
+      "enumeration_shards_path": "work/solver_agent/cap20_rep76_v4_shards",
+      "enumeration_log_path": "work/solver_agent/cap20_rep76_v4_shards.log",
+      "join_kind": "55_shards",
+      "join_path": "work/math_agent/nonextendible_structure/rep76_join_shards"
+    },
+    {
+      "index_zero_based": 88,
+      "anchor_hex": "0140220300078009050001480444084",
+      "status": "UNSAT_FOR_FIXED_ANCHOR",
+      "catalogue_path": "work/solver_agent/cap20_rep88_runner_v1/all_masks.hex",
+      "catalogue_sha256": "6d9944f33a2689d5c2fdfaaf9158392e160fee62bb032d2a035e52723dcc353f",
+      "catalogue_masks": 110303,
+      "least_eligible_caps": 52454,
+      "extendible_caps": 119,
+      "nonextendible_caps": 110184,
+      "enumeration_shards_path": "work/solver_agent/cap20_rep88_runner_v1/shards",
+      "enumeration_log_path": "work/solver_agent/cap20_rep88_runner_v1/shards.log",
+      "join_kind": "55_shards",
+      "join_path": "work/math_agent/nonextendible_structure/rep88_join_shards"
+    }
+  ]
+}

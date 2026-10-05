@@ -1,0 +1,84 @@
+{
+  "anchor_hex": "00a044140a0000c2260050001808830",
+  "claim_boundary": {
+    "catalogue_dependency": "The join UNSAT claim requires the separately audited exhaustive enumeration of every compatible size-20 cap for this fixed anchor.",
+    "fixed_anchor_result": "UNSAT",
+    "global_q10_status": "INCOMPLETE",
+    "remaining_unexhausted_frozen_representatives": 85
+  },
+  "catalogue": {
+    "audit_log": {
+      "path": "work/solver_agent/cap20_rep76_all_masks_v4.audit.log",
+      "sha256": "d733872e9592e11af41f52062a031319a111718ed494cd9cd4f07446d9490902",
+      "status": "AUDIT_OK"
+    },
+    "enumeration": {
+      "complete_shards": 3025,
+      "duplicate_keys": 0,
+      "extendible_caps": 25,
+      "missing_keys": 0,
+      "nonextendible_caps": 252254,
+      "nonzero_exits": 0,
+      "partial_audit_bug": "An auxiliary first partial-reuse audit sampled one mask per shard due to indentation; it was marked INVALID, corrected, and did not affect enumeration or the final union.",
+      "resume_method": "EXACT_DISJOINT_RESUME_OF_2950_MISSING_KEYS_AFTER_75_COMPLETE_KEYS",
+      "shard_log_sha256": "c7ad839e7eb4c2b660f962a01497fa95fac871a1b42c5cdafb34815eac68285c",
+      "shard_summary_sha256": "a2c8b6f282b5b7b2f06e29bb18fe15542765cbec37d9cbba919f6ac4c9581038",
+      "shard_union_audit_sha256": "01df83c81f79aba78b150b8049c4984bd936088d7634e1adabcc5f3029563cc8",
+      "status": "COMPLETE"
+    },
+    "masks": 252279,
+    "path": "work/solver_agent/cap20_rep76_all_masks_v4.hex",
+    "sha256": "d4b6ba4d66754097779b6d82c162a5db70577cb0ffc4a35731db72af6756ce5f"
+  },
+  "completion_matching_census": {
+    "extendible_caps": 25,
+    "frozen_containments": 25,
+    "nonextendible_caps": 252254,
+    "nonextendible_requires_double_blocker": 94,
+    "nonextendible_single_blockers_suffice": 252160,
+    "path": "work/math_agent/nonextendible_structure/rep76_completion_blockers.out",
+    "sha256": "7e4dbade1302b3a93a3c40fb6f4400a60f95b485616dbf464c11478a3571fef5",
+    "status": "PASS",
+    "unblocked_extensions": 25
+  },
+  "join": {
+    "aggregate": {
+      "final_pool_candidates": 0,
+      "final_pools_built": 245447,
+      "pair_candidates": 25285442,
+      "pair_pools_built": 252279,
+      "roots_examined": 252279,
+      "triple_candidates": 245447,
+      "triple_pools_built": 25285442
+    },
+    "audit": {
+      "mathematical_status": "UNSAT_RELATIVE_TO_COMPLETE_CAP_CATALOGUE",
+      "path": "work/math_agent/nonextendible_structure/rep76_join_shards/audit.json",
+      "sha256": "a0a2e04c66881927f7c28ca079a404594c82f5a8fb5ac758eb4c215d2ef645a5",
+      "status": "PASS"
+    },
+    "audit_script_sha256": "b5f575ee5055a8a05ed5e6f6f939b77b8718a697770d01e16943e95d5ae34620",
+    "binary_sha256": "032b43a7c8a4ef3526ca1601b22ff5e7d70d00ca687a47d551547676c76ab098",
+    "maximum_shard_search_seconds": 9.35484,
+    "resources": {
+      "makespan_seconds_runmeta_to_last_stdout_mtime": 85.63169860839844,
+      "maximum_resident_set_size_bytes": 352698368,
+      "resource_records": 55,
+      "sum_external_real_seconds": 337.19,
+      "sum_external_system_seconds": 5.85,
+      "sum_external_user_seconds": 217.25
+    },
+    "root_row_pair_shards": 55,
+    "run_metadata_sha256": "389961bb4ae0c9b4dbe6345e6c1cd50e14b247ebbd4a7ab60c250d494976851a",
+    "runner_script_sha256": "475eaf69249000af7cb403cf481d4970a46b59ee4bbf5f9abec2117044a31e3c",
+    "source_sha256": "f9c1eaf77e15eae03fbb95760af5c2268f2194e21d2e22b39d9f6ee3b344fa24",
+    "status_histogram": {
+      "COMPLETE_NO_WITNESS": 55
+    },
+    "sum_search_seconds": 221.57655905,
+    "witnesses": 0
+  },
+  "mathematical_status": "REPRESENTATIVE_76_UNSAT",
+  "representative_index_zero_based": 76,
+  "schema": "q10-fixed-anchor-result-v1"
+}

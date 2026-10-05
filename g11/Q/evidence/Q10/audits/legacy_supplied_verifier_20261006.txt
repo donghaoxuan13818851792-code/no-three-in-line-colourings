@@ -1,0 +1,10 @@
+HANDOFF_MANIFEST_PASS files=23594
+STATUS_AND_INPUTS_PASS global=INCOMPLETE representatives=89 exhausted=4 remaining=85
+CLOUD_ARCHIVE_PARTS_PASS parts=3 core_sha256=cec9f1e5178c4a684721ae5f897cc552cea49a8f7f0fd48ffa7adc685ae498b8 proof_sha256=b45b65ec91e1f56a7c527d65e012a26901a1ea94cd45b632eb9b6f4323cf6c87
+PAIR_PROOF_BUNDLE_PASS last={"claim_boundary": "at-least-two-extendible-size-20 sector only", "ordinary_checker_seconds_sum": 1390.0679312145803, "ordinary_proof_bytes": 2022459608, "ordinary_representatives"
+FIXED_ANCHOR_RESULTS_PASS last=}
+REP1_3025_SHARD_CATALOGUE_PASS last=}
+SHELL_SYNTAX_build_linux.sh_PASS last=PASS
+SHELL_SYNTAX_catalogue_resume.sbatch_PASS last=PASS
+SHELL_SYNTAX_join_55way.sbatch_PASS last=PASS
+Q10_HANDOFF_VERIFICATION_PASS global_status=INCOMPLETE proof_sector=PASS fixed_anchors=4 rep1_catalogue=3025_of_3025

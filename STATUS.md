@@ -21,7 +21,7 @@ This file records the evidence status of the computational proof components.
 | Q5–Q6 | one size-22 class | COMPLETE |
 | Q7 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
 | Q8–Q9 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
-| Q10 | (22,20,20,20,20,19) | INCOMPLETE |
+| Q10 | (22,20,20,20,20,19) | INDEPENDENT_VERIFICATION_PENDING |
 | P1–P3 | no size-22 class | INDEPENDENT_VERIFICATION_PENDING |
 | P4–P5 | three size-21 classes | AWAITING_ARTIFACT_IMPORT |
 | P6 | (21,21,20,20,20,19) | INCOMPLETE |
@@ -89,6 +89,24 @@ observed failed launch/rerun, replay ledger and remaining gaps are retained in
 P6 remains INCOMPLETE: this local branch does not cover the 266,771,874 retained
 canonical pairs in the global frozen scope, and independent terminal
 verification remains outstanding.
+
+## Q10 HPC handoff — 6 October 2026
+
+The new archive supplies 85 terminal catalogue/join chains, including the
+previously missing rep1 join. Together with the four frozen anchor-local
+results, primary coverage now reaches all 89 representatives. The archive
+coverage and hash auditor passes 257,125 catalogue records and 4,675 new join
+shards, checking 74,011,954 masks in sorted shard unions. The supplied join
+auditor also passes fresh checks for all 85 new join chains. The old 23,594-file
+manifest remains byte-correct but omits 533,182 additions, so the supplied
+verifier's manifest stage rejects the new archive. See
+[g11/Q/evidence/Q10/AUDIT.md](g11/Q/evidence/Q10/AUDIT.md).
+
+Q10 is now INDEPENDENT_VERIFICATION_PENDING at repository evidence level.
+No independent global UNSAT proof, catalogue regeneration, join search replay,
+or full fresh DRAT/IDRUP replay is claimed. The earlier September import note
+and the received frozen status files describe the older boundary, not the new
+primary execution coverage.
 
 ## Final theorem gate
 

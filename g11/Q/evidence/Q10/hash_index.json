@@ -1,0 +1,9 @@
+{
+  "filename": "Q10_HPC_FILE_SHA256SUMS.jsonl.gz",
+  "bytes": 25155918,
+  "sha256": "c21478d7ba50e7b3e9a3b8150267d4c138a56be159ef8e134923e17df30bac8f",
+  "decompressed_sha256": "82b9ebf85e5ae93f334d3ecbed18229f5f50cfdc586c813df39849b9a532d738",
+  "files": 556776,
+  "scope": "All files in the delivered verifier manifest universe: excludes build/ and files named HANDOFF_SHA256SUMS. Source and binary bindings outside this universe are checked directly by audit_hpc_zip.py.",
+  "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/g11-handoff-20261006/Q10_HPC_FILE_SHA256SUMS.jsonl.gz"
+}

@@ -1,0 +1,15 @@
+{
+  "audit": "AUDIT_OK count 793178 least_eligible 402297 extendible 360 nonextendible 792818 maximal_lines 628",
+  "catalogue_masks": 793178,
+  "catalogue_sha256": "536d121e964a14fa65bf33c091ace255cd3396e5ea5e45134b4d6078809bbc96",
+  "completed_utc": "2026-08-28T15:19:25.691352+00:00",
+  "fixture_mode": false,
+  "log_sha256": "f421c5dcb90301ad06e20bea5e25dfc14abd3b650226725a153b4c7d9a5be3fb",
+  "records": 3025,
+  "run_identity_sha256": "5092dcacbc294f6e861b74d3a650a8d94cd08e25977b91792f56c6253413a518",
+  "schema": "q10-cap20-catalogue-run-result-v1",
+  "shard_audit_stdout": "{\n  \"catalogue_sha256\": \"536d121e964a14fa65bf33c091ace255cd3396e5ea5e45134b4d6078809bbc96\",\n  \"masks\": 793178,\n  \"records\": 3025,\n  \"self_secant_rejects\": 0,\n  \"status\": \"SHARD_AUDIT_OK\"\n}",
+  "status": "COMPLETE_AUDITED",
+  "sum_enumerator_wall_seconds": 12931.884987356141,
+  "summary_stdout": "{\n  \"complete_records\": 3025,\n  \"duplicate_record_count\": 0,\n  \"exact_extendible_count\": 360,\n  \"exact_least_eligible_count\": 402297,\n  \"exact_nonextendible_count\": 792818,\n  \"exact_self_secant_rejects\": 0,\n  \"exact_total_count\": 793178,\n  \"extra_keys\": [],\n  \"incomplete_records\": 0,\n  \"input\": \"/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/runs/rep25_catalogue/shards.log\",\n  \"input_sha256\": \"f421c5dcb90301ad06e20bea5e25dfc14abd3b650226725a153b4c7d9a5be3fb\",\n  \"max_shard_count\": 4539,\n  \"max_shard_seconds\": 2.6837,\n  \"missing_keys\": [],\n  \"nonzero_exit_records\": 0,\n  \"nonzero_shards\": 3025,\n  \"records\": 3025,\n  \"sum_shard_seconds\": 4257.894134000005,\n  \"total_nodes\": 2756471322,\n  \"unique_keys\": 3025\n}"
+}

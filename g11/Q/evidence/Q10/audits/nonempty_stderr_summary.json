@@ -1,0 +1,18 @@
+[
+  {
+    "first_line_pattern": "bash: project/q10/Q10_HPC_HANDOFF_PACKAGE/slurm/catalogue_resume.sbatch: No such file or directory",
+    "count": 168,
+    "example_files": [
+      "logs/q10-cat-24623228_4.err",
+      "logs/q10-cat-24623136_3.err",
+      "logs/q10-cat-24623228_36.err"
+    ]
+  },
+  {
+    "first_line_pattern": "environment: line 9: non-zero status 20: syntax error in expression (error token is \"status 20\")",
+    "count": 1,
+    "example_files": [
+      "runs/logs/rep1-join-25031304.err"
+    ]
+  }
+]

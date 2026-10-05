@@ -1,0 +1,137 @@
+{"identity_sha256": "61c6c7ad105aed0f79b3ad557c10c768023bdf8f4b2f5b89e4902dac7d9e7791", "invalid_or_missing": 3025, "jobs": 24, "reusable": 0, "total_keys": 3025}
+{"attempted": 25, "failed": 0, "remaining": 3000}
+{"attempted": 50, "failed": 0, "remaining": 2975}
+{"attempted": 75, "failed": 0, "remaining": 2950}
+{"attempted": 100, "failed": 0, "remaining": 2925}
+{"attempted": 125, "failed": 0, "remaining": 2900}
+{"attempted": 150, "failed": 0, "remaining": 2875}
+{"attempted": 175, "failed": 0, "remaining": 2850}
+{"attempted": 200, "failed": 0, "remaining": 2825}
+{"attempted": 225, "failed": 0, "remaining": 2800}
+{"attempted": 250, "failed": 0, "remaining": 2775}
+{"attempted": 275, "failed": 0, "remaining": 2750}
+{"attempted": 300, "failed": 0, "remaining": 2725}
+{"attempted": 325, "failed": 0, "remaining": 2700}
+{"attempted": 350, "failed": 0, "remaining": 2675}
+{"attempted": 375, "failed": 0, "remaining": 2650}
+{"attempted": 400, "failed": 0, "remaining": 2625}
+{"attempted": 425, "failed": 0, "remaining": 2600}
+{"attempted": 450, "failed": 0, "remaining": 2575}
+{"attempted": 475, "failed": 0, "remaining": 2550}
+{"attempted": 500, "failed": 0, "remaining": 2525}
+{"attempted": 525, "failed": 0, "remaining": 2500}
+{"attempted": 550, "failed": 0, "remaining": 2475}
+{"attempted": 575, "failed": 0, "remaining": 2450}
+{"attempted": 600, "failed": 0, "remaining": 2425}
+{"attempted": 625, "failed": 0, "remaining": 2400}
+{"attempted": 650, "failed": 0, "remaining": 2375}
+{"attempted": 675, "failed": 0, "remaining": 2350}
+{"attempted": 700, "failed": 0, "remaining": 2325}
+{"attempted": 725, "failed": 0, "remaining": 2300}
+{"attempted": 750, "failed": 0, "remaining": 2275}
+{"attempted": 775, "failed": 0, "remaining": 2250}
+{"attempted": 800, "failed": 0, "remaining": 2225}
+{"attempted": 825, "failed": 0, "remaining": 2200}
+{"attempted": 850, "failed": 0, "remaining": 2175}
+{"attempted": 875, "failed": 0, "remaining": 2150}
+{"attempted": 900, "failed": 0, "remaining": 2125}
+{"attempted": 925, "failed": 0, "remaining": 2100}
+{"attempted": 950, "failed": 0, "remaining": 2075}
+{"attempted": 975, "failed": 0, "remaining": 2050}
+{"attempted": 1000, "failed": 0, "remaining": 2025}
+{"attempted": 1025, "failed": 0, "remaining": 2000}
+{"attempted": 1050, "failed": 0, "remaining": 1975}
+{"attempted": 1075, "failed": 0, "remaining": 1950}
+{"attempted": 1100, "failed": 0, "remaining": 1925}
+{"attempted": 1125, "failed": 0, "remaining": 1900}
+{"attempted": 1150, "failed": 0, "remaining": 1875}
+{"attempted": 1175, "failed": 0, "remaining": 1850}
+{"attempted": 1200, "failed": 0, "remaining": 1825}
+{"attempted": 1225, "failed": 0, "remaining": 1800}
+{"attempted": 1250, "failed": 0, "remaining": 1775}
+{"attempted": 1275, "failed": 0, "remaining": 1750}
+{"attempted": 1300, "failed": 0, "remaining": 1725}
+{"attempted": 1325, "failed": 0, "remaining": 1700}
+{"attempted": 1350, "failed": 0, "remaining": 1675}
+{"attempted": 1375, "failed": 0, "remaining": 1650}
+{"attempted": 1400, "failed": 0, "remaining": 1625}
+{"attempted": 1425, "failed": 0, "remaining": 1600}
+{"attempted": 1450, "failed": 0, "remaining": 1575}
+{"attempted": 1475, "failed": 0, "remaining": 1550}
+{"attempted": 1500, "failed": 0, "remaining": 1525}
+{"attempted": 1525, "failed": 0, "remaining": 1500}
+{"attempted": 1550, "failed": 0, "remaining": 1475}
+{"attempted": 1575, "failed": 0, "remaining": 1450}
+{"attempted": 1600, "failed": 0, "remaining": 1425}
+{"attempted": 1625, "failed": 0, "remaining": 1400}
+{"attempted": 1650, "failed": 0, "remaining": 1375}
+{"attempted": 1675, "failed": 0, "remaining": 1350}
+{"attempted": 1700, "failed": 0, "remaining": 1325}
+{"attempted": 1725, "failed": 0, "remaining": 1300}
+{"attempted": 1750, "failed": 0, "remaining": 1275}
+{"attempted": 1775, "failed": 0, "remaining": 1250}
+{"attempted": 1800, "failed": 0, "remaining": 1225}
+{"attempted": 1825, "failed": 0, "remaining": 1200}
+{"attempted": 1850, "failed": 0, "remaining": 1175}
+{"attempted": 1875, "failed": 0, "remaining": 1150}
+{"attempted": 1900, "failed": 0, "remaining": 1125}
+{"attempted": 1925, "failed": 0, "remaining": 1100}
+{"attempted": 1950, "failed": 0, "remaining": 1075}
+{"attempted": 1975, "failed": 0, "remaining": 1050}
+{"attempted": 2000, "failed": 0, "remaining": 1025}
+{"attempted": 2025, "failed": 0, "remaining": 1000}
+{"attempted": 2050, "failed": 0, "remaining": 975}
+{"attempted": 2075, "failed": 0, "remaining": 950}
+{"attempted": 2100, "failed": 0, "remaining": 925}
+{"attempted": 2125, "failed": 0, "remaining": 900}
+{"attempted": 2150, "failed": 0, "remaining": 875}
+{"attempted": 2175, "failed": 0, "remaining": 850}
+{"attempted": 2200, "failed": 0, "remaining": 825}
+{"attempted": 2225, "failed": 0, "remaining": 800}
+{"attempted": 2250, "failed": 0, "remaining": 775}
+{"attempted": 2275, "failed": 0, "remaining": 750}
+{"attempted": 2300, "failed": 0, "remaining": 725}
+{"attempted": 2325, "failed": 0, "remaining": 700}
+{"attempted": 2350, "failed": 0, "remaining": 675}
+{"attempted": 2375, "failed": 0, "remaining": 650}
+{"attempted": 2400, "failed": 0, "remaining": 625}
+{"attempted": 2425, "failed": 0, "remaining": 600}
+{"attempted": 2450, "failed": 0, "remaining": 575}
+{"attempted": 2475, "failed": 0, "remaining": 550}
+{"attempted": 2500, "failed": 0, "remaining": 525}
+{"attempted": 2525, "failed": 0, "remaining": 500}
+{"attempted": 2550, "failed": 0, "remaining": 475}
+{"attempted": 2575, "failed": 0, "remaining": 450}
+{"attempted": 2600, "failed": 0, "remaining": 425}
+{"attempted": 2625, "failed": 0, "remaining": 400}
+{"attempted": 2650, "failed": 0, "remaining": 375}
+{"attempted": 2675, "failed": 0, "remaining": 350}
+{"attempted": 2700, "failed": 0, "remaining": 325}
+{"attempted": 2725, "failed": 0, "remaining": 300}
+{"attempted": 2750, "failed": 0, "remaining": 275}
+{"attempted": 2775, "failed": 0, "remaining": 250}
+{"attempted": 2800, "failed": 0, "remaining": 225}
+{"attempted": 2825, "failed": 0, "remaining": 200}
+{"attempted": 2850, "failed": 0, "remaining": 175}
+{"attempted": 2875, "failed": 0, "remaining": 150}
+{"attempted": 2900, "failed": 0, "remaining": 125}
+{"attempted": 2925, "failed": 0, "remaining": 100}
+{"attempted": 2950, "failed": 0, "remaining": 75}
+{"attempted": 2975, "failed": 0, "remaining": 50}
+{"attempted": 3000, "failed": 0, "remaining": 25}
+{"attempted": 3025, "failed": 0, "remaining": 0}
+{
+  "audit": "AUDIT_OK count 378229 least_eligible 241227 extendible 131 nonextendible 378098 maximal_lines 628",
+  "catalogue_masks": 378229,
+  "catalogue_sha256": "fdd3e95ee40b4242e59655e069198aa37cf0095da4702a67629bdf1049bec550",
+  "completed_utc": "2026-08-28T15:18:43.203416+00:00",
+  "fixture_mode": false,
+  "log_sha256": "8268890dd3e6dc74c9fdb5e12c27c5b5c45ef9a4504548b8fc9a52c9a191935e",
+  "records": 3025,
+  "run_identity_sha256": "61c6c7ad105aed0f79b3ad557c10c768023bdf8f4b2f5b89e4902dac7d9e7791",
+  "schema": "q10-cap20-catalogue-run-result-v1",
+  "shard_audit_stdout": "{\n  \"catalogue_sha256\": \"fdd3e95ee40b4242e59655e069198aa37cf0095da4702a67629bdf1049bec550\",\n  \"masks\": 378229,\n  \"records\": 3025,\n  \"self_secant_rejects\": 0,\n  \"status\": \"SHARD_AUDIT_OK\"\n}",
+  "status": "COMPLETE_AUDITED",
+  "sum_enumerator_wall_seconds": 12529.884397868067,
+  "summary_stdout": "{\n  \"complete_records\": 3025,\n  \"duplicate_record_count\": 0,\n  \"exact_extendible_count\": 131,\n  \"exact_least_eligible_count\": 241227,\n  \"exact_nonextendible_count\": 378098,\n  \"exact_self_secant_rejects\": 0,\n  \"exact_total_count\": 378229,\n  \"extra_keys\": [],\n  \"incomplete_records\": 0,\n  \"input\": \"/data/home/ahw807/Q10_HPC_HANDOFF_PACKAGE/runs/rep27_catalogue/shards.log\",\n  \"input_sha256\": \"8268890dd3e6dc74c9fdb5e12c27c5b5c45ef9a4504548b8fc9a52c9a191935e\",\n  \"max_shard_count\": 2403,\n  \"max_shard_seconds\": 2.27458,\n  \"missing_keys\": [],\n  \"nonzero_exit_records\": 0,\n  \"nonzero_shards\": 3025,\n  \"records\": 3025,\n  \"sum_shard_seconds\": 3662.509094000001,\n  \"total_nodes\": 2246422241,\n  \"unique_keys\": 3025\n}"
+}

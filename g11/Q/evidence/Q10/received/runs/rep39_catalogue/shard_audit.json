@@ -1,0 +1,7 @@
+{
+  "catalogue_sha256": "050ee222619968a6be57d5cd56258a1a2d7d0a11626cfbf8095d21c4c26b9771",
+  "masks": 560389,
+  "records": 3025,
+  "self_secant_rejects": 0,
+  "status": "SHARD_AUDIT_OK"
+}
