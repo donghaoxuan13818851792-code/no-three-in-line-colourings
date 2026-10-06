@@ -69,3 +69,7 @@ Timeouts, resource limits, interrupted runs, bounded searches, near-colourings, 
 ## Repository status
 
 `STATUS.md` is the authoritative public status ledger inside the repository. Large final proof archives are imported by immutable metadata and hashes before a branch is promoted to `COMPLETE`.
+
+The [6 October 2026 handoff intake](docs/handoff_intake_20261006.md) records
+the newly received P6 and Q10 materials, executed checks and remaining gaps.
+The exact original archives are referenced from their evidence directories.

@@ -97,13 +97,28 @@ These observed logs do not substitute for a complete cluster accounting export.
 
 ## Reproduction and archives
 
-`archive.json` identifies the exact 3,140,960,671-byte ZIP and its 13 ordered release
-parts. Concatenate parts `00` through `12` in numeric order; verify the complete SHA-256
+`archive.json` identifies the exact 3,140,960,671-byte ZIP and its 63 ordered release
+parts. Concatenate chunks `00` through `62` in numeric order; verify the complete SHA-256
 `1ea37d8321c44a018efc37694e21e2d8dacc4870224a540ea14b5609cbc2000e`
 before use. `hash_index.json` identifies the compressed complete file index.
 Neither the ZIP nor its large candidate/proof bodies belongs in ordinary Git.
 
+All 63 chunks and the compressed file index are uploaded and match their
+expected byte sizes and GitHub server SHA-256 digests. The metadata sidecars
+and P6 ZIP were also checked: 67/67 release assets match. See
+[`UPLOAD_STATUS.md`](UPLOAD_STATUS.md) and
+[`audits/remote_asset_verification.json`](audits/remote_asset_verification.json).
+The complete archive hash was verified on the downloaded source and local
+ordered reassembly; a second full remote download was not performed.
+
+The retrieval helper streams the ordered release chunks into a single ZIP,
+checks every chunk and the complete archive hash, and keeps at least 5 GB
+free. It creates no separate local chunk copies. Use an empty destination;
+an interrupted or rejected transfer retains a `.partial` file.
+
 ```sh
+python3 g11/Q/evidence/Q10/scripts/fetch_archive.py \
+  /path/to/Q10_HPC_HANDOFF_PACKAGE.zip
 python3 g11/Q/evidence/Q10/scripts/run_zip_manifest_verifier.py \
   Q10_HPC_HANDOFF_PACKAGE.zip Q10_FILE_INDEX.jsonl \
   --expected-verifier-sha256 7f8b8d17b78d7a0ef2d4e024877e671e695422b69665f3b7155417493de9db86

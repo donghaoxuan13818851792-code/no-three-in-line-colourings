@@ -29,7 +29,7 @@ P6 therefore remains **INCOMPLETE globally**. Read
 
 The new primary chains cover all 89 representatives, with 257,125 catalogue
 shards and 4,675 new terminal join shards checked. The exact original ZIP is
-archived as 13 ordered byte-preserving parts with complete and per-part SHA-256.
+archived as 63 ordered byte-preserving chunks with complete and per-part SHA-256.
 The supplied manifest stage rejects 533,182 unmanifested additions; all
 23,594 old entries match. Failed catalogue launches and the rep1 resource
 wrapper error are preserved alongside the complete final records.
@@ -46,3 +46,10 @@ P6 was extracted once for its integrity audit and full supplied-list backend
 replay. Q10 is read directly from its ZIP to avoid a large expanded copy.
 Temporary files created for this intake can be removed after the archive and
 repository records are confirmed. Earlier user-owned material is preserved.
+
+All 67 release assets now match their expected byte sizes and server SHA-256
+digests, including all 63 Q10 chunks. The source ZIP and local ordered chunk
+reassembly had already matched the complete Q10 archive hash. The task-created
+Q10 raw download and uploaded chunks were removed after their corresponding
+checks. See the [completed upload record](../g11/Q/evidence/Q10/UPLOAD_STATUS.md)
+and [remote asset verification](../g11/Q/evidence/Q10/audits/remote_asset_verification.json).
