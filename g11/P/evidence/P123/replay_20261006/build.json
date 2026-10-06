@@ -1,0 +1,15 @@
+{
+  "source_sha256": "fead71b869a063e8947ce7c0cf1af461eff2c720b34b9b774df33929fadffb78",
+  "included_source_sha256": "825b3a3d6e8d8c926d8a14c8725175188ab8b0e6d8b0c97e7e4916b2e45da1e8",
+  "binary_sha256": "bcc328e7aa89b55047dd747b67d46947773230ee78fb84f00b623da6d649c786",
+  "source_modified": false,
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin27.2.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "input_hashes": {
+    "caps21_r0_diag.hex": "c4ba6b9aa11f4b9b7d1f7c2cd74eada8b727c40851c57e25a553142c4e12df3e",
+    "caps21_r1_diag.hex": "62d025e2de26afe788057cc1a4525302d8a56c1be8ae4baf3d6d129f115b3895",
+    "caps21_r2_diag.hex": "14f89035771e3428d0d6465d02ebea8430fb101cd0d6e3c972a8e98062d180e5",
+    "caps21_r3_diag.hex": "92f7ea6aec073e2b335e089a56634f08ba34d1dab18e6b3c3935b70c2a157b42",
+    "caps21_r4_diag.hex": "b1df4d6c48aeaad56d674b688e9398d05ef529409a9f4502fac212a7f4f78060",
+    "caps21_r5_diag.hex": "47d59957a0f5f3d83298041cf4d8a3f99c5f5dc5211524c42e74235ea2561f9e"
+  }
+}

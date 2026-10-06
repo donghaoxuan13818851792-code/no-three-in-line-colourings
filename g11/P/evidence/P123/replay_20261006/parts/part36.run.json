@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/usr/bin/time",
+    "-p",
+    "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/p123_independent_verifier",
+    "36",
+    "60",
+    "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/p123/part36.residuals.hex",
+    "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/g11/P/work/math_agent"
+  ],
+  "pid": 92293,
+  "started_epoch": 1791282947.2626188,
+  "partition": {
+    "residue": 36,
+    "modulus": 60
+  }
+}

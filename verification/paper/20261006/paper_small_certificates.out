@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "upper_bound_matrices": [
+    {
+      "grid": 9,
+      "colours": 5,
+      "class_sizes": [
+        17,
+        15,
+        16,
+        16,
+        17
+      ],
+      "sha256": "43558895f3ed58cd7e8b7410742c28089526be9ff69fb22cdedf72a7866bf409",
+      "collinear_triples": 2712,
+      "monochromatic_collinear_triples": 0,
+      "two_geometry_methods_agree": true
+    },
+    {
+      "grid": 10,
+      "colours": 6,
+      "class_sizes": [
+        20,
+        20,
+        20,
+        20,
+        10,
+        10
+      ],
+      "sha256": "96efaf6aca921323fbdeeeb77d0dd54407b6ecb2bf786a2f457466d75912876a",
+      "collinear_triples": 4448,
+      "monochromatic_collinear_triples": 0,
+      "two_geometry_methods_agree": true
+    },
+    {
+      "grid": 12,
+      "colours": 7,
+      "class_sizes": [
+        24,
+        24,
+        24,
+        24,
+        16,
+        16,
+        16
+      ],
+      "sha256": "a379c6caf103cb60fce8c8baab051399418920cd013bf6df19f5dc5988a094a3",
+      "collinear_triples": 10332,
+      "monochromatic_collinear_triples": 0,
+      "two_geometry_methods_agree": true
+    }
+  ],
+  "small_G11": {
+    "profiles": 44,
+    "coverage_identity": [
+      16,
+      11,
+      10,
+      7
+    ],
+    "caps_validated": 676,
+    "D4_orbits": 89,
+    "disjoint_pairs": 2138,
+    "triangle_free": true,
+    "capacity_feasible_pairs": 930,
+    "pair_orbits": 119,
+    "R1_leaves": 1309,
+    "scope": "membership, orbit closure, graph, profile and leaf arithmetic only; no catalogue completeness or R proof-body claim"
+  },
+  "seed_and_arithmetic": {
+    "eight_seed_determinants": 2240,
+    "absorption_memberships": 1024,
+    "mixed_colour_sites_without_single_class_choice": 8,
+    "C6_displayed_subtotals": [
+      933581490,
+      338037281,
+      1426881381,
+      250515737
+    ],
+    "C6_sum": 2949015889,
+    "C6_scope": "arithmetic of four displayed subtotals only, not 33-profile ledger audit or enumeration"
+  },
+  "admissible_prime_data": {
+    "primitive_directions_checked": 576,
+    "distinct_norms_checked": 65,
+    "listed_primes": [
+      5,
+      13,
+      17,
+      29,
+      37,
+      41,
+      53,
+      61,
+      73,
+      89,
+      97,
+      101,
+      109,
+      113,
+      137,
+      149,
+      157,
+      173,
+      181,
+      193,
+      197,
+      229,
+      233,
+      241,
+      269,
+      277,
+      313,
+      317,
+      421
+    ],
+    "all_prime_factors_accounted_for": true,
+    "example_prime": 185456518679,
+    "example_primality": "exact trial division through integer square root",
+    "example_all_norms_quadratic_residues": true,
+    "scope": "finite prime list and admissibility of displayed example; no smallest-prime search or infinite-family proof claim"
+  },
+  "elapsed_seconds": 0.15422940254211426,
+  "manuscript_sha256": "2ef8c74453172bc6f276266c5224b5f9a5b380c97e9bb73a28ff096c34af520e"
+}

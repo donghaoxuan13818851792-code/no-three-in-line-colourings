@@ -1,0 +1,140 @@
+{
+  "combined_reduction": {
+    "end_to_end_factor": 3.544427883,
+    "fresh_local_canonical_decision_projection_core_hours": 795.3612,
+    "historical_central_total_core_hours": 4114.5865,
+    "method_only_residual_decision_factor": 3.547494184,
+    "recommended_production_budget_core_hours": "1200-1300 plus operational margin",
+    "revised_conservative_central_total_core_hours": 1160.8605
+  },
+  "coverage_status": {
+    "P4_resolved": false,
+    "P5_resolved": false,
+    "complete_global_outer_canonical_count": true,
+    "complete_global_residual_decisions": false,
+    "gap_free_global_terminal_ledger": false,
+    "ready_for_complete_coverage": true
+  },
+  "generated_at_utc": "2026-07-26T13:15:00Z",
+  "negative_results": [
+    {
+      "method": "P1/P2/P3 maximality propagation",
+      "status": "COMPLETE benchmark, exact but slower"
+    },
+    {
+      "method": "direct three-colour CSP",
+      "status": "INCOMPLETE bounded benchmark, much slower"
+    },
+    {
+      "method": "persistent Z3 activity assumptions",
+      "status": "INCOMPLETE bounded benchmark, much slower"
+    },
+    {
+      "method": "line-first branching",
+      "status": "COMPLETE benchmark, slower"
+    },
+    {
+      "method": "row-chunk exact search",
+      "status": "INCOMPLETE bounded benchmark, much slower"
+    },
+    {
+      "method": "post-canonical residual equality/D4 merge",
+      "status": "complete representative measurement, only 1.00066x"
+    }
+  ],
+  "package_gate": {
+    "independent_formulation_created_before_unlock": true,
+    "independent_sha256": "53c4350ba93344a824446f073796a423e2351521a861adc86fa9ae2463c77b78",
+    "rebuilt_smoke_test": "PASS",
+    "verify_package": "PASS",
+    "verify_unlocked_materials": "PASS"
+  },
+  "principal_exact_method": {
+    "canonical_outer_records": 544481464,
+    "exact_structural_reduction_factor": 3.000403602352935,
+    "exactly_one_orbit_rule_proved": true,
+    "full_count_audit": "PASS",
+    "full_positions": 127491,
+    "name": "D4 x S3 canonical augmentation of unordered triples of size-21 caps",
+    "original_outer_occurrences": 1633664146,
+    "sat_reconstruction_provenance_preserved": true,
+    "skipped_extendible_positions": 1801,
+    "valid_nonextendible_positions": 125690
+  },
+  "production_delivery": {
+    "frozen_regression_cases": 1200,
+    "package_manifest_rechecked_by_global_verifier": true,
+    "platform": "64-bit Linux",
+    "production_shards": 180,
+    "progress_logging_is_resumable_checkpoint": false,
+    "return_bundle_contains_complete_positions_partition": true,
+    "total_expected_records": 544481464
+  },
+  "production_residual_solver": {
+    "canonical_distribution_57755": {
+      "baseline_user_seconds": 359.1,
+      "cases": 57755,
+      "hybrid_user_seconds": 303.72,
+      "outcome": "all UNSAT",
+      "speedup": 1.182338996,
+      "terminal_status_match": "PASS"
+    },
+    "cross_compiler_check": "PASS",
+    "fixed57755": {
+      "baseline_user_seconds": 302.91,
+      "cases": 57755,
+      "hybrid_user_seconds": 254.48,
+      "outcome": "all UNSAT",
+      "speedup": 1.190309651,
+      "terminal_status_match": "PASS"
+    },
+    "name": "Hybrid30 product-impact/static exact DPLL",
+    "sanitizer_checks": "PASS",
+    "streaming_provenance_smoke": "PASS"
+  },
+  "profiles": {
+    "P4": [
+      21,
+      21,
+      21,
+      20,
+      20,
+      18
+    ],
+    "P5": [
+      21,
+      21,
+      21,
+      20,
+      19,
+      19
+    ]
+  },
+  "resource_and_tail": {
+    "canonical_position_max": 516594,
+    "canonical_position_median": 457,
+    "canonical_position_p90": 10409,
+    "canonical_position_p99": 59049,
+    "full_count_longest_shard_wall_seconds": 1010.19,
+    "full_count_peak_rss_kib": 53952,
+    "full_count_total_user_seconds": 4008.94,
+    "historical_counting_partition": {
+      "canonical_records_per_shard_max": 60497941,
+      "canonical_records_per_shard_min": 60497940,
+      "purpose": "completed global canonical counting audit",
+      "shards": 9
+    },
+    "production_partition": {
+      "canonical_records_per_shard_max": 3024898,
+      "canonical_records_per_shard_min": 3024897,
+      "purpose": "final Linux/HPC exhaustive residual decisions",
+      "shards": 180
+    },
+    "solver_peak_rss_approx_kib": 7000,
+    "top_10_percent_record_share": 0.71502,
+    "top_1_percent_record_share": 0.23815
+  },
+  "schema_version": 2,
+  "strongest_next_action": "Run the 180 exact-count-balanced streaming production shards, require every expected record to receive a terminal result, recompute the package and shard evidence with the strengthened global verifier, independently verify any SAT witness over all 287,980 unordered triples, or otherwise retain the complete global UNSAT ledger.",
+  "task": "11x11 six-colouring P4/P5 maximum exact reduction"
+}

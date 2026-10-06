@@ -1,5 +1,10 @@
 # P1–P3 independent verification pending
 
+**Historical intake note, superseded on 6 October 2026.** A separately archived
+fresh 60-part independent replay now passes in
+[`../P123/AUDIT.md`](../P123/AUDIT.md). The missing older six-shard files described
+below were not synthesised or overwritten.
+
 The existing `audit_p123_independent_results.py` was inspected and attempted
 against the available records. It stops while reading
 `work/independent_agent/p123_independent_full_shard0.status` because that file

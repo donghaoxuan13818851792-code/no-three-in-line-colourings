@@ -19,13 +19,50 @@ This file records the evidence status of the computational proof components.
 | R | R0: ≥3 size-22; R1: exactly two size-22 | AWAITING_ARTIFACT_IMPORT |
 | Q1–Q4 | one size-22 class | COMPLETE |
 | Q5–Q6 | one size-22 class | COMPLETE |
-| Q7 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
-| Q8–Q9 | one size-22 class | AWAITING_ARTIFACT_IMPORT |
+| Q7 | one size-22 class | COMPLETE |
+| Q8–Q9 | one size-22 class | COMPLETE |
 | Q10 | (22,20,20,20,20,19) | INDEPENDENT_VERIFICATION_PENDING |
-| P1–P3 | no size-22 class | INDEPENDENT_VERIFICATION_PENDING |
-| P4–P5 | three size-21 classes | AWAITING_ARTIFACT_IMPORT |
+| P1–P3 | no size-22 class | COMPLETE |
+| P4–P5 | three size-21 classes | INCOMPLETE |
 | P6 | (21,21,20,20,20,19) | INCOMPLETE |
 | P7 | (21,20,20,20,20,20) | INCOMPLETE |
+
+## Local campaign — 6 October 2026
+
+The bounded local campaign is running; queued checks do not change a branch to
+`COMPLETE`. Its plan and whole-paper evidence boundaries are recorded in
+`docs/local_verification_plan_20261006.md` and `PAPER_CLAIMS.md`.
+
+P1–P3 now pass a **full fresh independent replay**: 60 disjoint actual parts,
+127,491 anchors, 708,638 residual instances, all exits 20, no SAT, and all
+primary prefix/instance counters matching when grouped modulo six. Native
+elapsed time was 20.92 minutes and summed CPU time 2.707 hours on the M4.
+The old missing/empty six-shard records are preserved as historical omissions;
+the new independently executed records are separately archived and audited.
+See `g11/P/evidence/P123/AUDIT.md`.
+
+Q7 and Q8/Q9 now have exact original ZIPs at immutable public URLs, full
+manifest/file-universe passes, passing unchanged strict terminal audits with
+explicit historical-path relocation, and fresh prefix and Boolean/profile
+checks. Their large terminal searches were not rerun. The new archives and
+P1–P3 replay are in the
+[local verification release](https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/tag/local-verification-20261006),
+with all four initial asset server sizes and SHA-256 digests checked.
+See `g11/Q/evidence/Q7/AUDIT.md` and `g11/Q/evidence/Q89/AUDIT.md`.
+
+The explicit G9/G10/G12 upper-bound matrices, the eight-grid seed/reflection
+table, finite prime-list/example conditions, small G11 graph/profile arithmetic,
+and the existing observed 598-class G9 catalogue pass fresh checks. The G10
+route2 five-colour exclusion also passes fresh DRAT and independently audited
+CNF reconstruction. Their claim boundaries are in `verification/paper/20261006/`.
+
+P4/P5 is now recorded as `INCOMPLETE`, correcting the earlier import-only
+placeholder. The existing final Linux delivery explicitly reports both
+profiles unresolved, global residual decisions incomplete and no gap-free
+global terminal ledger. Its 544,481,464-record outer reduction/count is not
+a complete UNSAT decision; the 57,755-case comparisons are finite pilot checks.
+The matching research-package final audit likewise says UNKNOWN for both
+branches. No newly reviewed package establishes complete global P4/P5.
 
 ## Evidence import — 26 September 2026
 

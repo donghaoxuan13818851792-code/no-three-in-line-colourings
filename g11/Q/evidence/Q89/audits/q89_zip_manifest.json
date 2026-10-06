@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "exact archive payload integrity only",
+  "archive_bytes": 117689964,
+  "archive_sha256": "e3035da69338b6a258b8c978ce33c398dd99e1ef8c190f1da5979b0c6832aac3",
+  "manifest": "g11_q89_complete_elimination/SHA256SUMS",
+  "manifest_sha256": "d682ddab052131513dae902771b39cbb137abf45da26e82338b218e596a86e0b",
+  "listed_files": 519,
+  "missing": [],
+  "extra": [],
+  "mismatched": [],
+  "outside_payload_files": []
+}

@@ -1,0 +1,494 @@
+{
+  "status": "PASS",
+  "started_epoch": 1791282304.908492,
+  "last_native_completion_epoch": 1791283560.388053,
+  "native_wall_seconds": 1255.4795608520508,
+  "cpu_seconds": 9744.27,
+  "cpu_hours": 2.706741666666667,
+  "workers": 10,
+  "physical_cores": 10,
+  "machine": "Apple M4 Mac16,12; 24 GiB RAM",
+  "per_part": [
+    {
+      "shard": 7,
+      "exit_code": 20,
+      "wall_seconds": 170.1543848514557,
+      "real": 169.28,
+      "user": 142.62,
+      "sys": 0.88
+    },
+    {
+      "shard": 2,
+      "exit_code": 20,
+      "wall_seconds": 176.34788298606873,
+      "real": 175.41,
+      "user": 148.31,
+      "sys": 0.91
+    },
+    {
+      "shard": 5,
+      "exit_code": 20,
+      "wall_seconds": 176.3438367843628,
+      "real": 176.28,
+      "user": 149.02,
+      "sys": 0.93
+    },
+    {
+      "shard": 6,
+      "exit_code": 20,
+      "wall_seconds": 179.39033007621765,
+      "real": 178.93,
+      "user": 151.57,
+      "sys": 0.94
+    },
+    {
+      "shard": 8,
+      "exit_code": 20,
+      "wall_seconds": 179.38763117790222,
+      "real": 176.82,
+      "user": 150.2,
+      "sys": 0.93
+    },
+    {
+      "shard": 9,
+      "exit_code": 20,
+      "wall_seconds": 185.56747794151306,
+      "real": 182.83,
+      "user": 155.18,
+      "sys": 0.97
+    },
+    {
+      "shard": 0,
+      "exit_code": 20,
+      "wall_seconds": 188.6407618522644,
+      "real": 187.47,
+      "user": 158.5,
+      "sys": 1.0
+    },
+    {
+      "shard": 3,
+      "exit_code": 20,
+      "wall_seconds": 191.8700830936432,
+      "real": 189.02,
+      "user": 159.6,
+      "sys": 1.01
+    },
+    {
+      "shard": 1,
+      "exit_code": 20,
+      "wall_seconds": 194.99467611312866,
+      "real": 194.8,
+      "user": 163.5,
+      "sys": 1.07
+    },
+    {
+      "shard": 4,
+      "exit_code": 20,
+      "wall_seconds": 198.0676510334015,
+      "real": 197.26,
+      "user": 165.75,
+      "sys": 1.09
+    },
+    {
+      "shard": 10,
+      "exit_code": 20,
+      "wall_seconds": 210.99831295013428,
+      "real": 209.61,
+      "user": 157.35,
+      "sys": 1.8
+    },
+    {
+      "shard": 12,
+      "exit_code": 20,
+      "wall_seconds": 204.89965891838074,
+      "real": 204.55,
+      "user": 153.52,
+      "sys": 1.78
+    },
+    {
+      "shard": 11,
+      "exit_code": 20,
+      "wall_seconds": 210.99521398544312,
+      "real": 209.61,
+      "user": 157.6,
+      "sys": 1.83
+    },
+    {
+      "shard": 14,
+      "exit_code": 20,
+      "wall_seconds": 214.0684459209442,
+      "real": 213.94,
+      "user": 160.22,
+      "sys": 1.89
+    },
+    {
+      "shard": 13,
+      "exit_code": 20,
+      "wall_seconds": 217.12406396865845,
+      "real": 216.62,
+      "user": 162.3,
+      "sys": 1.92
+    },
+    {
+      "shard": 15,
+      "exit_code": 20,
+      "wall_seconds": 210.9260618686676,
+      "real": 207.91,
+      "user": 155.37,
+      "sys": 1.84
+    },
+    {
+      "shard": 16,
+      "exit_code": 20,
+      "wall_seconds": 207.6927571296692,
+      "real": 207.52,
+      "user": 156.32,
+      "sys": 1.85
+    },
+    {
+      "shard": 17,
+      "exit_code": 20,
+      "wall_seconds": 210.67432188987732,
+      "real": 207.99,
+      "user": 157.62,
+      "sys": 1.87
+    },
+    {
+      "shard": 18,
+      "exit_code": 20,
+      "wall_seconds": 210.6678671836853,
+      "real": 209.81,
+      "user": 159.71,
+      "sys": 1.88
+    },
+    {
+      "shard": 19,
+      "exit_code": 20,
+      "wall_seconds": 238.31706190109253,
+      "real": 236.77,
+      "user": 173.82,
+      "sys": 2.19
+    },
+    {
+      "shard": 21,
+      "exit_code": 20,
+      "wall_seconds": 225.5790090560913,
+      "real": 222.82,
+      "user": 162.22,
+      "sys": 2.21
+    },
+    {
+      "shard": 22,
+      "exit_code": 20,
+      "wall_seconds": 232.19109773635864,
+      "real": 229.44,
+      "user": 167.49,
+      "sys": 2.24
+    },
+    {
+      "shard": 20,
+      "exit_code": 20,
+      "wall_seconds": 244.51450300216675,
+      "real": 242.2,
+      "user": 177.88,
+      "sys": 2.35
+    },
+    {
+      "shard": 26,
+      "exit_code": 20,
+      "wall_seconds": 229.22347712516785,
+      "real": 228.22,
+      "user": 166.1,
+      "sys": 2.22
+    },
+    {
+      "shard": 27,
+      "exit_code": 20,
+      "wall_seconds": 226.15375900268555,
+      "real": 225.64,
+      "user": 164.24,
+      "sys": 2.18
+    },
+    {
+      "shard": 24,
+      "exit_code": 20,
+      "wall_seconds": 235.31723880767822,
+      "real": 234.6,
+      "user": 172.02,
+      "sys": 2.29
+    },
+    {
+      "shard": 25,
+      "exit_code": 20,
+      "wall_seconds": 235.3144109249115,
+      "real": 232.61,
+      "user": 170.75,
+      "sys": 2.27
+    },
+    {
+      "shard": 28,
+      "exit_code": 20,
+      "wall_seconds": 226.1462299823761,
+      "real": 223.27,
+      "user": 163.15,
+      "sys": 2.17
+    },
+    {
+      "shard": 23,
+      "exit_code": 20,
+      "wall_seconds": 247.5227198600769,
+      "real": 238.65,
+      "user": 182.06,
+      "sys": 2.37
+    },
+    {
+      "shard": 29,
+      "exit_code": 20,
+      "wall_seconds": 216.82098484039307,
+      "real": 214.68,
+      "user": 166.67,
+      "sys": 2.03
+    },
+    {
+      "shard": 30,
+      "exit_code": 20,
+      "wall_seconds": 208.02591919898987,
+      "real": 205.28,
+      "user": 163.54,
+      "sys": 1.84
+    },
+    {
+      "shard": 31,
+      "exit_code": 20,
+      "wall_seconds": 204.8875069618225,
+      "real": 204.58,
+      "user": 163.39,
+      "sys": 1.79
+    },
+    {
+      "shard": 33,
+      "exit_code": 20,
+      "wall_seconds": 201.7350468635559,
+      "real": 201.46,
+      "user": 161.14,
+      "sys": 1.76
+    },
+    {
+      "shard": 32,
+      "exit_code": 20,
+      "wall_seconds": 207.82588696479797,
+      "real": 207.64,
+      "user": 166.55,
+      "sys": 1.79
+    },
+    {
+      "shard": 35,
+      "exit_code": 20,
+      "wall_seconds": 201.73074007034302,
+      "real": 201.31,
+      "user": 160.17,
+      "sys": 1.73
+    },
+    {
+      "shard": 34,
+      "exit_code": 20,
+      "wall_seconds": 207.81805801391602,
+      "real": 206.07,
+      "user": 165.44,
+      "sys": 1.75
+    },
+    {
+      "shard": 36,
+      "exit_code": 20,
+      "wall_seconds": 204.76115703582764,
+      "real": 202.38,
+      "user": 161.82,
+      "sys": 1.74
+    },
+    {
+      "shard": 37,
+      "exit_code": 20,
+      "wall_seconds": 204.7496418952942,
+      "real": 204.32,
+      "user": 163.48,
+      "sys": 1.75
+    },
+    {
+      "shard": 38,
+      "exit_code": 20,
+      "wall_seconds": 198.66175413131714,
+      "real": 198.45,
+      "user": 158.52,
+      "sys": 1.69
+    },
+    {
+      "shard": 39,
+      "exit_code": 20,
+      "wall_seconds": 217.51551008224487,
+      "real": 215.16,
+      "user": 172.57,
+      "sys": 1.78
+    },
+    {
+      "shard": 40,
+      "exit_code": 20,
+      "wall_seconds": 194.77170300483704,
+      "real": 193.3,
+      "user": 165.83,
+      "sys": 1.12
+    },
+    {
+      "shard": 42,
+      "exit_code": 20,
+      "wall_seconds": 182.5234818458557,
+      "real": 181.44,
+      "user": 155.49,
+      "sys": 1.04
+    },
+    {
+      "shard": 46,
+      "exit_code": 20,
+      "wall_seconds": 176.44952487945557,
+      "real": 174.94,
+      "user": 148.41,
+      "sys": 1.0
+    },
+    {
+      "shard": 41,
+      "exit_code": 20,
+      "wall_seconds": 191.6523687839508,
+      "real": 189.77,
+      "user": 162.92,
+      "sys": 1.09
+    },
+    {
+      "shard": 47,
+      "exit_code": 20,
+      "wall_seconds": 186.1364710330963,
+      "real": 185.5,
+      "user": 156.73,
+      "sys": 1.06
+    },
+    {
+      "shard": 43,
+      "exit_code": 20,
+      "wall_seconds": 195.75693678855896,
+      "real": 192.99,
+      "user": 161.07,
+      "sys": 1.12
+    },
+    {
+      "shard": 45,
+      "exit_code": 20,
+      "wall_seconds": 195.83741974830627,
+      "real": 195.24,
+      "user": 161.31,
+      "sys": 1.15
+    },
+    {
+      "shard": 44,
+      "exit_code": 20,
+      "wall_seconds": 201.93814992904663,
+      "real": 200.29,
+      "user": 166.49,
+      "sys": 1.18
+    },
+    {
+      "shard": 48,
+      "exit_code": 20,
+      "wall_seconds": 198.76255321502686,
+      "real": 195.96,
+      "user": 162.25,
+      "sys": 1.17
+    },
+    {
+      "shard": 49,
+      "exit_code": 20,
+      "wall_seconds": 198.96585297584534,
+      "real": 196.75,
+      "user": 161.13,
+      "sys": 1.19
+    },
+    {
+      "shard": 50,
+      "exit_code": 20,
+      "wall_seconds": 193.183922290802,
+      "real": 190.47,
+      "user": 152.86,
+      "sys": 1.16
+    },
+    {
+      "shard": 51,
+      "exit_code": 20,
+      "wall_seconds": 196.2439239025116,
+      "real": 195.9,
+      "user": 156.96,
+      "sys": 1.2
+    },
+    {
+      "shard": 53,
+      "exit_code": 20,
+      "wall_seconds": 198.9399700164795,
+      "real": 196.34,
+      "user": 158.43,
+      "sys": 1.2
+    },
+    {
+      "shard": 52,
+      "exit_code": 20,
+      "wall_seconds": 205.3406810760498,
+      "real": 203.02,
+      "user": 164.59,
+      "sys": 1.24
+    },
+    {
+      "shard": 54,
+      "exit_code": 20,
+      "wall_seconds": 201.3595108985901,
+      "real": 201.04,
+      "user": 167.1,
+      "sys": 1.19
+    },
+    {
+      "shard": 55,
+      "exit_code": 20,
+      "wall_seconds": 195.04708790779114,
+      "real": 194.26,
+      "user": 162.9,
+      "sys": 1.14
+    },
+    {
+      "shard": 56,
+      "exit_code": 20,
+      "wall_seconds": 191.98504900932312,
+      "real": 190.11,
+      "user": 159.5,
+      "sys": 1.11
+    },
+    {
+      "shard": 57,
+      "exit_code": 20,
+      "wall_seconds": 191.95112323760986,
+      "real": 189.91,
+      "user": 159.81,
+      "sys": 1.1
+    },
+    {
+      "shard": 58,
+      "exit_code": 20,
+      "wall_seconds": 188.73414707183838,
+      "real": 186.91,
+      "user": 157.16,
+      "sys": 1.09
+    },
+    {
+      "shard": 59,
+      "exit_code": 20,
+      "wall_seconds": 169.8100278377533,
+      "real": 169.12,
+      "user": 145.04,
+      "sys": 0.93
+    }
+  ],
+  "interrupted_attempt_excluded": true
+}
