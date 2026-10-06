@@ -1,0 +1,13 @@
+points 100
+unordered_triples_examined 161700
+collinear_triples 4448
+colour_counts 1:17 2:17 3:14 4:18 5:16 6:18
+monochromatic_collinear_triples 0
+VERIFIED
+all_pair_defined_lines 2306
+lines_with_at_least_3_grid_points 406
+line_length_distribution 3:252 4:64 5:52 6:4 7:4 8:4 9:4 10:22
+sum_choose_length_3 4448
+monochromatic_line_violations 0
+VERIFIED
+UPPER BOUND: PASS

@@ -1,0 +1,178 @@
+{
+  "reviewed_epoch": 1791287317.298261,
+  "local_available_checks": "REVIEWED_COMPLETE",
+  "queued_tasks": 16,
+  "recorded_followup_exits": [
+    {
+      "name": "grid10_lower_drat",
+      "exit_code": 0,
+      "real": 24.14,
+      "user": 22.33,
+      "sys": 0.32
+    },
+    {
+      "name": "grid10_upper_witnesses",
+      "exit_code": 0,
+      "real": 0.19,
+      "user": 0.13,
+      "sys": 0.04
+    },
+    {
+      "name": "grid9_existing_598_catalogue",
+      "exit_code": 0,
+      "real": 0.31,
+      "user": 0.29,
+      "sys": 0.0
+    },
+    {
+      "name": "p45_artifact_audit",
+      "exit_code": 0,
+      "real": 0.18,
+      "user": 0.14,
+      "sys": 0.02
+    },
+    {
+      "name": "p45_baseline_manifest",
+      "exit_code": 0,
+      "real": 0.47,
+      "user": 0.35,
+      "sys": 0.03
+    },
+    {
+      "name": "paper_small_certificates",
+      "exit_code": 0,
+      "real": 0.2,
+      "user": 0.18,
+      "sys": 0.0
+    },
+    {
+      "name": "q10_all_catalogue_geometry",
+      "exit_code": 0,
+      "real": 22.11,
+      "user": 132.61,
+      "sys": 3.81
+    },
+    {
+      "name": "q10_fetch_archive",
+      "exit_code": 0,
+      "real": 571.75,
+      "user": 9.62,
+      "sys": 7.88
+    },
+    {
+      "name": "q7_audit_binary_logic",
+      "exit_code": 0,
+      "real": 0.29,
+      "user": 0.28,
+      "sys": 0.0
+    },
+    {
+      "name": "q7_audit_prefix_ledger",
+      "exit_code": 0,
+      "real": 28.9,
+      "user": 28.72,
+      "sys": 0.12
+    },
+    {
+      "name": "q7_terminal_audit",
+      "exit_code": 1,
+      "real": 0.05,
+      "user": 0.03,
+      "sys": 0.01
+    },
+    {
+      "name": "q7_terminal_audit_retry1",
+      "exit_code": 0,
+      "real": 0.12,
+      "user": 0.08,
+      "sys": 0.02
+    },
+    {
+      "name": "q89_audit_binary_logic",
+      "exit_code": 0,
+      "real": 1.11,
+      "user": 1.1,
+      "sys": 0.0
+    },
+    {
+      "name": "q89_audit_profile_logic",
+      "exit_code": 0,
+      "real": 0.03,
+      "user": 0.02,
+      "sys": 0.0
+    },
+    {
+      "name": "q89_prefix_universe",
+      "exit_code": 0,
+      "real": 21.39,
+      "user": 21.07,
+      "sys": 0.19
+    },
+    {
+      "name": "q89_terminal_audit",
+      "exit_code": 1,
+      "real": 0.05,
+      "user": 0.03,
+      "sys": 0.0
+    },
+    {
+      "name": "q89_terminal_audit_retry1",
+      "exit_code": 0,
+      "real": 2.18,
+      "user": 2.04,
+      "sys": 0.11
+    }
+  ],
+  "q7_q89_initial_path_adapter_failures": "RESOLVED_BY_RETRY1; originals preserved; not mathematical failures",
+  "q10_sector_native_status": "PASS_88_DRAT_PLUS_REP1_IDRUP",
+  "q10_global_status": "INDEPENDENT_VERIFICATION_PENDING",
+  "source_transcript_binding": "PASS_2200_UNSAT_QUERIES",
+  "coordinator_status": "STOPPED_WITH_ERROR",
+  "coordinator_error": "DISK_RESERVE: free=4708323328, reserve=5368709120",
+  "coordinator_stopped_epoch": 1791285178.298549,
+  "native_idrup_log_completed_epoch": 1791285181.4799461,
+  "proof_report_completed_epoch": 1791285182.245479,
+  "outer_q10_proof_exit": "NOT_RECORDED",
+  "operational_review": "Running coordinator stopped its immediate time wrapper at disk reserve; native checker child completed after the stop. No outer exit or clean coordinator finish is claimed. Current coordinator source terminates whole process groups for future runs.",
+  "platform_notes": {
+    "embedded_build_header": "Unchanged frozen idrup-build.c retains an August build string. Fresh October compiler/source/binary hashes are in report.json.",
+    "idrup_reported_rss_mb": 55824.0,
+    "darwin_corrected_rss_mib": 54.515625,
+    "rss_reason": "Frozen checker shifts ru_maxrss by 10 as for Linux KiB. Darwin returns bytes, so the displayed MB number is 1024 times too large."
+  },
+  "remaining_g11_obligations": [
+    "full R1 proof bodies and replay",
+    "global P4/P5",
+    "global P6",
+    "global P7",
+    "independent global Q10 enumeration/join correctness"
+  ],
+  "whole_paper_gaps": "See PAPER_CLAIMS.md; finite checks do not establish exhaustive classifications or infinite-family proof.",
+  "original_materials_read_only": true,
+  "cleanup": {
+    "started_epoch": 1791286688.8907478,
+    "free_bytes_before": 7158190080,
+    "removed": [
+      {
+        "path": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/Q10_HPC_HANDOFF_PACKAGE.zip",
+        "bytes": 3140960671,
+        "sha256": "1ea37d8321c44a018efc37694e21e2d8dacc4870224a540ea14b5609cbc2000e",
+        "kind": "task-created verified remote reassembly"
+      },
+      {
+        "path": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package",
+        "bytes": 472039402,
+        "kind": "task-created temporary extraction; original archive retained and public"
+      },
+      {
+        "path": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid10_route2",
+        "bytes": 90107028,
+        "kind": "task-created temporary extraction; original archive retained and public"
+      }
+    ],
+    "user_owned_materials_removed": false,
+    "free_bytes_after": 10862968832,
+    "ended_epoch": 1791286690.515317
+  },
+  "recorded_cpu_hours_subtotal": 3.128072222222222
+}

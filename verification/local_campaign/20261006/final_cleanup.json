@@ -1,0 +1,25 @@
+{
+  "started_epoch": 1791286688.8907478,
+  "free_bytes_before": 7158190080,
+  "removed": [
+    {
+      "path": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/Q10_HPC_HANDOFF_PACKAGE.zip",
+      "bytes": 3140960671,
+      "sha256": "1ea37d8321c44a018efc37694e21e2d8dacc4870224a540ea14b5609cbc2000e",
+      "kind": "task-created verified remote reassembly"
+    },
+    {
+      "path": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package",
+      "bytes": 472039402,
+      "kind": "task-created temporary extraction; original archive retained and public"
+    },
+    {
+      "path": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid10_route2",
+      "bytes": 90107028,
+      "kind": "task-created temporary extraction; original archive retained and public"
+    }
+  ],
+  "user_owned_materials_removed": false,
+  "free_bytes_after": 10862968832,
+  "ended_epoch": 1791286690.515317
+}

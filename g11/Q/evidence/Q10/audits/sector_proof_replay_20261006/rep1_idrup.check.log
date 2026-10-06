@@ -1,0 +1,37 @@
+c Interaction DRUP Checker
+c Copyright (c) 2023 Armin Biere University of Freiburg
+c Version 0.0.7 14ef226689dce88a40ddc7471713687007d44337
+c Compiler Apple clang version 17.0.0 (clang-1700.6.3.2) -Wall -O3 -DNDEBUG -DCADICAL
+c Build Sun Aug 2 21:00:30 AEST 2026 Darwin DONGHAOXUANs-MacBook-Air-1966.local 27.0.0 arm64
+c
+c reading incremental CNF '/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/Q10_HPC_HANDOFF_PACKAGE/work/package_agent/pair_proofs/rep1_full.icnf'
+c reading and checking incremental DRUP proof '/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/Q10_HPC_HANDOFF_PACKAGE/work/package_agent/pair_proofs/rep1_full.idrup'
+c interaction and proof checking in strict mode
+c root-level unit propagation yields conflict
+c
+s VERIFIED
+c
+c added:                           18790209      6663.19 per variable
+c conclusions:                         2200       100.00 % queries
+c cores:                               2200       100.00 % conclusions
+c decisions:                      170756242         9.14 per lemma
+c deleted:                         18781406        99.95 % added
+c extension clauses:                      0         0.00 per extension var
+c extension vars:                         0         0.00 % variables
+c inputs:                            117629         0.63 % added
+c lemmas:                          18672580        99.37 % added
+c models:                                 0         0.00 % conclusions
+c propagations:                 24351951561       142.61 per decision
+c queries:                             2200         0.34 per second
+c restored:                              23         9.16 % weakened
+c unknowns:                               0         0.00 % conclusions
+c weakened:                             251         0.21 % inputs
+c
+c process-time:                      723.40 seconds   98 % wall-clock
+c wall-clock-time:                   738.41 seconds  100 %
+c maximum-resident-set-size:    55824.00 MB
+c
+c exit 0
+real 738.85
+user 717.81
+sys 5.57

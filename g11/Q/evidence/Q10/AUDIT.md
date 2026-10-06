@@ -60,6 +60,50 @@ per-case stdout/stderr/exit records are in `audits/membership_replay_20261006/`.
 This validates catalogue membership and stored counters. Independent
 enumeration completeness and global join/UNSAT correctness remain open.
 
+## Fresh existing-sector certificate replay
+
+The unchanged native checkers were freshly compiled on this Mac. All **88
+ordinary DRAT certificates pass**, including 18 already contradictory inputs
+with empty proofs. Those 18 return checker exit 1 with `s VERIFIED`; acceptance
+also requires an actual empty input clause and a zero-byte proof, rather than
+treating arbitrary exit 1 as success. Every certified CNF/proof matches its
+original ordinary ledger in both bytes and SHA-256.
+
+The representative-1 **strict IDRUP check also passes**, with `s VERIFIED`,
+exit 0, 2,200 conclusions for 2,200 queries, and zero UNKNOWN results. The
+unchanged interaction auditor separately confirms the source formula, every
+query, core, exact blocking clause and full transcript. All 187 checked
+source/input/ledger files are additionally matched to the complete public
+archive index; exact bindings are retained with the fresh receipts.
+
+Summed ordinary DRAT CPU time is **0.15607 hours**. Native IDRUP takes
+**12.31 minutes elapsed and 0.20094 CPU hours**; the sector wrapper takes
+15.13 minutes including input hashing and the interaction audit. Receipts,
+binding report and the original ledger are in
+`audits/sector_proof_replay_20261006/`; the release receipt archive also
+preserves the fresh native binaries and unchanged compiler sources.
+
+This proves the deposited **at-least-two-extendible-size-20 sector only**.
+Independent catalogue completeness and arbitrary-cap global Q10 UNSAT remain
+separate obligations; the repository status stays
+`INDEPENDENT_VERIFICATION_PENDING`.
+
+The coordinator hit its 5 GiB reserve at 11:12:58 UTC and stopped its immediate
+time wrapper. The native child completed at 11:13:01 and the final PASS report
+was written at 11:13:02. Its genuine native success is reviewed separately
+from the preserved `STOPPED_WITH_ERROR` coordinator state. The missing outer
+exit file is not fabricated. Future coordinator code terminates whole process
+groups; the already-running version did not propagate this stop to its child.
+The final campaign review preserves both the resource interruption and the
+completed native proof evidence. Only temporary copies created by this task
+were then cleaned up, restoring about 10 GiB free disk.
+
+Two frozen-checker platform details are retained without editing raw logs.
+`idrup-build.c` contains an August build string; actual fresh compiler,
+source and binary hashes are in `report.json`. Its RSS routine assumes Linux
+KiB, whereas Darwin returns bytes. Thus the printed 55,824 MB corresponds to
+**54.52 MiB** on this Mac, not a 55 GB memory allocation.
+
 ## Supplied verifier and storage
 
 The supplied `verify_handoff.py` source is unchanged from the earlier handoff
@@ -106,11 +150,9 @@ These observed logs do not substitute for a complete cluster accounting export.
 2. Re-establish enumeration completeness and exact join correctness
    independently. Every listed mask now passes fresh geometry/membership
    validation, but the enumerator and global join searches were not rerun.
-3. The fresh DRAT/IDRUP certificate replay for the separately proof-certified
-   at-least-two-extendible sector is running. Until its full native checker
-   and source/transcript binding results are reviewed, no fresh final-sector
-   pass is claimed. That proof sector alone does not prove arbitrary-cap
-   global Q10 UNSAT.
+3. The fresh sector DRAT/IDRUP checks and source/transcript binding now pass.
+   Extend the independently checked proof coverage to arbitrary-cap global
+   Q10; the existing at-least-two-extendible sector does not cover that claim.
 4. Provide the original source revision, exact compiler environment/submission
    records, and comprehensive scheduler accounting tying every failed attempt
    and retry to the final tasks. Source/input/binary hashes and Slurm/job logs
@@ -149,3 +191,17 @@ python3 g11/Q/evidence/Q10/scripts/audit_hpc_zip.py \
 ```
 
 The primary result and the verification limitations must be cited together.
+
+To replay the deposited sector certificates, obtain the exact original
+archive and extract the paths listed in
+`audits/sector_proof_replay_20261006/input_archive_bindings.json` into a package
+root. This selective set includes all 88 CNF/proof pairs, rep1 source/transcript/
+proof, ordinary ledger and native checker sources. Verify the listed bytes and
+hashes before running:
+
+```sh
+python3 scripts/recheck_q10_proof_sector.py /path/to/package /tmp/fresh-sector --workers 10
+```
+
+The rep1 checker is sequential; extra worker processes do not accelerate its
+stateful proof stream. No new solver search is required for this replay.

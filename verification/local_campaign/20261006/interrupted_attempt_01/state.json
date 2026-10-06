@@ -1,0 +1,76 @@
+{
+  "pid": 81915,
+  "started_epoch": 1791282073.424333,
+  "workers": 10,
+  "phase": "P123",
+  "status": "STOPPED_WITH_ERROR",
+  "total_parts": 60,
+  "completed": [],
+  "active": [
+    {
+      "shard": 0,
+      "pid": 82017,
+      "anchors_completed": 100,
+      "elapsed_seconds": 52.44971585273743
+    },
+    {
+      "shard": 1,
+      "pid": 82018,
+      "anchors_completed": 100,
+      "elapsed_seconds": 52.44814586639404
+    },
+    {
+      "shard": 2,
+      "pid": 82020,
+      "anchors_completed": 200,
+      "elapsed_seconds": 52.446638107299805
+    },
+    {
+      "shard": 3,
+      "pid": 82022,
+      "anchors_completed": 200,
+      "elapsed_seconds": 52.44516086578369
+    },
+    {
+      "shard": 4,
+      "pid": 82024,
+      "anchors_completed": 100,
+      "elapsed_seconds": 52.44376802444458
+    },
+    {
+      "shard": 5,
+      "pid": 82026,
+      "anchors_completed": 200,
+      "elapsed_seconds": 52.442418813705444
+    },
+    {
+      "shard": 6,
+      "pid": 82028,
+      "anchors_completed": 100,
+      "elapsed_seconds": 52.44089412689209
+    },
+    {
+      "shard": 7,
+      "pid": 82030,
+      "anchors_completed": 200,
+      "elapsed_seconds": 52.439443826675415
+    },
+    {
+      "shard": 8,
+      "pid": 82032,
+      "anchors_completed": 100,
+      "elapsed_seconds": 52.43791627883911
+    },
+    {
+      "shard": 9,
+      "pid": 82034,
+      "anchors_completed": 100,
+      "elapsed_seconds": 52.43641901016235
+    }
+  ],
+  "reserve_bytes": 5368709120,
+  "updated_epoch": 1791282130.767471,
+  "free_disk_bytes": 5413822464,
+  "campaign_rss_kib": 395328,
+  "error": "DISK_RESERVE: free=5200265216, reserve=5368709120"
+}

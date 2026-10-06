@@ -1,0 +1,145 @@
+{
+  "machine": "Apple M4 Mac16,12; 24 GiB RAM",
+  "workers_max": 10,
+  "successful_campaign_started_epoch": 1791282304.908492,
+  "final_proof_report_written_epoch": 1791285182.245479,
+  "successful_campaign_wall_seconds_to_final_proof_report": 2877.336987018585,
+  "p123_native_cpu_seconds": 9744.27,
+  "p123_native_wall_seconds": 1255.4795608520508,
+  "timed_followups_cpu_seconds": 231.57,
+  "q10_ordinary_drat_native_cpu_seconds": 561.84,
+  "q10_rep1_idrup_native_cpu_seconds": 723.38,
+  "q10_rep1_idrup_native_wall_seconds": 738.85,
+  "q10_sector_wrapper_wall_seconds": 908.0447747707367,
+  "recorded_cpu_seconds_subtotal": 11261.06,
+  "recorded_cpu_hours_subtotal": 3.128072222222222,
+  "accounting_limitations": [
+    "The full outer geometry timer includes its native workers; the native geometry CPU sum is not added again.",
+    "The first interrupted P123 attempt completed zero parts; its CPU usage was not recorded and is excluded.",
+    "Untimed compilation, hashing, rep1 source/transcript binding, packaging and final review overhead is excluded.",
+    "Missing outer Q10 proof timer/exit is preserved; only its completed native checker times are included.",
+    "Follow-up timing includes the two failed path-adapter attempts and their passing retries.",
+    "Wall time ends at the final proof report and includes Q10 transfer; final review/upload is additional."
+  ],
+  "timed_followups": [
+    {
+      "name": "grid10_lower_drat",
+      "exit_code": 0,
+      "real": 24.14,
+      "user": 22.33,
+      "sys": 0.32
+    },
+    {
+      "name": "grid10_upper_witnesses",
+      "exit_code": 0,
+      "real": 0.19,
+      "user": 0.13,
+      "sys": 0.04
+    },
+    {
+      "name": "grid9_existing_598_catalogue",
+      "exit_code": 0,
+      "real": 0.31,
+      "user": 0.29,
+      "sys": 0.0
+    },
+    {
+      "name": "p45_artifact_audit",
+      "exit_code": 0,
+      "real": 0.18,
+      "user": 0.14,
+      "sys": 0.02
+    },
+    {
+      "name": "p45_baseline_manifest",
+      "exit_code": 0,
+      "real": 0.47,
+      "user": 0.35,
+      "sys": 0.03
+    },
+    {
+      "name": "paper_small_certificates",
+      "exit_code": 0,
+      "real": 0.2,
+      "user": 0.18,
+      "sys": 0.0
+    },
+    {
+      "name": "q10_all_catalogue_geometry",
+      "exit_code": 0,
+      "real": 22.11,
+      "user": 132.61,
+      "sys": 3.81
+    },
+    {
+      "name": "q10_fetch_archive",
+      "exit_code": 0,
+      "real": 571.75,
+      "user": 9.62,
+      "sys": 7.88
+    },
+    {
+      "name": "q7_audit_binary_logic",
+      "exit_code": 0,
+      "real": 0.29,
+      "user": 0.28,
+      "sys": 0.0
+    },
+    {
+      "name": "q7_audit_prefix_ledger",
+      "exit_code": 0,
+      "real": 28.9,
+      "user": 28.72,
+      "sys": 0.12
+    },
+    {
+      "name": "q7_terminal_audit",
+      "exit_code": 1,
+      "real": 0.05,
+      "user": 0.03,
+      "sys": 0.01
+    },
+    {
+      "name": "q7_terminal_audit_retry1",
+      "exit_code": 0,
+      "real": 0.12,
+      "user": 0.08,
+      "sys": 0.02
+    },
+    {
+      "name": "q89_audit_binary_logic",
+      "exit_code": 0,
+      "real": 1.11,
+      "user": 1.1,
+      "sys": 0.0
+    },
+    {
+      "name": "q89_audit_profile_logic",
+      "exit_code": 0,
+      "real": 0.03,
+      "user": 0.02,
+      "sys": 0.0
+    },
+    {
+      "name": "q89_prefix_universe",
+      "exit_code": 0,
+      "real": 21.39,
+      "user": 21.07,
+      "sys": 0.19
+    },
+    {
+      "name": "q89_terminal_audit",
+      "exit_code": 1,
+      "real": 0.05,
+      "user": 0.03,
+      "sys": 0.0
+    },
+    {
+      "name": "q89_terminal_audit_retry1",
+      "exit_code": 0,
+      "real": 2.18,
+      "user": 2.04,
+      "sys": 0.11
+    }
+  ]
+}

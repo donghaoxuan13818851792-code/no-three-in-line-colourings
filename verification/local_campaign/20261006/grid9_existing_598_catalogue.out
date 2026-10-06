@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "catalogue_member": "grid9_five_colour_current_source_0.1.0/data/canonical_598/experiment_150000_class_representatives.csv",
+  "member_sha256": "9e656bae82a33c34712f2025777b02f20b63412344b96f9910bac0db9ef0aaa5",
+  "distinct_valid_classes": 598,
+  "observed_valid_outcomes": 3817,
+  "within_colour_triples_checked": 1756093,
+  "geometry_canonicalisation_stabilizers_and_hashes": "PASS",
+  "claim_boundary": "598 observed valid inequivalent classes; does not certify exhaustive manuscript count C(9)=743"
+}

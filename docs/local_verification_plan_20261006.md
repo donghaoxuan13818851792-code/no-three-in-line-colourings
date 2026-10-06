@@ -44,7 +44,15 @@ prefix and Boolean/profile checks, the small-certificate checks, G9 observed
 598-class audit and G10 route2 formal proof/CNF audit also pass. Q10 download
 and all 89 membership checks also pass: 75,666,410 masks, 0.03551 native CPU
 hours and 19.43 seconds in the streamed catalogue workers, plus setup.
-The existing sector proof replay remains in progress.
+The existing sector replay also passes: 88 DRAT certificates plus full strict
+rep1 IDRUP and its 2,200-query source/transcript binding. IDRUP took 12.31
+minutes elapsed; ordinary DRAT plus IDRUP consumed 0.35701 native CPU hours.
+The successful campaign reached its final proof report after 47.96 minutes,
+including Q10 transfer. Recorded CPU subtotal is about 3.13 hours; untimed
+setup, the initial interrupted attempt and final archiving are additional.
+See `local_verification_results_20261006.md` for the final accounting and
+the coordinator's disk-reserve interruption. The preliminary ranges above
+are retained as estimates made before these actual measurements.
 
 ## Evidence produced
 

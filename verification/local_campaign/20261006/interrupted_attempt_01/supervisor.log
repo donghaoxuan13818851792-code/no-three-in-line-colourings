@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_local_verification.py", line 249, in <module>
+    main()
+    ~~~~^^
+  File "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_local_verification.py", line 162, in main
+    resources = guard(run)
+  File "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_local_verification.py", line 62, in guard
+    raise RuntimeError(f'DISK_RESERVE: free={free}, reserve={RESERVE}')
+RuntimeError: DISK_RESERVE: free=5200265216, reserve=5368709120

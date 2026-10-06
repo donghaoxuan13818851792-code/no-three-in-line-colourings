@@ -1,0 +1,6 @@
+{
+  "pid": 81915,
+  "started_epoch": 1791282073.372272,
+  "command": "caffeinate -i python3 scripts/run_local_verification.py --workers 10",
+  "run": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006"
+}

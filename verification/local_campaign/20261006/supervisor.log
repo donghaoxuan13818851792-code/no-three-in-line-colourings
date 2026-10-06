@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_local_verification.py", line 249, in <module>
+    start_new_session=True)
+    
+  File "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_local_verification.py", line 217, in main
+    elapsed = {key: float(val) for key, val in times}
+                            ^^^^^^^^^^
+  File "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_local_verification.py", line 62, in guard
+    os.killpg(process.pid, signal.SIGTERM)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: DISK_RESERVE: free=4708323328, reserve=5368709120

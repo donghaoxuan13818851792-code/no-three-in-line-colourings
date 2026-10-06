@@ -1,0 +1,187 @@
+[
+  {
+    "name": "q7_terminal_audit",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_relocated_audit.py",
+      "--package",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/Q7_FINAL_VERIFICATION_PACKAGE",
+      "--historical-root",
+      "/Users/donghaoxuan/Documents/Codex/2026-07-20/consider-the-11-11-integer-grid",
+      "--script",
+      "q7_exact_9way_20260722_2130/audit_final.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q7_audit_prefix_ledger",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/Q7_FINAL_VERIFICATION_PACKAGE/q7_exact_9way_20260722_2130/audit_prefix_ledger.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q7_audit_binary_logic",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/Q7_FINAL_VERIFICATION_PACKAGE/q7_exact_9way_20260722_2130/audit_binary_logic.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q89_terminal_audit",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/run_relocated_audit.py",
+      "--package",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package/g11_q89_complete_elimination",
+      "--historical-root",
+      "/Users/donghaoxuan/Documents/Codex/2026-07-20/consider-the-11-11-integer-grid",
+      "--script",
+      "q89_exact_9way_20260723_0130/audit_final.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q89_prefix_universe",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package/g11_q89_complete_elimination/scripts/audit_prefix_universe.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q89_audit_binary_logic",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package/g11_q89_complete_elimination/q89_exact_development_20260722/audit_binary_logic.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q89_audit_profile_logic",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package/g11_q89_complete_elimination/q89_exact_development_20260722/audit_profile_logic.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "p45_artifact_audit",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/grid11_p45_deep_compression_artifacts-2/src/verify_artifacts.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "p45_baseline_manifest",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/p45 压缩优化/grid11_p45_deep_compression_context_20260726/scripts/verify_package.py"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "paper_small_certificates",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/audit_paper_certificates.py",
+      "--output",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/paper_certificates.json"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "grid10_upper_witnesses",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "sh",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid10_route2/grid10_minimum_six_complete_proof_route2_0.1.1/scripts/verify_upper_bound.sh"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid10_route2/grid10_minimum_six_complete_proof_route2_0.1.1"
+  },
+  {
+    "name": "grid10_lower_drat",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "sh",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid10_route2/grid10_minimum_six_complete_proof_route2_0.1.1/scripts/verify_sat_lower_bound.sh"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid10_route2/grid10_minimum_six_complete_proof_route2_0.1.1"
+  },
+  {
+    "name": "grid9_existing_598_catalogue",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/audit_grid9_catalogue.py",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/整理文件包/grid9_five_colour_current_source_0.1.0.zip",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/grid9_catalogue.json"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q10_fetch_archive",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/g11/Q/evidence/Q10/scripts/fetch_archive.py",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/Q10_HPC_HANDOFF_PACKAGE.zip"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q10_all_catalogue_geometry",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/recheck_q10_geometry.py",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/Q10_HPC_HANDOFF_PACKAGE.zip",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q10_geometry",
+      "--workers",
+      "10"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  },
+  {
+    "name": "q10_existing_sector_proofs",
+    "command": [
+      "/usr/bin/time",
+      "-p",
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z/scripts/recheck_q10_proof_sector.py",
+      "/Users/donghaoxuan/Desktop/projects/整数网格上的无三点共线染色问题/项目文件/Q10_HPC_HANDOFF_PACKAGE",
+      "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q10_proof_replay",
+      "--workers",
+      "10"
+    ],
+    "cwd": "/Users/donghaoxuan/Desktop/agent workplace/no-three-in-line-colourings-repro-20260826T123506Z"
+  }
+]

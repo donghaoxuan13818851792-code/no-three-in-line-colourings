@@ -29,9 +29,12 @@ This file records the evidence status of the computational proof components.
 
 ## Local campaign — 6 October 2026
 
-The bounded local campaign is running; queued checks do not change a branch to
-`COMPLETE`. Its plan and whole-paper evidence boundaries are recorded in
-`docs/local_verification_plan_20261006.md` and `PAPER_CLAIMS.md`.
+The bounded local campaign's available checks are complete and reviewed.
+Its preserved coordinator state includes a disk-reserve interruption just
+before the final native proof checker completed; that checker then produced
+genuine verified evidence. No clean coordinator exit is claimed. Actual costs,
+raw receipts and remaining gaps are recorded in
+`docs/local_verification_results_20261006.md` and `PAPER_CLAIMS.md`.
 
 P1–P3 now pass a **full fresh independent replay**: 60 disjoint actual parts,
 127,491 anchors, 708,638 residual instances, all exits 20, no SAT, and all
@@ -61,7 +64,10 @@ on 75,666,410 masks, with exact source, archive, anchor and per-catalogue
 bindings. This takes 0.03551 native CPU hours and 19.43 seconds elapsed in
 the streamed catalogue workers. Q10 remains `INDEPENDENT_VERIFICATION_PENDING`
 because enumeration completeness and independent global join/UNSAT correctness
-are separate obligations. The existing proof-certified sector replay is running.
+are separate obligations. The existing at-least-two-extendible sector now also
+passes all 88 fresh DRAT checks and the full strict rep1 IDRUP check, together
+with source/transcript binding for 2,200 UNSAT queries. That sector pass does
+not close the global Q10 obligation.
 
 P4/P5 is now recorded as `INCOMPLETE`, correcting the earlier import-only
 placeholder. The existing final Linux delivery explicitly reports both
@@ -147,8 +153,9 @@ verifier's manifest stage rejects the new archive. See
 [g11/Q/evidence/Q10/AUDIT.md](g11/Q/evidence/Q10/AUDIT.md).
 
 Q10 is now INDEPENDENT_VERIFICATION_PENDING at repository evidence level.
-No independent global UNSAT proof, catalogue regeneration, join search replay,
-or full fresh DRAT/IDRUP replay is claimed. The earlier September import note
+No independent global UNSAT proof, catalogue regeneration or join search replay
+is claimed. Full fresh DRAT/IDRUP replay passes for the deposited proof sector
+only. The earlier September import note
 and the received frozen status files describe the older boundary, not the new
 primary execution coverage.
 

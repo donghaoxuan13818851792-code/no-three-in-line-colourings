@@ -5,8 +5,8 @@ This document maps manuscript claims to the objects needed to verify them.
 ## Whole-paper evidence review — 6 October 2026
 
 The local campaign checks deposited evidence and explicit finite certificates.
-Its results do not certify every assertion in the manuscript. `QUEUED` below
-means the program has been scheduled; it is not a passing result. `NOT_YET_MAPPED`
+All available checks scheduled in this campaign have completed and been
+reviewed; they do not certify every assertion in the manuscript. `NOT_YET_MAPPED`
 means a matching frozen artifact has not been identified in the material reviewed
 so far, rather than a claim that the authors never produced it.
 
@@ -20,7 +20,7 @@ so far, rather than a claim that the authors never produced it.
 | C(9)=743 | full final catalogue and exhaustive primary/independent enumerations | existing random-search catalogue of 598 observed classes PASS for validity/canonicalisation | the 743-class final release, completeness and independent enumeration; 598 observed classes do not refute or establish 743 |
 | χ(G10)=6 | six-colour witness and exclusion of five colours | exact route2 package 0.1.1 publicly archived; witnesses and fresh DRAT/CNF reconstruction PASS | route2 proof and exact CNF binding pass; route2 checks a different route from the paper's full-arc/corner explanation |
 | χ(G12)=7 | seven-colour witness plus complete full-arc/corner exclusion of six colours | manuscript upper-bound matrix PASS | full-arc input, symmetry expansion, all 26 corner cases and complete lower-bound argument NOT_YET_MAPPED |
-| χ(G11)=7 | upper bound from restricting G12 witness, every R/Q/P lower-bound branch and catalogue dependency | P1–P3 full independent replay and Q7/Q8/Q9 audits PASS; see STATUS.md for the remaining branches | full R1 proof bodies; global P4/P5, P6 and P7 terminal evidence; independent global Q10 correctness |
+| χ(G11)=7 | upper bound from restricting G12 witness, every R/Q/P lower-bound branch and catalogue dependency | P1–P3 full independent replay, Q7/Q8/Q9 audits, all Q10 catalogue memberships and existing-sector DRAT/IDRUP proofs PASS; see STATUS.md for the remaining branches | full R1 proof bodies; global P4/P5, P6 and P7 terminal evidence; independent global Q10 correctness |
 | Packing lower bounds at n=14,16,18,20 | exact full-arc inputs, oriented orbit expansion, complete packing exclusions and terminal evidence | NOT_YET_MAPPED | locate frozen inputs and all four complete runs; adjacent odd-grid bounds also require the monotonicity argument |
 | Infinite family χ(G8p)≤8p−8 | human proof of field partition/absorption and exact finite seed conditions | seed, 1,024 reflection memberships, prime-list and displayed-prime admissibility PASS | mathematical review of the construction; finite checks do not prove the infinite family |
 | Smallest admissible prime 185,456,518,679 | complete candidate search/CRT coverage and primality evidence | exact primality and all required residue conditions PASS for this example | no smaller candidate exists is a separate claim; the exhaustive search record is NOT_YET_MAPPED |
@@ -43,6 +43,8 @@ of whether its package-integrity auditor passes.
 See [the local verification plan](docs/local_verification_plan_20261006.md)
 and [catalogue coverage review](docs/catalogue_coverage_review_20261006.md) for
 the checked predicates, resource limits and limits of the replay.
+The [final campaign report](docs/local_verification_results_20261006.md) records
+actual CPU costs, native proof receipts and the preserved resource interruption.
 
 ## G11 lower bound
 

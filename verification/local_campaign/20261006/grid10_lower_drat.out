@@ -1,0 +1,24 @@
+variables=500
+collinear_triples=4448
+clauses=24740
+grid_points 100
+lines_with_at_least_3_points 406
+distinct_collinear_triples 4448
+exactly-one_clauses 1100
+monochromatic-triple bans_clauses 22240
+value precedence_clauses 400
+implied line lower bounds_clauses 1000
+declared_variables 500
+declared_clauses 24740
+exact_clause_multiset_match True
+VERIFIED
+c reading proof from stdin
+c parsing input formula with 500 variables and 24740 clauses
+c finished parsing, read 84066978 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 22605 of 24740 clauses in core                            
+c 1815254 of 1842451 lemmas in core using 48358947 resolution steps
+c 11982 RAT lemmas in core; 108696 redundant literals in core lemmas
+s VERIFIED
+c verification time: 21.881 seconds
+SAT/DRAT LOWER BOUND: PASS

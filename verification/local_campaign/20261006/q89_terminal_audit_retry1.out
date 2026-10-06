@@ -1,0 +1,4 @@
+{"adapter": "historical-path relocation only", "historical_root": "/Users/donghaoxuan/Documents/Codex/2026-07-20/consider-the-11-11-integer-grid", "physical_root": "/Users/donghaoxuan/Desktop/agent workplace/ntic-handoff-audit-20261006/local-campaign-20261006/q89_package/g11_q89_complete_elimination", "script": "q89_exact_9way_20260723_0130/audit_final.py", "script_sha256": "eb24f8661f7a59dffce89049c2a2b73872d27e31e40f9aa192f710a369de2218", "source_changed": false}
+Q8_FINAL_AUDIT PASS status=UNSAT workers=5 fixed_coverage=[0,89) prefixes=412995 global_cap_nodes=267205518698 global_candidates=195343877 pair_tests=571544352604 binary_instances=37232526 binary_nodes=916625078
+Q9_FINAL_AUDIT PASS status=UNSAT workers=4 fixed_coverage=[0,89) prefixes=412995 global_cap_nodes=267205518698 global_candidates=195343877 pair_tests=571544352604 binary_instances=37232526 binary_nodes=562882890
+Q89_FINAL_AUDIT PASS workers=9 profiles=Q8,Q9 status=UNSAT

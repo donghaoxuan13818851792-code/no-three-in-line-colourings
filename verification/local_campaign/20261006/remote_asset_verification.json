@@ -1,0 +1,52 @@
+{
+  "checked_epoch": 1791287519.360411,
+  "release": "local-verification-20261006",
+  "status": "PASS",
+  "assets": [
+    {
+      "name": "P123_independent_replay_20261006.tar.gz",
+      "bytes": 9800062,
+      "sha256": "33dd836bfcac23923e43e2033ccb68b092fb349e8a4083a767c28ef8b574ac2b",
+      "github_digest": "sha256:33dd836bfcac23923e43e2033ccb68b092fb349e8a4083a767c28ef8b574ac2b",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/local-verification-20261006/P123_independent_replay_20261006.tar.gz",
+      "api_url": "https://api.github.com/repos/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/assets/615240828",
+      "status": "REMOTE_SIZE_AND_SHA256_PASS"
+    },
+    {
+      "name": "Q7_FINAL_VERIFICATION_PACKAGE.zip",
+      "bytes": 41787119,
+      "sha256": "2803882cdc532da5fec7fc141ecafdd5ed083892eb5fd84b86228034c10bff5d",
+      "github_digest": "sha256:2803882cdc532da5fec7fc141ecafdd5ed083892eb5fd84b86228034c10bff5d",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/local-verification-20261006/Q7_FINAL_VERIFICATION_PACKAGE.zip",
+      "api_url": "https://api.github.com/repos/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/assets/615240831",
+      "status": "REMOTE_SIZE_AND_SHA256_PASS"
+    },
+    {
+      "name": "g11_q89_complete_elimination.zip",
+      "bytes": 117689964,
+      "sha256": "e3035da69338b6a258b8c978ce33c398dd99e1ef8c190f1da5979b0c6832aac3",
+      "github_digest": "sha256:e3035da69338b6a258b8c978ce33c398dd99e1ef8c190f1da5979b0c6832aac3",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/local-verification-20261006/g11_q89_complete_elimination.zip",
+      "api_url": "https://api.github.com/repos/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/assets/615240830",
+      "status": "REMOTE_SIZE_AND_SHA256_PASS"
+    },
+    {
+      "name": "grid10_minimum_six_complete_proof_route2_0.1.1.zip",
+      "bytes": 87311760,
+      "sha256": "e8e2a9ac54261ca2ac2730c5759bf2b4e1896d3f3e045fab20b1b3a5320e80b9",
+      "github_digest": "sha256:e8e2a9ac54261ca2ac2730c5759bf2b4e1896d3f3e045fab20b1b3a5320e80b9",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/local-verification-20261006/grid10_minimum_six_complete_proof_route2_0.1.1.zip",
+      "api_url": "https://api.github.com/repos/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/assets/615240829",
+      "status": "REMOTE_SIZE_AND_SHA256_PASS"
+    },
+    {
+      "name": "local_verification_final_20261006.tar.gz",
+      "bytes": 680966,
+      "sha256": "d6e8842bd1e0bd470623873b6b5c634c5135f1d096f97f18c26bc10e52f827f0",
+      "github_digest": "sha256:d6e8842bd1e0bd470623873b6b5c634c5135f1d096f97f18c26bc10e52f827f0",
+      "url": "https://github.com/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/download/local-verification-20261006/local_verification_final_20261006.tar.gz",
+      "api_url": "https://api.github.com/repos/donghaoxuan13818851792-code/no-three-in-line-colourings/releases/assets/615372008",
+      "status": "REMOTE_SIZE_AND_SHA256_PASS"
+    }
+  ]
+}

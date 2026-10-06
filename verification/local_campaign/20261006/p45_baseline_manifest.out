@@ -1,0 +1,12 @@
+P45_DEEP_COMPRESSION_CONTEXT_VERIFY PASS
+manifest_files=73
+caps21_lower_half=585837
+caps21_oriented_expected=1019640
+outer_representatives=127491
+outer_compatible=1699467737
+outer_nonextendible_compatible=1633664146
+dedup_occurrences=2319476
+dedup_canonical_residuals=2315001
+fixed_residuals=57755 all_UNSAT_by_supplied_solver
+fixed_seconds_mean=0.112015194
+fixed_seconds_median=0.104078000

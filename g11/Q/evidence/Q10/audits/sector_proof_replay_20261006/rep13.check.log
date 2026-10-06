@@ -1,0 +1,8 @@
+c parsing input formula with 630 variables and 28496 clauses
+c finished parsing
+c trivial UNSAT
+s VERIFIED
+c verification time: 0.083 seconds
+real 0.34
+user 0.03
+sys 0.01

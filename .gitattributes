@@ -1,3 +1,7 @@
 # Preserve received CRLF data and native output padding byte-for-byte.
 verification/paper/20261006/inputs/g9_observed598.csv -text -diff
 verification/paper/20261006/grid10_lower_drat.out -text -diff
+g11/Q/evidence/Q10/audits/sector_proof_replay_20261006/*.log -text -diff
+verification/local_campaign/20261006/*.out -text -diff
+verification/local_campaign/20261006/*.log -text -diff
+verification/local_campaign/20261006/interrupted_attempt_01/*.log -text -diff
