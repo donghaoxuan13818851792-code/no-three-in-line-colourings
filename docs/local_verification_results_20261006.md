@@ -107,3 +107,8 @@ artifacts for C5/C6/C7/C8/C9, the G12 lower bound, larger-grid packing records,
 and review of the infinite construction and smallest-prime claim. Exact
 claim boundaries are in `PAPER_CLAIMS.md`. This campaign did not start global
 searches whose required material is absent.
+
+The [post-campaign review](local_verification_review_20261006.md) records the
+follow-up evidence checks and process cleanup correction. The
+[material request checklist](supplier_materials_needed_20261006.md) identifies
+what can be checked locally after receipt of further frozen artifacts.

@@ -65,11 +65,33 @@ def terminate_job(process):
     try:
         process.wait(timeout=5)
     except subprocess.TimeoutExpired:
+        pass
+    # The group leader can exit before a native child that ignores SIGTERM.
+    # Escalate for the remaining group even when waiting on the leader succeeds.
+    try:
+        os.killpg(process.pid, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+    process.wait()
+
+
+def run_followup(task, run, env, state):
+    """Own the whole follow-up job through normal return or interruption."""
+    name = task['name']
+    with (run / f'{name}.out').open('w') as out, (run / f'{name}.err').open('w') as err:
+        process = subprocess.Popen(task['command'], cwd=task.get('cwd', str(ROOT)),
+                                   stdout=out, stderr=err, env=env,
+                                   start_new_session=True)
         try:
-            os.killpg(process.pid, signal.SIGKILL)
-        except ProcessLookupError:
-            pass
-        process.wait()
+            while process.poll() is None:
+                resources = guard(run)
+                state.update(updated_epoch=time.time(), **resources)
+                save(run / 'state.json', state)
+                time.sleep(3)
+            return process.returncode
+        except BaseException:
+            terminate_job(process)
+            raise
 
 
 def guard(run):
@@ -243,20 +265,7 @@ def main():
                 state['current_task'] = name
                 save(run / 'state.json', state)
                 begin = time.time()
-                with (run / f'{name}.out').open('w') as out, (run / f'{name}.err').open('w') as err:
-                    p = subprocess.Popen(task['command'], cwd=task.get('cwd', str(ROOT)),
-                                         stdout=out, stderr=err, env=env,
-                                         start_new_session=True)
-                    while p.poll() is None:
-                        try:
-                            resources = guard(run)
-                        except Exception:
-                            terminate_job(p)
-                            raise
-                        state.update(updated_epoch=time.time(), **resources)
-                        save(run / 'state.json', state)
-                        time.sleep(3)
-                code = p.returncode
+                code = run_followup(task, run, env, state)
                 (run / f'{name}.status').write_text(str(code)+'\n')
                 state['followups'].append({'name': name, 'exit_code': code,
                                           'wall_seconds': time.time()-begin})
