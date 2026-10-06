@@ -39,6 +39,27 @@ estimates, not mathematical status or content hashes.
 coverage closes the former missing-primary-run gap, but does not by itself
 establish independently verified global UNSAT.
 
+## Fresh all-catalogue geometry replay
+
+The complete remote ZIP was reassembled by streaming all 63 release parts,
+with every part and the full archive hash verified. The separately authored
+`q10_cap20_catalogue_audit.cpp` was then freshly compiled, unchanged, on the
+M4 Mac and run on **all 89 exact catalogues: 75,666,410 masks**.
+
+Every catalogue file hash and count matches its received metadata, every
+anchor binds to the frozen 89-representative list, and all 85 new saved audit
+counter strings agree exactly. The checker verifies 20-point size, absence
+of collinear triples, anchor disjointness, row/column occupancy and singleton
+conditions, residual line capacities, strict ordering/uniqueness, and
+extendibility/least-eligible classification against the 676-cap catalogue.
+
+All 89 cases pass. Summed native CPU time is **0.03551 CPU hours**; elapsed
+catalogue-worker time including streamed extraction is **19.43 seconds**.
+Archive hashing and compilation are additional setup time. Results and actual
+per-case stdout/stderr/exit records are in `audits/membership_replay_20261006/`.
+This validates catalogue membership and stored counters. Independent
+enumeration completeness and global join/UNSAT correctness remain open.
+
 ## Supplied verifier and storage
 
 The supplied `verify_handoff.py` source is unchanged from the earlier handoff
@@ -82,14 +103,14 @@ These observed logs do not substitute for a complete cluster accounting export.
 
 1. Update the supplier's manifest and final status to cover the HPC additions
    and the complete 89-representative primary run ledger.
-2. Re-establish catalogue membership/completeness and exact join correctness
-   independently. This intake reconstructs shard unions and checks primary
-   records; it does not rerun the enumerator or the join searches and does not
-   freshly validate the geometry of every listed mask.
-3. Full fresh DRAT/IDRUP certificate replay for the separately proof-certified
-   at-least-two-extendible sector was not performed. The proof files and old
-   binding audit remain byte-identical. That proof sector alone does not prove
-   arbitrary-cap global Q10 UNSAT.
+2. Re-establish enumeration completeness and exact join correctness
+   independently. Every listed mask now passes fresh geometry/membership
+   validation, but the enumerator and global join searches were not rerun.
+3. The fresh DRAT/IDRUP certificate replay for the separately proof-certified
+   at-least-two-extendible sector is running. Until its full native checker
+   and source/transcript binding results are reviewed, no fresh final-sector
+   pass is claimed. That proof sector alone does not prove arbitrary-cap
+   global Q10 UNSAT.
 4. Provide the original source revision, exact compiler environment/submission
    records, and comprehensive scheduler accounting tying every failed attempt
    and retry to the final tasks. Source/input/binary hashes and Slurm/job logs

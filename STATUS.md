@@ -56,6 +56,13 @@ and the existing observed 598-class G9 catalogue pass fresh checks. The G10
 route2 five-colour exclusion also passes fresh DRAT and independently audited
 CNF reconstruction. Their claim boundaries are in `verification/paper/20261006/`.
 
+All 89 Q10 catalogues now pass fresh independent geometric membership checks
+on 75,666,410 masks, with exact source, archive, anchor and per-catalogue
+bindings. This takes 0.03551 native CPU hours and 19.43 seconds elapsed in
+the streamed catalogue workers. Q10 remains `INDEPENDENT_VERIFICATION_PENDING`
+because enumeration completeness and independent global join/UNSAT correctness
+are separate obligations. The existing proof-certified sector replay is running.
+
 P4/P5 is now recorded as `INCOMPLETE`, correcting the earlier import-only
 placeholder. The existing final Linux delivery explicitly reports both
 profiles unresolved, global residual decisions incomplete and no gap-free

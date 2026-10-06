@@ -42,7 +42,9 @@ Completed P123 measurement: **2.70674 CPU hours and 20.92 minutes elapsed**,
 all 60 parts and all 708,638 residual instances checked. Q7/Q8/Q9 terminal,
 prefix and Boolean/profile checks, the small-certificate checks, G9 observed
 598-class audit and G10 route2 formal proof/CNF audit also pass. Q10 download
-and its subsequent membership/proof replays remain in progress.
+and all 89 membership checks also pass: 75,666,410 masks, 0.03551 native CPU
+hours and 19.43 seconds in the streamed catalogue workers, plus setup.
+The existing sector proof replay remains in progress.
 
 ## Evidence produced
 
